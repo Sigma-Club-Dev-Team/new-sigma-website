@@ -4,6 +4,7 @@ import UpcomingEvents from "./components/upcomingEvents";
 import MerchHero from "./components/MerchHero";
 import Footer from "./components/footer";
 import HonourarySigmites from "./components/HonSigmites";
+import Documentary from "./components/Documentary";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <UpcomingEvents />
+      <Documentary />
       <HonourarySigmites />
       <MerchHero />
       <Footer />
