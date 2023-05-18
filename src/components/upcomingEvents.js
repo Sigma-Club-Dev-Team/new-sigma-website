@@ -9,6 +9,7 @@ import {
   HStack,
   Link,
   Box,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import EventImg from "../assets/upcoming-quiz.jpg";
 
@@ -43,7 +44,12 @@ export default function UpcomingEvents() {
               school which includes cash prices and other beneficiaries.
             </p>
           </Text>
-          <HStack spacing="5px" justifyContent={"space-between"} paddingTop={5}>
+          <Stack
+            direction={useBreakpointValue({ base: "column", sm: "row" })}
+            spacing="5px"
+            justifyContent={"space-between"}
+            paddingTop={5}
+          >
             <Box>
               <Text color={"gray.700"} fontSize={"lg"}>
                 Date: 10th of May - 30th of May
@@ -54,7 +60,7 @@ export default function UpcomingEvents() {
                 Venue: Various Locations
               </Text>
             </Box>
-          </HStack>
+          </Stack>
           <HStack spacing="5px" justifyContent={"space-between"} paddingTop={5}>
             <Link color="brand.gold" href="#">
               View more Details

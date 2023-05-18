@@ -27,12 +27,25 @@ export default function Hero() {
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
           <Heading
             as="h1"
-            fontSize={useBreakpointValue({ base: "80px", md: "128px" })}
+            fontSize={useBreakpointValue({
+              base: "50px",
+              md: "80px",
+              lg: "128px",
+            })}
             color={"brand.purple"}
+            textAlign={"center"}
           >
             Sigma Club
           </Heading>
-          <Heading as="h2" size="2xl" color="white">
+          <Heading
+            as="h2"
+            size={useBreakpointValue({
+              base: "xl",
+              md: "2xl",
+            })}
+            color="white"
+            textAlign={"center"}
+          >
             University of Ibadan
           </Heading>
           <Text
