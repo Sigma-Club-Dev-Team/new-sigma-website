@@ -84,6 +84,7 @@ export default function Header() {
               fontWeight={600}
               color={"white"}
               bg={"brand.purple"}
+              _hover={"brand.purple"}
               href={"#"}
             >
               Donation
