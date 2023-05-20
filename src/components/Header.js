@@ -22,7 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import sigmalogo from "../assets/sigma-logo-purple.png";
+import sigmalogo from "../assets/sigma-logo.jpeg";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -60,7 +60,7 @@ export default function Header() {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Image src={sigmalogo} w={160} alt="Sigma logo" />
+            <Image src={sigmalogo} w={140} alt="Sigma logo" />
 
             <Flex
               display={{ base: "none", md: "flex" }}
@@ -83,7 +83,7 @@ export default function Header() {
               fontSize={"md"}
               fontWeight={600}
               color={"white"}
-              bg={"brand.purple"}
+              bg={"purple"}
               _hover={"brand.purple"}
               href={"#"}
             >
@@ -253,13 +253,14 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "ABOUT US",
+    href: "/about/history",
   },
   {
     label: "BLOGS/ARTICLES",
   },
   {
     label: "EVENTS/ACTIVITIES",
-    href: "#",
+    href: "/events/quiz-competition",
   },
   {
     label: "MERCH SALES",

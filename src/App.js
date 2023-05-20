@@ -1,26 +1,43 @@
-import Header from "./components/Header";
-import Hero from "./components/hero";
-import UpcomingEvents from "./components/upcomingEvents";
-import Documentary from "./components/Documentary";
-import Philantrophy from "./components/Philantrophy";
-import Blog from "./components/TopStories";
-import HonourarySigmites from "./components/HonSigmites";
-import MerchHero from "./components/MerchHero";
-import Footer from "./components/footer";
+import EventNav from "./components/EventNavBar"
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import Quiz from "./components/Quiz"
+import Scholarship from "./components/Scholarship"
+import Health from "./components/HealthOutreach";
+import SportCompetition from "./components/SportCompetition"
+import Header from './components/Header'
+
+
 
 function App() {
+ 
+
+
   return (
-    <div className="">
-      <Header />
-      <Hero />
-      <UpcomingEvents />
-      <Philantrophy />
-      <Documentary />
-      <Blog />
-      <HonourarySigmites />
-      <MerchHero />
-      <Footer />
+   
+    
+
+
+      <Router>
+    <div className="App">
+     <Header/>
+        <EventNav />
+       
+ <div className="content">
+<Routes>
+            <Route path="events/scholarship" element={<Scholarship />} />
+            <Route path="events/quiz-competition" element={<Quiz/>} />
+  
+            <Route path="events/health-outreach" element={<Health />} />
+            <Route path="events/sport-competition" element={<SportCompetition />} />
+            
+ 
+  </Routes>
+  
+  
+ </div>
+ 
     </div>
+    </Router>
   );
 }
 
