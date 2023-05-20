@@ -61,8 +61,8 @@ export default function UpcomingEvents() {
               </Text>
             </Box>
           </Stack>
-          <HStack spacing="5px" justifyContent={"space-between"} paddingTop={5}>
-            <Link color="brand.gold" href="#">
+          <HStack spacing="5px" justifyContent={"space-between"} paddingTop={2}>
+            <Link color="brand.gold" fontSize={"md"} href="#">
               View more Details
             </Link>
           </HStack>

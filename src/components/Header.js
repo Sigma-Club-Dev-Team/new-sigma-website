@@ -22,7 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import sigmalogo from "../assets/sigma-logo.jpeg";
+import sigmalogo from "../assets/sigma-logo-purple.png";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -60,7 +60,7 @@ export default function Header() {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Image src={sigmalogo} w={140} alt="Sigma logo" />
+            <Image src={sigmalogo} w={160} alt="Sigma logo" />
 
             <Flex
               display={{ base: "none", md: "flex" }}
