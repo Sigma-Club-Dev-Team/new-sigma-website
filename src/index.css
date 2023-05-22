@@ -1,25 +1,20 @@
 
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
+
+.about-topnav {
   overflow: hidden;
-  padding: 10px 25px;
+  padding: 10px 35px;
   margin: 0px 10px;
-  display: flex;
-  justify-content: space-around;
-
+ 
  
 }
 
-.topnav a {
+.about-topnav a {
   float: left;
   color:black;
   text-align: center;
-  padding: 6px 6px;
+  padding: 6px 36px;
  
   font-family: poppins;
   font-weight: 500;
@@ -27,50 +22,37 @@ body {
   font-size: 15px;
 }
 
-.topnav a:hover {
+.about-topnav a:hover {
   color: #8F19E7;
   Fill-Color-Style: purple;
 Fill: Solid;
  font-weight: 600;
 
+
  
 }
 
-.topnav a.active {
+.about-topnav a.active {
   
 }
-.history{
-   padding: 5px 55px;
-   color: #1C1C1C;
-   font-family: Poppins;
-font-size: 16px;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-font-weight: 400;
 
-}
 
 .heading{
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
 }
-.video{
-  padding: 30px;
-  margin: 90px 0px 90px 0px;
- 
-}
+
 
 
 @media screen and (max-width: 768px) {
- .topnav {
+ .about-topnav {
   padding:5px 15px;
   margin: 0px 5px;
   display: inline-block;
   
 }
-.topnav a {
+.about-topnav a {
   color:black;
   text-align: center;
   padding: 5px 15px;
@@ -83,13 +65,8 @@ font-weight: 400;
     display: block;
     text-align: left;
 }
+}
 
-.video{
-  padding: 20px;
-  margin: 40px 0px 40px 0px;
- 
-}
-}
 
 
 

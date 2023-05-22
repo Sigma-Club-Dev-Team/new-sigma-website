@@ -1,9 +1,9 @@
-import EventNav from "./components/EventNavBar"
+import AboutNavBar from "./components/AboutNavBar"
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
-import Quiz from "./components/Quiz"
-import Scholarship from "./components/Scholarship"
-import Health from "./components/HealthOutreach";
-import SportCompetition from "./components/SportCompetition"
+import History from "./components/History"
+import Chief from "./components/Chief"
+import Executives from "./components/Executives";
+import RollOfHonour from "./components/RollOfHonour"
 import Header from './components/Header'
 
 
@@ -20,15 +20,15 @@ function App() {
       <Router>
     <div className="App">
      <Header/>
-        <EventNav />
+        <AboutNavBar />
        
  <div className="content">
 <Routes>
-            <Route path="events/scholarship" element={<Scholarship />} />
-            <Route path="events/quiz-competition" element={<Quiz/>} />
+            <Route path="about/sigma-chief" element={<Chief />} />
+            <Route path="about/history" element={<History/>} />
   
-            <Route path="events/health-outreach" element={<Health />} />
-            <Route path="events/sport-competition" element={<SportCompetition />} />
+            <Route path="about/executives" element={<Executives />} />
+            <Route path="about/roll-of-honour" element={<RollOfHonour />} />
             
  
   </Routes>
