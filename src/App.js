@@ -3,7 +3,7 @@ import HomePage from "./pages/Home";
 import EventPage from "./pages/Events";
 
 function App() {
-  return <EventPage />;
+  return <HomePage />;
 }
 
 export default App;

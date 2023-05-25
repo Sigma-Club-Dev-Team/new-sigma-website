@@ -22,7 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import sigmalogo from "../assets/sigma-logo.jpeg";
+import sigmalogo from "../assets/sigma-logo-purple.png";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -34,7 +34,7 @@ export default function Header() {
           bg={useColorModeValue("white", "gray.800")}
           color={useColorModeValue("gray.600", "white")}
           minH={"60px"}
-          py={{ base: 2 }}
+          py={{ base: 4 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={"solid"}
