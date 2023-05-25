@@ -1,8 +1,8 @@
 import { Container } from "@chakra-ui/react";
-import QuizImage from "../assets/QuizImage.jpg";
+import QuizImage from "../../assets/QuizImage.jpg";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
-import Video from "../components/Video";
+import Video from "../../components/Video";
 
 const Quiz = () => {
   return (
