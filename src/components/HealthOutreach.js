@@ -1,9 +1,7 @@
 import { Container } from "@chakra-ui/react";
-
 import QuizImage from "../assets/pic3.jpg";
 import { Flex } from "@chakra-ui/react";
 import Video from "../components/Video";
-
 import { Text, Box, Image } from "@chakra-ui/react";
 
 const Health = () => {

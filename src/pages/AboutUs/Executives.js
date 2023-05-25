@@ -1,13 +1,13 @@
 import { Box, Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
-import image1 from "../assets/deputy_chief.jpeg";
-import image2 from "../assets/chief_scribe.jpeg";
-import image3 from "../assets/f&d.jpg";
-import image4 from "../assets/sigma_t.jpg";
-import image5 from "../assets/publicity_chair.JPG";
-import image6 from "../assets/sigma_t.jpg";
-import image7 from "../assets/investment.JPG";
-import image8 from "../assets/security.png";
+import image1 from "../../assets/deputy_chief.jpeg";
+import image2 from "../../assets/chief_scribe.jpeg";
+import image3 from "../../assets/f&d.jpg";
+import image4 from "../../assets/sigma_t.jpg";
+import image5 from "../../assets/publicity_chair.JPG";
+import image6 from "../../assets/sigma_t.jpg";
+import image7 from "../../assets/investment.JPG";
+import image8 from "../../assets/security.png";
 
 const ExecutiveObj = [
   {

@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
 
-import Chief from "../assets/sigma_chief.JPG";
+import Chief from "../../assets/sigma_chief.JPG";
 import { Flex } from "@chakra-ui/react";
 
 import { Text, Box, Image } from "@chakra-ui/react";
