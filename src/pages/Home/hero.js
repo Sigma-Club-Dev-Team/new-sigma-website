@@ -7,7 +7,7 @@ import {
   useBreakpointValue,
   Heading,
 } from "@chakra-ui/react";
-import heroBg from "../assets/hero-bg.jpg";
+import heroBg from "../../assets/hero-bg.jpg";
 
 export default function Hero() {
   return (

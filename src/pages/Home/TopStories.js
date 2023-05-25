@@ -10,7 +10,7 @@ import {
   Container,
   Flex,
 } from "@chakra-ui/react";
-import QuizImg from "../assets/upcoming-quiz.jpg";
+import QuizImg from "../../assets/upcoming-quiz.jpg";
 
 export const BlogAuthor = (props) => {
   return (

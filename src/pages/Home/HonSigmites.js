@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import HonSigmiteCard from "./HonSigmiteCard";
-import HonSigmiteImg from "../assets/honorarySigmites.jpg";
+import HonSigmiteImg from "../../assets/honorarySigmites.jpg";
 
 const HonSigmiteObj = [
   {

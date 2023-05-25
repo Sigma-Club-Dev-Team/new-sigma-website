@@ -7,7 +7,7 @@ import {
   Heading,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import MerchImg from "../assets/merchandise.jpg";
+import MerchImg from "../../assets/merchandise.jpg";
 
 export default function MerchHero() {
   return (

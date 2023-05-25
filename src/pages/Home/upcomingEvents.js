@@ -11,7 +11,7 @@ import {
   Box,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import EventImg from "../assets/upcoming-quiz.jpg";
+import EventImg from "../../assets/upcoming-quiz.jpg";
 
 export default function UpcomingEvents() {
   return (

@@ -1,6 +1,6 @@
 import { Stack, Container, Box, Flex, Text, Heading } from "@chakra-ui/react";
 import PhilantrophyCard from "./PhilantrophyCard";
-import quizCompetition from "../assets/quizCompetition.jpg";
+import quizCompetition from "../../assets/quizCompetition.jpg";
 
 const PhilantrophyObj = [
   {
