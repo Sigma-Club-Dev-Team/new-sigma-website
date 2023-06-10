@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading } from "@chakra-ui/react";
+import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import image1 from "../../assets/deputy_chief.jpeg";
 import image2 from "../../assets/chief_scribe.jpeg";
@@ -64,12 +64,12 @@ const ExecutiveObj = [
 
 export default function Executives() {
   return (
-    <Box p={2}>
-      <Heading fontSize="30px" fontWeight={"bold"} ml="10">
+    <Container p={2} maxW={"7xl"}>
+      <Heading fontSize="30px" fontWeight={"bold"}>
         The Executives
       </Heading>
 
-      <Container maxW={"8xl"} my={1}>
+      <Container my={1} maxW={"100%"}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           {ExecutiveObj.map(({ image, name, post, space }) => (
             <ExecutivesCard
@@ -81,6 +81,6 @@ export default function Executives() {
           ))}
         </Flex>
       </Container>
-    </Box>
+    </Container>
   );
 }

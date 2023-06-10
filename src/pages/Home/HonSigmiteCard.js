@@ -12,7 +12,7 @@ export default function HonSigmiteCard({ image, name, description }) {
   return (
     <Center py={6}>
       <Box
-        maxW={"425px"}
+        maxW={"395px"}
         w={"full"}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"md"}

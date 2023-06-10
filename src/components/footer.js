@@ -130,7 +130,7 @@ export default function Footer() {
                   bg={"brand.purple"}
                   color={useColorModeValue("white", "gray.800")}
                   _hover={{
-                    bg: "green.600",
+                    bg: "brand.purple",
                   }}
                   aria-label="Subscribe"
                   icon={<BiMailSend />}

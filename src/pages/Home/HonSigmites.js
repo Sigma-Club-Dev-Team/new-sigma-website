@@ -48,7 +48,7 @@ export default function HonourarySigmites() {
         </Text>
       </Stack>
 
-      <Container maxW={"8xl"} my={12}>
+      <Container maxW={"7xl"} my={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           {HonSigmiteObj.map(({ image, name, description }) => (
             <HonSigmiteCard

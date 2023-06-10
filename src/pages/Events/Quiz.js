@@ -7,7 +7,7 @@ import Video from "../../components/Video";
 const Quiz = () => {
   return (
     <div>
-      <Container maxW="100%" className="animate-bottom">
+      <Container maxW="7xl" className="animate-bottom">
         <Flex direction={{ base: "column", md: "row" }}>
           <Box flex="4.5" color="white" p={{ lg: "10", md: "3", sm: "4" }}>
             <Image

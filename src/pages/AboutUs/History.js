@@ -1,11 +1,10 @@
 import { Container } from "@chakra-ui/react";
-
 import { Text } from "@chakra-ui/react";
 
 const History = () => {
   return (
     <div className="animate-bottom">
-      <Container maxW="100%">
+      <Container maxW="7xl">
         <Text px={{ base: "3", lg: "10" }} pb={24}>
           <Text>
             <Text py={6} fontWeight={500} fontSize={25}>

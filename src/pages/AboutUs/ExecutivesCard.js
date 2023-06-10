@@ -14,7 +14,7 @@ export default function ExecutivesCard({ image, name, post, space }) {
       <Center py={6}>
         <Box
           className="animate-bottom"
-          maxW={"295px"}
+          maxW={"290px"}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"md"}

@@ -7,7 +7,7 @@ import { Text, Box, Image } from "@chakra-ui/react";
 
 const Scholarship = () => {
   return (
-    <Container maxW="100%" className="animate-bottom" mb={20} px={10}>
+    <Container maxW="7xl" className="animate-bottom" mb={20} px={10}>
       <Flex direction={{ base: "column", md: "row" }}>
         <Box
           flex="4"

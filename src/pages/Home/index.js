@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 import Hero from "./hero";
 import UpcomingEvents from "./upcomingEvents";
 import Documentary from "./Documentary";
@@ -10,7 +10,7 @@ import MerchHero from "./MerchHero";
 
 function HomePage() {
   return (
-    <div className="">
+    <>
       <Header />
       <Hero />
       <UpcomingEvents />
@@ -20,7 +20,7 @@ function HomePage() {
       <HonourarySigmites />
       <MerchHero />
       <Footer />
-    </div>
+    </>
   );
 }
 
