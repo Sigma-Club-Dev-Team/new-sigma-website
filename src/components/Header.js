@@ -14,7 +14,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import sigmalogo from "../assets/sigma-logo-purple.png";
 
 export default function Header() {
@@ -98,15 +98,12 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link
+              <NavLink
                 p={2}
                 to={navItem.href}
-                fontSize={"sm"}
-                fontWeight={600}
-                color={"blue.700"}
               >
                 {navItem.label}
-              </Link>
+              </NavLink>
             </PopoverTrigger>
           </Popover>
         </Box>
@@ -140,7 +137,7 @@ const MobileNavItem = ({ label, href }) => {
           textDecoration: "none",
         }}
       >
-        <Text fontWeight={600} color={"gray.600"}>
+        <Text>
           {label}
         </Text>
       </Flex>
@@ -155,7 +152,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Articles",
-    href: "#",
+    href: "/blogs",
   },
   {
     label: "Events",
@@ -163,6 +160,6 @@ const NAV_ITEMS = [
   },
   {
     label: "Purchase Merch",
-    href: "#",
+    href: "/merch",
   },
 ];

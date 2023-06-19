@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./index.css";
@@ -8,18 +8,18 @@ const EventNavBar = () => {
     <>
       <Header />
       <nav className="about-topnav">
-        <Link to="history" className="nav">
+        <NavLink to="history" className="nav">
           Sigma History
-        </Link>
-        <Link to="sigma-chief" className="nav">
+        </NavLink>
+        <NavLink to="sigma-chief" className="nav">
           Sigma Chief
-        </Link>
-        <Link to="executives" className="nav">
+        </NavLink>
+        <NavLink to="executives" className="nav">
           Executives/Committes
-        </Link>
-        <Link to="roll-of-honour" className="nav">
+        </NavLink>
+        <NavLink to="roll-of-honour" className="nav">
           Role of Honour
-        </Link>
+        </NavLink>
       </nav>
       <Outlet />
       <Footer />

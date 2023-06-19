@@ -1,5 +1,6 @@
 import HomePage from "./pages/Home";
 import BlogPage from "./pages/Blog";
+import MerchPage from "./pages/Merch";
 import Header from "./components/Header";
 import EventNavBar from "./pages/Events/EventNavBar";
 import AboutNavBar from "./pages/AboutUs/AboutNavBar";
@@ -12,6 +13,7 @@ import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import { Routes, Route } from "react-router-dom";
+import "./app.css"
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="executives" element={<Executives />} />
         <Route path="roll-of-honour" element={<RollOfHonour />} />
       </Route>
-      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blogs" element={<BlogPage />} />
+      <Route path="/merch" element={<MerchPage />} />
       <Route path="/events" element={<EventNavBar />}>
         <Route path="scholarship" element={<Scholarship />} />
         <Route path="quiz-competition" element={<Quiz />} />

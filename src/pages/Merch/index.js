@@ -2,7 +2,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Center } from "@chakra-ui/react";
 
-const BlogPage = () => {
+const MerchPage = () => {
     return (
         <>
             <Header />
@@ -12,4 +12,4 @@ const BlogPage = () => {
     )
 };
 
-export default BlogPage;
+export default MerchPage;
