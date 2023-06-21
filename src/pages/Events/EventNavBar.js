@@ -15,10 +15,10 @@ const EventNavBar = () => {
           Sigma Scholarship Scheme
         </NavLink>
         <NavLink to="health-outreach" className="nav">
-          Sigma Guest Luncheon
+          Sigma Health Outreach
         </NavLink>
         <NavLink to="sport-competition" className="nav">
-          Sigma Essay Competition
+          Sigma Chief Cup
         </NavLink>
       </nav>
       <Outlet />
