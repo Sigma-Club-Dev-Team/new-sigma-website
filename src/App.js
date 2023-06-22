@@ -1,5 +1,5 @@
 import HomePage from "./pages/Home";
-import BlogPage from "./pages/Blog";
+import BlogPage from "./pages/Articles/Blog";
 import MerchPage from "./pages/Merch";
 import Header from "./components/Header";
 import EventNavBar from "./pages/Events/EventNavBar";
@@ -12,7 +12,7 @@ import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
-import Articles from "./pages/Articles/Blog";
+import Blogdetails from "./pages/Articles/Blogdetails";
 import { Routes, Route } from "react-router-dom";
 import "./app.css"
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="quiz-competition" element={<Quiz />} />
         <Route path="health-outreach" element={<HealthOutreach />} />
         <Route path="sport-competition" element={<SportCompetition />} />
-            <Route path="/blogs/:id" element={<Articles />} />
+        <Route path="/blogs/:id" element={<Blogdetails />} />
       </Route>
     </Routes>
   );
