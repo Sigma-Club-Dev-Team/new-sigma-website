@@ -12,6 +12,7 @@ import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
+import Articles from "./pages/Articles/Blog";
 import { Routes, Route } from "react-router-dom";
 import "./app.css"
 
@@ -25,13 +26,14 @@ function App() {
         <Route path="executives" element={<Executives />} />
         <Route path="roll-of-honour" element={<RollOfHonour />} />
       </Route>
-      <Route path="/blog/:id" element={<BlogPage />} />
+      <Route path="/blog" element={<BlogPage />} />
       <Route path="/merch" element={<MerchPage />} />
       <Route path="/events" element={<EventNavBar />}>
         <Route path="scholarship" element={<Scholarship />} />
         <Route path="quiz-competition" element={<Quiz />} />
         <Route path="health-outreach" element={<HealthOutreach />} />
         <Route path="sport-competition" element={<SportCompetition />} />
+            <Route path="/blogs/:id" element={<Articles />} />
       </Route>
     </Routes>
   );
