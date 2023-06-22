@@ -152,7 +152,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Articles",
-    href: "/blogs",
+    href: "/blog",
   },
   {
     label: "Events",
