@@ -36,7 +36,7 @@ const ExecutiveObj = [
   },
   {
     id: 5,
-    name: "Loyalist Fijabi Oluwatobi",
+    name: "Loyalist Fadipe Charles",
     post: "Publicity Committe ",
     image: image5,
     space: "Chairman",
@@ -55,7 +55,7 @@ const ExecutiveObj = [
   },
   {
     id: 8,
-    name: "Loyalist Adedokun Ibrahim",
+    name: "Loyalist Akparanta Simeon",
     post: "Security Committe",
     image: image8,
     space: "Chairman",
