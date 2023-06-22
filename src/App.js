@@ -14,7 +14,7 @@ import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
 import { Routes, Route } from "react-router-dom";
-import "./app.css"
+import "./app.css";
 
 function App() {
   return (
@@ -27,13 +27,13 @@ function App() {
         <Route path="roll-of-honour" element={<RollOfHonour />} />
       </Route>
       <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blogs/:id" element={<Blogdetails />} />
       <Route path="/merch" element={<MerchPage />} />
       <Route path="/events" element={<EventNavBar />}>
         <Route path="scholarship" element={<Scholarship />} />
         <Route path="quiz-competition" element={<Quiz />} />
         <Route path="health-outreach" element={<HealthOutreach />} />
         <Route path="sport-competition" element={<SportCompetition />} />
-        <Route path="/blogs/:id" element={<Blogdetails />} />
       </Route>
     </Routes>
   );
