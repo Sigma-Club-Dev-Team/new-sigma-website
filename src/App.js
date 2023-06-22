@@ -25,7 +25,7 @@ function App() {
         <Route path="executives" element={<Executives />} />
         <Route path="roll-of-honour" element={<RollOfHonour />} />
       </Route>
-      <Route path="/blogs" element={<BlogPage />} />
+      <Route path="/blog/:id" element={<BlogPage />} />
       <Route path="/merch" element={<MerchPage />} />
       <Route path="/events" element={<EventNavBar />}>
         <Route path="scholarship" element={<Scholarship />} />
