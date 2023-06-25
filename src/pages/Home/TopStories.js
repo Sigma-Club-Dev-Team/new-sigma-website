@@ -30,43 +30,26 @@ const Blog = () => {
         <Box
           marginTop={{ base: "1", sm: "5" }}
           display="flex"
-          flexDirection={{ base: "column", sm: "row" }}
+          flexDirection={{ base: "column", md: "row" }}
           justifyContent="space-between"
         >
           <Box
             display="flex"
             flex="1"
-            marginRight="3"
+            marginRight="8"
+            gap="4"
+            marginBottom="4"
             position="relative"
+            width={{ base: "100%", sm: "100%" }}
             alignItems="center"
             flexDirection={{ base: "column", sm: "row" }}
           >
-            <Box
-              width={{ base: "100%", sm: "85%" }}
-              zIndex="2"
-              marginLeft={{ base: "0", sm: "5%" }}
-              marginTop="5%"
-            >
-              <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                <Image
-                  borderRadius="lg"
-                  src={QuizImg}
-                  alt="some good alt text"
-                  objectFit="contain"
-                />
-              </Link>
-            </Box>
-            <Box zIndex="1" width="100%" position="absolute" height="100%">
-              <Box
-                bgGradient={
-                  ("radial(orange.600 1px, transparent 1px)",
-                  "radial(orange.600 1px, transparent 1px)")
-                }
-                backgroundSize="20px 20px"
-                opacity="0.4"
-                height="100%"
-              />
-            </Box>
+            <Image
+              borderRadius="lg"
+              src={QuizImg}
+              alt="some good alt text"
+              objectFit="contain"
+            />
           </Box>
           <Box
             display="flex"

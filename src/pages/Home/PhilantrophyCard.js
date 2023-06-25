@@ -12,7 +12,7 @@ export default function PhilantrophyCard({ image, name, description }) {
   return (
     <Center py={6}>
       <Box
-        maxW={"345px"}
+        maxW={{ base: "100%", sm: "345px" }}
         w={"full"}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"md"}
