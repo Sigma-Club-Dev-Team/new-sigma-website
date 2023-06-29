@@ -7,8 +7,15 @@ import {
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
+import React from "react";
+import { HonourarySigmite } from "./types";
 
-export default function HonSigmiteCard({ image, name, description }) {
+type HonSigmiteCardProps = {
+  honSigmite: HonourarySigmite;
+};
+
+export default function HonSigmiteCard({ honSigmite }: HonSigmiteCardProps) {
+  const { image, name, description } = honSigmite;
   return (
     <Center py={6}>
       <Box
@@ -20,7 +27,7 @@ export default function HonSigmiteCard({ image, name, description }) {
         overflow={"hidden"}
       >
         <Box bg={"gray.100"} mb={4} pos={"relative"}>
-          <Image src={image} layout={"fill"} />
+          <Image src={image} fit={"fill"} />
         </Box>
         <Stack p={3} mb={4}>
           <Heading
