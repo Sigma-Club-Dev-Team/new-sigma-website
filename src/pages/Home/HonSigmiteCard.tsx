@@ -8,7 +8,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import { HonourarySigmite } from "./types";
+import { HonourarySigmite } from "../../types";
 
 type HonSigmiteCardProps = {
   honSigmite: HonourarySigmite;

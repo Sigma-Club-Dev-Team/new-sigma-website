@@ -10,9 +10,16 @@ import {
   Container,
   Flex,
 } from "@chakra-ui/react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { Article } from "types";
 
-const Blog = ({ image, title, article, id, Date, Time }) => {
+type BlogProps = {
+  article: Article
+}
+
+const Blog = ({article}: BlogProps) => {
+  const { image, title, content, id, date } = article;
   return (
     <Container maxW="full" m="auto">
       <Card
@@ -39,17 +46,14 @@ const Blog = ({ image, title, article, id, Date, Time }) => {
               </Text>
               <Text px={3} fontSize="sm">
                 {" "}
-                Last updated {Time}
-              </Text>
-              <Text px={3} fontSize="sm">
-                {Date}
+                Last updated {date.toLocaleDateString()}
               </Text>
             </Flex>
 
             <Heading size="md">{title}</Heading>
 
             <Text py="2" className="article">
-              {article}
+              {content}
             </Text>
           </CardBody>
 
