@@ -12,6 +12,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import EventImg from "../../assets/upcoming-quiz.jpg";
+import React from "react";
 
 export default function UpcomingEvents() {
   return (
@@ -72,7 +73,8 @@ export default function UpcomingEvents() {
             rounded={"md"}
             alt={"feature image"}
             src={EventImg}
-            objectFit={"cover"}
+            fit={"fill"}
+            borderRadius={15}
           />
         </Flex>
       </SimpleGrid>

@@ -11,8 +11,9 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import QuizImg from "../../assets/upcoming-quiz.jpg";
+import { Blog as BlogModel } from "./types";
 
-export const BlogAuthor = (props) => {
+export const BlogAuthor = (props: BlogModel) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
       <Text fontWeight="bold">{props.name}</Text>
@@ -79,7 +80,7 @@ const Blog = () => {
       <Flex justifyContent={"center"} alignItems={"center"} mt={10}>
         <Button
           bg={"brand.purple"}
-          _hover={"brand.purple"}
+          _hover={{brand: "purple"}}
           color={"white"}
           size="lg"
           fontWeight={"bold"}
