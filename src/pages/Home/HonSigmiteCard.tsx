@@ -19,17 +19,17 @@ export default function HonSigmiteCard({ honSigmite }: HonSigmiteCardProps) {
   return (
     <Center py={6}>
       <Box
-        maxW={"395px"}
-        w={"full"}
+        maxW={"390px"}
+        height={453}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"md"}
         rounded={"md"}
         overflow={"hidden"}
       >
         <Box bg={"gray.100"} mb={4} pos={"relative"}>
-          <Image src={image} fit={"fill"} />
+          <Image src={image} fit={"fill"} height={249}/>
         </Box>
-        <Stack p={3} mb={4}>
+        <Stack p={3} mb={4} align={"end"}>
           <Heading
             color={useColorModeValue("gray.700", "white")}
             fontSize={"2xl"}

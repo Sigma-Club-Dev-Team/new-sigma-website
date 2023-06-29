@@ -40,7 +40,7 @@ const HonSigmiteObj: HonourarySigmite[] = [
 export default function HonourarySigmites() {
   return (
     <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+      <Stack spacing={4} as={Container} maxW={"full"} textAlign={"left"}>
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           Our Honorary Sigmites
         </Heading>
@@ -50,8 +50,8 @@ export default function HonourarySigmites() {
         </Text>
       </Stack>
 
-      <Container maxW={"7xl"} my={12}>
-        <Flex flexWrap="wrap" gridGap={6} justify="center">
+      <Container maxW={"full"} my={12}>
+        <Flex flexWrap="wrap" gridGap={6} justify="left">
           {HonSigmiteObj.map((honSigmite) => (
             <HonSigmiteCard honSigmite={honSigmite} />
           ))}
