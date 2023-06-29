@@ -16,23 +16,20 @@ import React from "react";
 
 export default function UpcomingEvents() {
   return (
-    <Container maxW={"5xl"} py={12}>
+    <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
+          <Heading>Upcoming Event</Heading>
           <Text
-            textTransform={"uppercase"}
             color={"white"}
-            fontWeight={800}
-            fontSize={"sm"}
-            bg={"brand.purple"}
-            p={2}
+            fontWeight={600}
+            fontSize={20}
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            Upcoming Event
+            SouthWest Region Secondary school Quiz competition
           </Text>
-          <Heading>SouthWest Region Secondary school Quiz competition</Heading>
-          <Text color={"gray.700"} fontSize={"lg"}>
+          <Text fontSize={16}>
             <p>
               Sigma Club is organizing another quiz competition for all
               available secondary schools across the six states in the
@@ -52,18 +49,14 @@ export default function UpcomingEvents() {
             paddingTop={5}
           >
             <Box>
-              <Text color={"gray.700"} fontSize={"lg"}>
-                Date: 10th of May - 30th of May
-              </Text>
+              <Text fontSize={18}>Date: 10th of May - 30th of May</Text>
             </Box>
             <Box>
-              <Text color={"gray.700"} fontSize={"lg"}>
-                Venue: Various Locations
-              </Text>
+              <Text fontSize={18}>Venue: Various Locations</Text>
             </Box>
           </Stack>
           <HStack spacing="5px" justifyContent={"space-between"} paddingTop={2}>
-            <Link color="brand.gold" fontSize={"md"} href="#">
+            <Link color="brand.gold" fontSize={16} href="#">
               View more Details
             </Link>
           </HStack>

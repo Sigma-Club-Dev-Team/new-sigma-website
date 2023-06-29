@@ -80,7 +80,7 @@ const Blog = () => {
       <Flex justifyContent={"center"} alignItems={"center"} mt={10}>
         <Button
           bg={"brand.purple"}
-          _hover={{brand: "purple"}}
+          _hover={{bg: "purple"}}
           color={"white"}
           size="lg"
           fontWeight={"bold"}
