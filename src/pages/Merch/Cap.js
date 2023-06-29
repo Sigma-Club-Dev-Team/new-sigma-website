@@ -55,7 +55,7 @@ const CarouselCard = ({ content, interval }) => {
     >
       <Box bg={"gray.100"} pos={"relative"}>
         <IconButton
-          Icon={<ChevronLeftIcon />}
+          icon={<ChevronLeftIcon />}
           onClick={handlePrev}
           aria-label="Next"
           position="absolute"
@@ -66,7 +66,7 @@ const CarouselCard = ({ content, interval }) => {
         />
 
         <IconButton
-          Icon={<ChevronRightIcon />}
+          icon={<ChevronRightIcon />}
           onClick={handleNext}
           aria-label="Next"
           position="absolute"

@@ -14,15 +14,12 @@ const MerchPage = () => {
         <Container maxW={"8xl"} p={4} display="flex">
           <Flex flexWrap="wrap" direction={{ base: "column", md: "row" }} p={4}>
             <Cap />
-
             <Hoodie />
-
             <Shirt />
             <Shorts />
           </Flex>
         </Container>
       </Center>
-      ;
       <Footer />
     </>
   );
