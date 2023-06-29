@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Container,
-  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -20,6 +19,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { BiMailSend } from "react-icons/bi";
 
 const SocialButton = ({ children, label, href }) => {
@@ -31,6 +31,7 @@ const SocialButton = ({ children, label, href }) => {
       h={8}
       cursor={"pointer"}
       as={"a"}
+      target="_blank"
       href={href}
       display={"inline-flex"}
       alignItems={"center"}
@@ -88,29 +89,46 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Quick Links</ListHeader>
-            <Link href={"#"}>Home</Link>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Events</Link>
-            <Link href={"#"}>Merch Sales</Link>
-            <Link href={"#"}>Donate</Link>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/about/history"}>About Us</Link>
+            <Link to={"/blog"}>Blog</Link>
+            <Link to={"/events/quiz-competition"}>Events</Link>
+            <Link to={"/merch"}>Merch Sales</Link>
+            <Link to={"#"}>Donate</Link>
           </Stack>
           <Box>
             <ListHeader>Our Socials</ListHeader>
             <Stack direction={"row"} spacing={6} mb={4} mt={4}>
-              <SocialButton label={"Twitter"} href={"#"}>
+              <SocialButton
+                label={"Twitter"}
+                href={"https://twitter.com/_sigmaclub_ui"}
+              >
                 <FaTwitter />
               </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
+              <SocialButton
+                label={"YouTube"}
+                href={"https://www.youtube.com/@SigmaClubUI"}
+              >
                 <FaYoutube />
               </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
+              <SocialButton
+                label={"Instagram"}
+                href={"https://instagram.com/sigmaclub_ui"}
+              >
                 <FaInstagram />
               </SocialButton>
-              <SocialButton label={"Linkedin"} href={"#"}>
+              <SocialButton
+                label={"Linkedin"}
+                href={
+                  "https://www.linkedin.com/company/sigma-club-university-of-ibadan/"
+                }
+              >
                 <FaLinkedin />
               </SocialButton>
-              <SocialButton label={"Facebook"} href={"#"}>
+              <SocialButton
+                label={"Facebook"}
+                href={"https://m.facebook.com/sigmaclubui/"}
+              >
                 <FaFacebook />
               </SocialButton>
             </Stack>

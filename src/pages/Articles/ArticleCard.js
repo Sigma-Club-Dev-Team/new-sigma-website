@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Blog = ({ image, title, article, id, Date, Time }) => {
   return (
-    <Container maxW="container.xlg" m="auto">
+    <Container maxW="full" m="auto">
       <Card
         direction={{ sm: "column", md: "row" }}
         overflow="hidden"

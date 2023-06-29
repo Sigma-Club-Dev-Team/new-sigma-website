@@ -65,7 +65,7 @@ const Quiz = () => {
       </Container>
 
       <div>
-        <Video />
+        <Video src={"https://www.youtube.com/watch?v=0LQKoj3XXgo"} />
       </div>
     </div>
   );

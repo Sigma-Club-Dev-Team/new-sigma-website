@@ -52,7 +52,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <Container maxW="container.xlg" m="auto" p={10}>
+      <Container maxW="8xl" m="auto" p={10}>
         {ArticleArray.map(({ image, title, article, id, Date, Time }) => (
           <ArticleCard
             image={image}

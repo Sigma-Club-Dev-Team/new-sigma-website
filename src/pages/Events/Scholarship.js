@@ -57,7 +57,7 @@ const Scholarship = () => {
       </Flex>
 
       <div>
-        <Video />
+        <Video src={"https://www.youtube.com/watch?v=pvEXAjHgdOs"} />
       </div>
     </Container>
   );

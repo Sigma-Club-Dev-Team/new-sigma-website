@@ -7,6 +7,7 @@ import {
   Heading,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import MerchImg from "../../assets/merchandise.jpg";
 
 export default function MerchHero() {
@@ -41,14 +42,16 @@ export default function MerchHero() {
           </Text>
 
           <Stack direction={"row"}>
-            <Button
-              bg={"brand.purple"}
-              rounded={"md"}
-              color={"white"}
-              _hover={{ bg: "brand.purple" }}
-            >
-              Purchase Merch
-            </Button>
+            <Link to={"/merch"}>
+              <Button
+                bg={"brand.purple"}
+                rounded={"md"}
+                color={"white"}
+                _hover={{ bg: "brand.purple" }}
+              >
+                Purchase Merch
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </VStack>

@@ -98,10 +98,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <NavLink
-                p={2}
-                to={navItem.href}
-              >
+              <NavLink p={2} to={navItem.href}>
                 {navItem.label}
               </NavLink>
             </PopoverTrigger>
@@ -137,9 +134,7 @@ const MobileNavItem = ({ label, href }) => {
           textDecoration: "none",
         }}
       >
-        <Text>
-          {label}
-        </Text>
+        <Text>{label}</Text>
       </Flex>
     </Stack>
   );
@@ -151,7 +146,7 @@ const NAV_ITEMS = [
     href: "/about/history",
   },
   {
-    label: "Articles",
+    label: "Blog",
     href: "/blog",
   },
   {

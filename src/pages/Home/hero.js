@@ -7,6 +7,7 @@ import {
   useBreakpointValue,
   Heading,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import heroBg from "../../assets/hero-bg.jpg";
 
 export default function Hero() {
@@ -59,22 +60,26 @@ export default function Hero() {
             the nation and in the world.
           </Text>
           <Stack direction={"row"} gap={4}>
-            <Button
-              bg={"brand.gold"}
-              _hover={"brand.gold"}
-              rounded={"md"}
-              color={"white"}
-            >
-              KNOW ABOUT US
-            </Button>
-            <Button
-              bg={"brand.purple"}
-              _hover={"brand.purple"}
-              rounded={"md"}
-              color={"white"}
-            >
-              DONATE
-            </Button>
+            <Link to={"/about/history"}>
+              <Button
+                bg={"brand.gold"}
+                _hover={"brand.gold"}
+                rounded={"md"}
+                color={"white"}
+              >
+                KNOW ABOUT US
+              </Button>
+            </Link>
+            <Link to={"#"}>
+              <Button
+                bg={"brand.purple"}
+                _hover={"brand.purple"}
+                rounded={"md"}
+                color={"white"}
+              >
+                DONATE
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </VStack>

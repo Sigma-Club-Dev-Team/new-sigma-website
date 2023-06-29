@@ -4,11 +4,7 @@ const FilterBtn = () => {
   return (
     <Container maxW="container.xlg" my={10}>
       <Button borderRadius="full" colorScheme="purple" p={5} m={3}>
-        Articles on Scholarship
-      </Button>
-
-      <Button borderRadius="full" colorScheme="purple" p={5} m={3}>
-        Scholarship
+        News on Sigma Scholarship
       </Button>
 
       <Button borderRadius="full" colorScheme="purple" p={5} m={3}>
@@ -16,11 +12,7 @@ const FilterBtn = () => {
       </Button>
 
       <Button borderRadius="full" colorScheme="purple" p={5} m={3}>
-        Scholarship
-      </Button>
-
-      <Button borderRadius="full" colorScheme="purple" p={5} m={3}>
-        Scholarship
+        News on Sigma Quiz Competition
       </Button>
     </Container>
   );
