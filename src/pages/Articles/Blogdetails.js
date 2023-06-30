@@ -1,6 +1,6 @@
 import { Heading, Text, Image, Box, Flex } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { ArticleArray } from "./Blog";
+import { ArticleArray } from "../../constants/articles";
 import FilterBtn from "./filterbtn";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";

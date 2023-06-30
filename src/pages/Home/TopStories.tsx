@@ -10,15 +10,19 @@ import {
   Container,
   Flex,
 } from "@chakra-ui/react";
-import QuizImg from "../../assets/upcoming-quiz.jpg";
-import { Blog as BlogModel } from "./types";
+import { Article } from "../../types";
+import {ArticleArray} from '../../constants/articles';
 
-export const BlogAuthor = (props: BlogModel) => {
+type BlogAuthorProps = {
+  blog: Article;
+};
+
+export const BlogAuthor = ({ blog }: BlogAuthorProps) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Text fontWeight="bold">{props.name}</Text>
+      <Text fontWeight="bold">{blog.authorName}</Text>
       <Text>—</Text>
-      <Text>{props.date.toLocaleDateString()}</Text>
+      <Text>{blog.date.toLocaleDateString()}</Text>
     </HStack>
   );
 };
@@ -26,9 +30,10 @@ export const BlogAuthor = (props: BlogModel) => {
 const Blog = () => {
   return (
     <Container maxW={"7xl"} p="12">
-      <Heading as="h1">Top Stories in Our Blogs</Heading>
-      {[1, 2, 3].map(() => (
-        <Box
+      <Heading as="h2">Top Stories in Our Blogs</Heading>
+      {ArticleArray.slice(0, 3).map((article) => {
+        return (
+         <Box
           marginTop={{ base: "1", sm: "5" }}
           display="flex"
           flexDirection={{ base: "column", md: "row" }}
@@ -47,7 +52,7 @@ const Blog = () => {
           >
             <Image
               borderRadius="lg"
-              src={QuizImg}
+              src={article.image}
               alt="some good alt text"
               objectFit="contain"
             />
@@ -61,26 +66,23 @@ const Blog = () => {
           >
             <Heading marginTop="1">
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                Roseline Etuokwu Secondary School Quiz Competition
+                {article.title}
               </Link>
             </Heading>
             <Text as="p" marginTop="2" color={"gray.700"} fontSize="lg">
-              This is a quiz competition that stemed out of the need to improve
-              education. It started in 2019 with 10 schools, and then progressed
-              to Oyo state and is now organizing a South west level with more
-              than 1000+ schools.
+              {article.abridgedContent}
             </Text>
             <BlogAuthor
-              name="Sigma Club"
-              date={new Date("2021-04-06T19:01:27Z")}
+              blog={article}
             />
           </Box>
         </Box>
-      ))}
+      
+      )})}
       <Flex justifyContent={"center"} alignItems={"center"} mt={10}>
         <Button
           bg={"brand.purple"}
-          _hover={{bg: "purple"}}
+          _hover={{ bg: "purple" }}
           color={"white"}
           size="lg"
           fontWeight={"bold"}
