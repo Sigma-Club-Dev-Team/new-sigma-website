@@ -13,3 +13,10 @@ export type Article = {
   date: Date;
   image: string;
 };
+
+export type PhilantrophyActivity = {
+  image: string;
+  name: string;
+  description: string;
+  link: string
+};

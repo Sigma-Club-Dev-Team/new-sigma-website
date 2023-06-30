@@ -7,6 +7,8 @@ import SigmaLogoJPG from "assets/logo.jpg";
 import SecSchoolQuizJPG from "assets/images/upcoming-quiz.jpg";
 import SigmaChiefCupJPG from "assets/images/sigma_chief_cup.jpg";
 import SigmaHealthOutreachJPG from 'assets/images/sigma_health_outreach.jpg';
+import SecSchoolQuizWinnerJPG from "assets/quizCompetition.jpg";
+
 
 export const ImageAssets = {
   HsLamidoSanusiJPG,
@@ -16,6 +18,7 @@ export const ImageAssets = {
   HsFemiAdeshina,
   SigmaLogoJPG,
   SecSchoolQuizJPG,
+  SecSchoolQuizWinnerJPG,
   SigmaChiefCupJPG,
   SigmaHealthOutreachJPG
 };
