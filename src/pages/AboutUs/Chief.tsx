@@ -1,6 +1,7 @@
+import React from "react";
 import { Container } from "@chakra-ui/react";
 
-import Chief from "../../assets/sigma_chief.JPG";
+import { SigmaChiefJPG } from "constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 
 import { Text, Box, Image } from "@chakra-ui/react";
@@ -22,7 +23,7 @@ const Scholarship = () => {
             mt={3.5}
             borderRadius="lg"
             width={{ lg: "95%", md: "80%", sm: "90%" }}
-            src={Chief}
+            src={SigmaChiefJPG}
             alt="presentation of prize"
           />
         </Box>

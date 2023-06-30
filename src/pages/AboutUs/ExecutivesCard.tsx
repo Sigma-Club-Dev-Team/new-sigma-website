@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Center,
@@ -7,14 +8,23 @@ import {
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Executive } from "types";
 
-export default function ExecutivesCard({ image, name, post, space }) {
+type ExecutivesCardProps = {
+  executive: Executive;
+};
+
+export default function ExecutivesCard({
+  executive
+}: ExecutivesCardProps) {
+  const { image, name, post, space } = executive;
   return (
     <div>
       <Center py={6}>
         <Box
           className="animate-bottom"
           maxW={"290px"}
+          height={320}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"md"}
@@ -24,10 +34,9 @@ export default function ExecutivesCard({ image, name, post, space }) {
           <Box bg={"gray.100"} mb={4} pos={"relative"}>
             <Image
               src={image}
-              layout={"fill"}
-              width="300px"
+              fit={"fill"}
+              width="288px"
               height="200px"
-              objectFit="fill"
             />
           </Box>
           <Stack p={3} mb={4}>

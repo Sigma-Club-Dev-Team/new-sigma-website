@@ -20,3 +20,11 @@ export type PhilantrophyActivity = {
   description: string;
   link: string
 };
+
+export type Executive = {
+  id: number|string;
+  name: string;
+  post: string;
+  image: string;
+  space?: string;
+};

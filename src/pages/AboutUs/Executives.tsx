@@ -1,63 +1,67 @@
+import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
-import image1 from "../../assets/deputy_chief.jpeg";
-import image2 from "../../assets/chief_scribe.jpeg";
-import image3 from "../../assets/f&d.jpg";
-import image4 from "../../assets/sigma_t.jpg";
-import image5 from "../../assets/fadipe.jpg";
-import image6 from "../../assets/sigma_t.jpg";
-import image7 from "../../assets/investment.JPG";
-import image8 from "../../assets/Akparanta.jpg";
+import {
+  DeputyChiefJPG,
+  ChiefScribeJPG,
+  FDChairJPG,
+  SigmaTJPG,
+  InvestmentChairJPG,
+  SecurityChairJPG,
+  PublicityChairJPG,
+  DeputyChiefScribeJPG
+} from "constants/image_assets";
+import { Executive } from "types";
 
-const ExecutiveObj = [
+const ExecutiveObj: Executive[] = [
   {
     id: 1,
     name: "Loyalist Azeez Adewale",
     post: "Deputy Chief (Band Committe Chairman)",
-    image: image1,
+    image: DeputyChiefJPG,
   },
   {
     id: 2,
     name: "Loyalist Babatola Benjamin",
     post: "Chief Scribe (Secretariat Committe Chairman)",
-    image: image2,
+    image: ChiefScribeJPG,
   },
   {
     id: 3,
     name: "Loyalist Eniola Moses",
     post: "Financial Scribe (Food & Drinks Commitee Chairman)",
-    image: image3,
+    image: FDChairJPG,
   },
   {
     id: 4,
-    name: "Loyalist Ogbonna",
+    name: "Loyalist Ogbonna Prince",
     post: "Deputy Scribe (Maintenance & Decoration Committee Chairman) ",
-    image: image4,
+    image: DeputyChiefScribeJPG,
   },
   {
     id: 5,
     name: "Loyalist Fadipe Charles",
     post: "Publicity Committe ",
-    image: image5,
+    image: PublicityChairJPG,
     space: "Chairman",
   },
   {
     id: 6,
     name: "Loyalist Onifari Emmanuel",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committe Chairman)",
-    image: image6,
+    image: SigmaTJPG,
   },
   {
     id: 7,
     name: "Loyalist Olugbenro Fredrick",
     post: "Investment and Special Duties Committe Chairman",
-    image: image7,
+    image: InvestmentChairJPG,
   },
   {
     id: 8,
     name: "Loyalist Akparanta Simeon",
     post: "Security Committe",
-    image: image8,
+    image: SecurityChairJPG,
     space: "Chairman",
   },
 ];
@@ -71,13 +75,8 @@ export default function Executives() {
 
       <Container my={1} maxW={"100%"}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
-          {ExecutiveObj.map(({ image, name, post, space }) => (
-            <ExecutivesCard
-              image={image}
-              name={name}
-              post={post}
-              space={space}
-            />
+          {ExecutiveObj.map((executive) => (
+            <ExecutivesCard executive={executive} />
           ))}
         </Flex>
       </Container>
