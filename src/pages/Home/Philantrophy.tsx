@@ -2,7 +2,7 @@ import React from "react";
 import { Stack, Container, Box, Flex, Text, Heading } from "@chakra-ui/react";
 import PhilantrophyCard from "./PhilantrophyCard";
 import { PhilantrophyActivity } from "types";
-import * as  ImageAssets  from "constants/image_assets";
+import * as ImageAssets from "constants/image_assets";
 
 const PhilantrophyObj: PhilantrophyActivity[] = [
   {
@@ -57,7 +57,7 @@ export default function Philantrophy() {
         </Stack>
 
         <Container maxW={"full"} my={4}>
-          <Flex flexWrap="wrap" gridGap={6} justify="left">
+          <Flex flexWrap="wrap" gridGap={6} justify="center">
             {PhilantrophyObj.map((philantrophyActivity) => (
               <PhilantrophyCard philantrophyActivity={philantrophyActivity} />
             ))}

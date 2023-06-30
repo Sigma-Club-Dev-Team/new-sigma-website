@@ -27,7 +27,7 @@ export default function HonSigmiteCard({ honSigmite }: HonSigmiteCardProps) {
         overflow={"hidden"}
       >
         <Box bg={"gray.100"} mb={4} pos={"relative"}>
-          <Image src={image} fit={"fill"} height={249}/>
+          <Image src={image} w={"100%"} fit={"fill"} height={249} />
         </Box>
         <Stack p={3} mb={4} align={"end"}>
           <Heading

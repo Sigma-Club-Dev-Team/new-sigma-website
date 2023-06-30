@@ -2,7 +2,7 @@ import { Box, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import HonSigmiteCard from "./HonSigmiteCard";
 import React from "react";
 import { HonourarySigmite } from "../../types";
-import * as ImageAssets  from "constants/image_assets";
+import * as ImageAssets from "constants/image_assets";
 
 const HonSigmiteObj: HonourarySigmite[] = [
   {
@@ -50,11 +50,11 @@ export default function HonourarySigmites() {
         </Text>
       </Stack>
 
-        <Flex flexWrap="wrap" my={12} gridGap={6} justify="left">
-          {HonSigmiteObj.map((honSigmite) => (
-            <HonSigmiteCard honSigmite={honSigmite} />
-          ))}
-        </Flex>
+      <Flex flexWrap="wrap" my={12} gridGap={6} justify="center">
+        {HonSigmiteObj.map((honSigmite) => (
+          <HonSigmiteCard honSigmite={honSigmite} />
+        ))}
+      </Flex>
     </Container>
   );
 }

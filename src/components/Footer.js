@@ -134,27 +134,6 @@ export default function Footer() {
             </Stack>
 
             <Stack align={"flex-start"}>
-              <ListHeader>Subscribe to our Newsletter</ListHeader>
-              <Stack direction={"row"}>
-                <Input
-                  placeholder={"Your email address"}
-                  bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-                  border={0}
-                  _focus={{
-                    bg: "whiteAlpha.300",
-                  }}
-                />
-                <IconButton
-                  bg={"brand.purple"}
-                  color={useColorModeValue("white", "gray.800")}
-                  _hover={{
-                    bg: "brand.purple",
-                  }}
-                  aria-label="Subscribe"
-                  icon={<BiMailSend />}
-                />
-              </Stack>
-
               <Text fontSize={"sm"} pt={4}>
                 © 2023 Sigma Club. All rights reserved.
               </Text>
