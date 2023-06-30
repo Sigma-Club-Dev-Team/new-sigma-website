@@ -31,7 +31,7 @@ const PhilantrophyObj: PhilantrophyActivity[] = [
 export default function Philantrophy() {
   return (
     <Box>
-      <Container maxW={"6xl"}>
+      <Container maxW={"8xl"}>
         <Stack direction={{ base: "column", lg: "row" }}>
           <Stack
             flex={1}

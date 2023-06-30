@@ -29,7 +29,7 @@ export const BlogAuthor = ({ blog }: BlogAuthorProps) => {
 
 const Blog = () => {
   return (
-    <Container maxW={"7xl"} p="12">
+    <Container maxW={"8xl"} p="12">
       <Heading as="h2">Top Stories in Our Blogs</Heading>
       {ArticleArray.slice(0, 3).map((article) => {
         return (
