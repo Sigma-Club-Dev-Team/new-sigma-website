@@ -2,7 +2,7 @@ import React from "react";
 import { Stack, Container, Box, Flex, Text, Heading } from "@chakra-ui/react";
 import PhilantrophyCard from "./PhilantrophyCard";
 import { PhilantrophyActivity } from "types";
-import { ImageAssets } from "constants/image_assets";
+import * as  ImageAssets  from "constants/image_assets";
 
 const PhilantrophyObj: PhilantrophyActivity[] = [
   {

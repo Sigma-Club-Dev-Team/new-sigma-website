@@ -11,7 +11,7 @@ import {
   Box,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { ImageAssets } from "constants/image_assets";
+import { SecSchoolQuizJPG } from "constants/image_assets";
 import React from "react";
 
 export default function UpcomingEvents() {
@@ -65,7 +65,7 @@ export default function UpcomingEvents() {
           <Image
             rounded={"md"}
             alt={"feature image"}
-            src={ImageAssets.SecSchoolQuizJPG}
+            src={SecSchoolQuizJPG}
             fit={"fill"}
             borderRadius={15}
           />

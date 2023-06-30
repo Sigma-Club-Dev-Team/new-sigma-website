@@ -1,5 +1,5 @@
 import { Article } from "types";
-import { ImageAssets } from "./image_assets";
+import * as ImageAssets from "./image_assets";
 
 export const ArticleArray: Article[] = [
   {
