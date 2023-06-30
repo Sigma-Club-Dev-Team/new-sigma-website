@@ -9,9 +9,9 @@ import { Container, Heading, Box } from "@chakra-ui/react";
 export default function Documentary() {
   return (
     <Container maxW={"full"} py={12} bg={"white"}>
-      <Container maxW={"6xl"}>
+      <Container maxW={"8xl"}>
         <Heading>Documentaries</Heading>
-        <Box py={12}>
+        <Box py={12} px={6}>
           <Swiper
             cssMode={true}
             navigation={true}
