@@ -6,8 +6,6 @@ import {
   Stack,
   Text,
   VisuallyHidden,
-  Input,
-  IconButton,
   useColorModeValue,
   Heading,
   VStack,
@@ -20,7 +18,6 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { BiMailSend } from "react-icons/bi";
 
 const SocialButton = ({ children, label, href }) => {
   return (

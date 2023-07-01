@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import image1 from "../../assets/hoodie 3.jpg";
 import image2 from "../../assets/hoodie white and purple.jpg";
 import image3 from "../../assets/sweatshirt 1.jpg";
@@ -30,18 +30,18 @@ const CarouselCard = ({ content, interval }) => {
     );
   };
 
-  const handleNext = useCallback(() => {
+  const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === totalSlides - 1 ? 0 : prevIndex + 1
     );
-  }, [totalSlides]);
+  };
 
   useEffect(() => {
     const timer = setInterval(handleNext, interval);
     return () => {
       clearInterval(timer);
     };
-  }, [handleNext, interval]);
+  });
 
   return (
     <Box
@@ -57,6 +57,8 @@ const CarouselCard = ({ content, interval }) => {
       <Box bg={"gray.100"} pos={"relative"}>
         <IconButton
           icon={<ChevronLeftIcon />}
+          bg={"transparent"}
+          _hover={{ bg: "transparent" }}
           onClick={handlePrev}
           aria-label="Next"
           position="absolute"
@@ -64,10 +66,13 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
+          fontSize={28}
         />
 
         <IconButton
           icon={<ChevronRightIcon />}
+          bg={"transparent"}
+          _hover={{ bg: "transparent" }}
           onClick={handleNext}
           aria-label="Next"
           position="absolute"
@@ -75,6 +80,7 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
+          fontSize={28}
         />
 
         <Image
@@ -105,7 +111,10 @@ const CarouselCard = ({ content, interval }) => {
               display="inline-block"
             ></Box>
           ))}
-          <Link href="">
+          <Link
+            target="_blank"
+            href="https://wa.me/2349030883078?text=Hi%2C%20I%27m%20interested%20in%20the%20Sigma%20merch.%20My%20name%20is%20________"
+          >
             <Button position="absolute" right={5} bottom={3} px={4}>
               Buy
             </Button>
@@ -154,7 +163,7 @@ const HoodieCard = () => {
     },
   ];
 
-  const interval = 1000; // Transition interval in milliseconds
+  const interval = 3000; // Transition interval in milliseconds
 
   return <CarouselCard content={content} interval={interval} />;
 };

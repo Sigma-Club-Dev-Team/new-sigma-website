@@ -26,7 +26,7 @@ const Blog = ({ article }: BlogProps) => {
         direction={{ sm: "column", md: "row" }}
         overflow="hidden"
         shadow="md"
-        bg="teal.100"
+        bg="blue.50"
         mb={9}
         rounded="xl"
       >
@@ -58,7 +58,13 @@ const Blog = ({ article }: BlogProps) => {
           </CardBody>
 
           <CardFooter>
-            <Button colorScheme="purple" ml="auto">
+            <Button
+              fontWeight={600}
+              color={"white"}
+              bg={"brand.purple"}
+              _hover={{ bgColor: "brand.purple" }}
+              ml="auto"
+            >
               <Link to={`/blogs/${id}`}>Read More</Link>
             </Button>
           </CardFooter>
