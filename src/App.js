@@ -26,7 +26,8 @@ function App() {
         <Route path="sigma-chief" element={<Chief />} />
         <Route path="history" element={<History />} />
         <Route path="executives" element={<Executives />} />
-        <Route path="roll-of-honour" element={<RollOfHonour />} />
+        <Route path="roll-of-honour" element={<OldChiefs />} />
+        <Route path="old-sigmites" element={<OldSigmites />} />
       </Route>
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blogs/:id" element={<Blogdetails />} />
