@@ -25,7 +25,7 @@ const Health = () => {
             lineHeight="normal"
             fontWeight="semibold"
           >
-            Sigma Guest Luncheon
+            Sigma Health Outreach
           </Text>
           <br />
 
