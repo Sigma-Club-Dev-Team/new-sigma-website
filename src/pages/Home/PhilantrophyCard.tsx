@@ -32,7 +32,7 @@ export default function PhilantrophyCard({
         overflow={"hidden"}
       >
         <Box bg={"gray.100"} mb={2} pos={"relative"}>
-          <Image src={image} fit={"fill"} height={279} />
+          <Image src={image} fit={"fill"} height={279} w={"100%"} />
         </Box>
         <Stack p={3} mb={4}>
           <Heading
@@ -45,7 +45,12 @@ export default function PhilantrophyCard({
           <Text color={"brand.text_black"} noOfLines={3}>
             {description}
           </Text>
-          <Link alignSelf={"end"} color={"#03B9E1"} textDecoration={"underline"} href={link}>
+          <Link
+            alignSelf={"end"}
+            color={"#03B9E1"}
+            textDecoration={"underline"}
+            href={link}
+          >
             See more
           </Link>
         </Stack>

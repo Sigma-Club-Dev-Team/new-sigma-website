@@ -6,7 +6,7 @@ import * as ImageAssets from "constants/image_assets";
 
 const PhilantrophyObj: PhilantrophyActivity[] = [
   {
-    image: ImageAssets.SecSchoolQuizWinnerJPG,
+    image: ImageAssets.SecSchoolQuizGroupJPG,
     name: "Roseline Etuokwu Sigma Secondary School Quiz Competition",
     description:
       "The Sigma club organizes a wide range quiz competition for secondary schools",
@@ -20,7 +20,7 @@ const PhilantrophyObj: PhilantrophyActivity[] = [
     link: "events/health-outreach",
   },
   {
-    image: ImageAssets.SigmaLogoJPG,
+    image: ImageAssets.ScholarShipScheme,
     name: "Sigma Scholarship Scheme",
     description:
       "This scheme awards Undergraduate and Post-graduate scholarships to deserving indigent students to enable them complete their education.",

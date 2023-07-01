@@ -243,11 +243,6 @@ const RollOfHonour = () => {
       name: "Old Chief Adebanji Dada",
     },
     {
-      id: 48,
-      year: "2000/2001",
-      name: "Old Chief Adebanji Dada",
-    },
-    {
       id: 49,
       year: "2001/2002",
       name: "Old Chief Abodande Olubunmi",

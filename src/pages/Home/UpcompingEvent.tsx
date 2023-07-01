@@ -11,7 +11,7 @@ import {
   Box,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { SecSchoolQuizJPG } from "constants/image_assets";
+import { SigmaScholarship } from "constants/image_assets";
 import React from "react";
 
 export default function UpcomingEvents() {
@@ -27,7 +27,7 @@ export default function UpcomingEvents() {
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            SouthWest Region Secondary school Quiz competition
+            Sigma Scholarship Scheme
           </Text>
           <Text fontSize={16}>
             <p>
@@ -49,11 +49,11 @@ export default function UpcomingEvents() {
             paddingTop={5}
           >
             <Box>
-              <Text fontSize={18}>Date: 10th of May - 30th of May</Text>
+              <Text fontSize={18}>Date: 24th of June - 14th of July</Text>
             </Box>
-            <Box>
+            {/* <Box>
               <Text fontSize={18}>Venue: Various Locations</Text>
-            </Box>
+            </Box> */}
           </Stack>
           <HStack spacing="5px" justifyContent={"space-between"} paddingTop={2}>
             <Link color="brand.gold" fontSize={16} href="#">
@@ -65,8 +65,11 @@ export default function UpcomingEvents() {
           <Image
             rounded={"md"}
             alt={"feature image"}
-            src={SecSchoolQuizJPG}
-            fit={"fill"}
+            src={SigmaScholarship}
+            fit={"contain"}
+            maxH={"600px"}
+            w={"full"}
+            overflow={"hidden"}
             borderRadius={15}
           />
         </Flex>

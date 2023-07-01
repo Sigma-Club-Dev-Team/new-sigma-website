@@ -3,7 +3,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Link as ChakraTextLink,
@@ -15,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link, NavLink } from "react-router-dom";
+import DoanteModal from "./Donate";
 import sigmalogo from "../assets/sigma-logo-purple.png";
 
 export default function Header() {
@@ -70,16 +70,7 @@ export default function Header() {
             justify={"flex-end"}
             direction={"row"}
           >
-            <Button
-              display={{ base: "inline-flex" }}
-              fontSize={"md"}
-              fontWeight={600}
-              color={"white"}
-              bg={"purple"}
-              _hover={"brand.purple"}
-            >
-              Donation
-            </Button>
+            <DoanteModal />
           </Stack>
         </Flex>
 

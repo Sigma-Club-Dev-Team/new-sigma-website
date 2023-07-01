@@ -5,7 +5,9 @@ import HsGabrielOgunmola from "assets/images/honorary_sigmites/hs_gabriel_ogunmo
 import HsFemiAdeshina from "assets/images/honorary_sigmites/hs_femi_adeshina.jpeg";
 import SigmaLogoJPG from "assets/logo.jpg";
 import SecSchoolQuizJPG from "assets/images/events/upcoming-quiz.jpg";
+import SecSchoolQuizGroupJPG from "assets/images/events/quiz-winner-group.jpg";
 import SigmaChiefCupJPG from "assets/images/events/sigma_chief_cup.jpg";
+import ScholarShipScheme from "assets/images/events/ScholarShipScheme.jpeg";
 import SigmaHealthOutreachJPG from "assets/images/events/sigma_health_outreach.jpg";
 import SecSchoolQuizWinnerJPG from "assets/quizCompetition.jpg";
 import ChiefScribeJPG from "assets/images/excos/chief_scribe.jpeg";
@@ -17,6 +19,7 @@ import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpg";
 import SigmaTJPG from "assets/images/excos/sigma_t.jpg"; 
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
+import SigmaScholarship from "assets/sigma-scholarship.jpg";
 
 
 export {
@@ -28,6 +31,7 @@ export {
   SigmaLogoJPG,
   SecSchoolQuizJPG,
   SecSchoolQuizWinnerJPG,
+  SecSchoolQuizGroupJPG,
   SigmaChiefCupJPG,
   SigmaHealthOutreachJPG,
   ChiefScribeJPG,
@@ -38,5 +42,7 @@ export {
   SigmaChiefJPG,
   SigmaTJPG,
   PublicityChairJPG,
-  DeputyChiefScribeJPG
+  DeputyChiefScribeJPG,
+  SigmaScholarship,
+  ScholarShipScheme
 };
