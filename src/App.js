@@ -7,7 +7,9 @@ import AboutNavBar from "./pages/AboutUs/AboutNavBar";
 import Chief from "./pages/AboutUs/Chief";
 import History from "./pages/AboutUs/History";
 import Executives from "./pages/AboutUs/Executives";
-import RollOfHonour from "./pages/AboutUs/RollOfHonour";
+import OldChiefs from "./pages/AboutUs/OldChiefsTable";
+import OldSigmites from "./pages/AboutUs/OldSigmitesTable";
+
 import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
