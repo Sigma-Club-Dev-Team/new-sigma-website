@@ -7,9 +7,8 @@ import Footer from "../../components/Footer";
 
 const Blogdetails = () => {
   const { id } = useParams();
-  console.log(id);
-  const { image, title, article, Date, Time } = ArticleArray.find(
-    (article) => article.id === parseInt(id)
+  const { content, Time, Date, title, image } = ArticleArray.find(
+    (article) => article.id === id
   );
 
   return (
@@ -40,7 +39,7 @@ const Blogdetails = () => {
             rounded="md"
           />
 
-          <Text py="2">{article}</Text>
+          <Text py="2">{content}</Text>
 
           <FilterBtn />
         </Box>

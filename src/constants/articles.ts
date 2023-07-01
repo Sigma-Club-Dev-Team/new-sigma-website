@@ -37,7 +37,7 @@ export const ArticleArray: Article[] = [
     image: ImageAssets.SigmaHealthOutreachJPG,
   },
   {
-    id: "1",
+    id: "5",
     authorName: "Sigma Club",
     title: "Havana Musical Carnival",
     abridgedContent:

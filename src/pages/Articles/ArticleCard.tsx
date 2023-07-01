@@ -15,10 +15,10 @@ import { Link } from "react-router-dom";
 import { Article } from "types";
 
 type BlogProps = {
-  article: Article
-}
+  article: Article;
+};
 
-const Blog = ({article}: BlogProps) => {
+const Blog = ({ article }: BlogProps) => {
   const { image, title, content, id, date } = article;
   return (
     <Container maxW="full" m="auto">
