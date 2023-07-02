@@ -34,15 +34,15 @@ const OldSigmites = () => {
 
   const handleYearFilter = (year: string) => {
     setSelectedYear(year);
-    // Filter old sigmites based on selected year
-    const filteredSigmites = OldSigmitesOBJ.filter((sigmite) => {
-      return year === "" || sigmite.sigmaYear === year;
-    });
 
     if (year === "") {
       setOldSigmites(OldSigmitesOBJ.slice(0, 100));
     } else {
-      setOldSigmites(filteredSigmites.slice(0, 100));
+      // Filter old sigmites based on selected year
+      const filteredSigmites = OldSigmitesOBJ.filter((sigmite) => {
+        return year === "" || sigmite.sigmaYear === year;
+      });
+      setOldSigmites(filteredSigmites);
     }
     setShowAll(false);
   };
@@ -67,7 +67,7 @@ const OldSigmites = () => {
     setShowAll(true);
   };
 
-  //Fetch reouccuring years once into the dropdown menu to filter by year
+  //Fetch reoccuring years once into the dropdown menu to filter by year
   const UniqueYears = Array.from(
     new Set(OldSigmitesOBJ.map((sigmite) => sigmite.sigmaYear))
   );
