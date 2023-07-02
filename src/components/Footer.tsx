@@ -1,3 +1,4 @@
+import React, { PropsWithChildren } from "react";
 import {
   Box,
   chakra,
@@ -19,7 +20,16 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const SocialButton = ({ children, label, href }) => {
+type SocialButtonProps = {
+  label: string;
+  href: string;
+};
+
+const SocialButton = ({
+  children,
+  label,
+  href,
+}: PropsWithChildren<SocialButtonProps>) => {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -44,7 +54,7 @@ const SocialButton = ({ children, label, href }) => {
   );
 };
 
-const ListHeader = ({ children }) => {
+const ListHeader = ({ children }: PropsWithChildren) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}

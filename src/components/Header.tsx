@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Flex,
@@ -14,8 +15,8 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link, NavLink } from "react-router-dom";
-import DoanteModal from "./Donate";
-import sigmalogo from "../assets/sigma-logo-purple.png";
+import DonateModal from "./Donate";
+import {SigmaLogoJPG} from "constants/image_assets"
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -53,7 +54,7 @@ export default function Header() {
 
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
             <Link to="/">
-              <Image src={sigmalogo} w={140} alt="Sigma logo" />
+              <Image src={SigmaLogoJPG} w={140} alt="Sigma logo" />
             </Link>
 
             <Flex
@@ -70,7 +71,7 @@ export default function Header() {
             justify={"flex-end"}
             direction={"row"}
           >
-            <DoanteModal />
+            <DonateModal />
           </Stack>
         </Flex>
 
@@ -89,7 +90,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <NavLink p={2} to={navItem.href}>
+              <NavLink to={navItem.href}>
                 {navItem.label}
               </NavLink>
             </PopoverTrigger>
@@ -110,7 +111,11 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, href }) => {
+type MobileNavItemProps = {
+  label: string;
+  href: string;
+};
+const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
   const { onToggle } = useDisclosure();
 
   return (

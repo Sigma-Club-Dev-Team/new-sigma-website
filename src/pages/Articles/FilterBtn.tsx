@@ -1,3 +1,4 @@
+import React from "react";
 import { Button, Container } from "@chakra-ui/react";
 
 const FilterBtn = () => {

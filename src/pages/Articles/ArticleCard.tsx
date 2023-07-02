@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardBody,
@@ -10,7 +11,6 @@ import {
   Container,
   Flex,
 } from "@chakra-ui/react";
-import React from "react";
 import { Link } from "react-router-dom";
 import { Article } from "types";
 
@@ -26,7 +26,7 @@ const Blog = ({ article }: BlogProps) => {
         direction={{ sm: "column", md: "row" }}
         overflow="hidden"
         shadow="md"
-        bg="blue.50"
+        bg={"rgba(143, 25, 231, 0.07)"}
         mb={9}
         rounded="xl"
       >
