@@ -6,7 +6,6 @@ import {
   IconButton,
   Stack,
   Collapse,
-  Link as ChakraTextLink,
   Popover,
   PopoverTrigger,
   useDisclosure,
@@ -105,7 +104,7 @@ const MobileNav = () => {
   return (
     <Stack bg={"white"} p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem key={navItem.label}  {...navItem} />
       ))}
     </Stack>
   );
@@ -122,8 +121,8 @@ const MobileNavItem = ({ label, href }: MobileNavItemProps) => {
     <Stack spacing={4} onClick={onToggle}>
       <Flex
         py={2}
-        as={ChakraTextLink}
-        href={href}
+        as={NavLink}
+        to={href}
         justify={"space-between"}
         align={"center"}
         _hover={{

@@ -1,12 +1,12 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, Button, MenuList, MenuItem } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 import { Link as RRLink } from "react-router-dom";
 
-type AlumniTypeDropDown = {
+type AlumniTypeDropDownProps = {
   label: "Old Chiefs" | "Old Sigmites";
 };
-export default function AlumniTypeDropDown({ label }: AlumniTypeDropDown) {
+export default function AlumniTypeDropDown({ label }: AlumniTypeDropDownProps) {
   console.log("Current Selection");
   return (
     <Menu>
