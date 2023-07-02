@@ -18,13 +18,19 @@ export type PhilantrophyActivity = {
   image: string;
   name: string;
   description: string;
-  link: string
+  link: string;
 };
 
 export type Executive = {
-  id: number|string;
+  id: number | string;
   name: string;
   post: string;
   image: string;
   space?: string;
+};
+
+export type OldSigmite = {
+  id: string;
+  sigmaYear: string;
+  name: string;
 };

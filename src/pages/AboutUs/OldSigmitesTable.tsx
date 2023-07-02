@@ -32,11 +32,11 @@ const OldSigmites = () => {
   const [oldSigmites, setOldSigmites] = useState(OldSigmitesOBJ.slice(0, 100));
   const [showAll, setShowAll] = useState(false);
 
-  const handleYearFilter = (year) => {
+  const handleYearFilter = (year: string) => {
     setSelectedYear(year);
     // Filter old sigmites based on selected year
     const filteredSigmites = OldSigmitesOBJ.filter((sigmite) => {
-      return year === "" || sigmite.year === year;
+      return year === "" || sigmite.sigmaYear === year;
     });
 
     if (year === "") {
@@ -48,7 +48,7 @@ const OldSigmites = () => {
   };
 
   // Filter old sigmites based on search query
-  const handleSearch = (query) => {
+  const handleSearch = (query: string) => {
     setSearchQuery(query);
 
     const filteredSigmites = query
@@ -69,7 +69,7 @@ const OldSigmites = () => {
 
   //Fetch reouccuring years once into the dropdown menu to filter by year
   const UniqueYears = Array.from(
-    new Set(OldSigmitesOBJ.map((sigmite) => sigmite.year))
+    new Set(OldSigmitesOBJ.map((sigmite) => sigmite.sigmaYear))
   );
 
   return (
@@ -97,7 +97,7 @@ const OldSigmites = () => {
               <MenuButton
                 as={Button}
                 bg={"purple"}
-                _hover={"brand.purple"}
+                _hover={{ bg: "brand.purple" }}
                 color={"white"}
                 rightIcon={<ChevronDownIcon />}
               >
@@ -145,7 +145,7 @@ const OldSigmites = () => {
             </Thead>
             <Tbody>
               {oldSigmites.length > 0 ? (
-                oldSigmites.map(({ name, year, id }) => (
+                oldSigmites.map(({ name, sigmaYear, id }) => (
                   <Tr key={id}>
                     <Td width="50px" textAlign="left" py={3} px={6}>
                       {id}
@@ -154,13 +154,13 @@ const OldSigmites = () => {
                       {name}
                     </Td>
                     <Td width="400px" textAlign="center" py={3}>
-                      {year}
+                      {sigmaYear}
                     </Td>
                   </Tr>
                 ))
               ) : (
                 <Tr>
-                  <Td colSpan="3" textAlign="center">
+                  <Td colSpan={3} textAlign="center">
                     Query not found!
                   </Td>
                 </Tr>
@@ -173,7 +173,7 @@ const OldSigmites = () => {
           <Center mt={4}>
             <Button
               bg={"purple"}
-              _hover={"brand.purple"}
+              _hover={{ bg: "brand.purple" }}
               color={"white"}
               onClick={fetchAllItems}
             >
