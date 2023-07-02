@@ -10,6 +10,7 @@ import {
   Link,
   Box,
   useBreakpointValue,
+  Button,
 } from "@chakra-ui/react";
 import { SigmaScholarship } from "constants/image_assets";
 import React from "react";
@@ -19,8 +20,8 @@ export default function UpcomingEvents() {
     <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading>Upcoming Event</Heading>
-          <Text
+          <Heading>Sigma Scholarship Scheme</Heading>
+          {/* <Text
             color={"white"}
             fontWeight={600}
             fontSize={20}
@@ -28,19 +29,9 @@ export default function UpcomingEvents() {
             rounded={"md"}
           >
             Sigma Scholarship Scheme
-          </Text>
+          </Text> */}
           <Text fontSize={16}>
-            <p>
-              Sigma Club is organizing another quiz competition for all
-              available secondary schools across the six states in the
-              south-west region of Nigeria (Lagos, Ogun, Oyo, Osun, Ondo and
-              Ekiti States).{" "}
-            </p>{" "}
-            <br />
-            <p>
-              There are various prices to be won by the performances of each
-              school which includes cash prices and other beneficiaries.
-            </p>
+            <p>content...</p>
           </Text>
           <Stack
             direction={useBreakpointValue({ base: "column", sm: "row" })}
@@ -56,8 +47,15 @@ export default function UpcomingEvents() {
             </Box> */}
           </Stack>
           <HStack spacing="5px" justifyContent={"space-between"} paddingTop={2}>
-            <Link color="brand.gold" fontSize={16} href="#">
-              View more Details
+            <Link fontSize={16} href="#">
+              <Button
+                bg="brand.gold"
+                color={"white"}
+                _hover={{ bg: "brand.gold", color: "white" }}
+                fontWeight={"bold"}
+              >
+                Apply Now
+              </Button>
             </Link>
           </HStack>
         </Stack>

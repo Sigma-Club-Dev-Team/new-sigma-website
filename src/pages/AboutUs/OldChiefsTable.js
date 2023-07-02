@@ -8,7 +8,6 @@ import {
   Button,
   Menu,
   MenuButton,
-  Link,
   MenuList,
   MenuItem,
   Input,
@@ -25,6 +24,7 @@ import {
   Tr,
   Td,
 } from "@chakra-ui/react";
+import { Link as RRLink } from "react-router-dom";
 
 const OldChiefs = () => {
   const [selectedYear, setSelectedYear] = useState(""); // State for selected year in the dropdown
@@ -73,9 +73,9 @@ const OldChiefs = () => {
                   Old Chiefs
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>
-                    <Link href="old-sigmites"> Old Sigmites</Link>
-                  </MenuItem>
+                  <RRLink to={"/about/old-sigmites"}>
+                    <MenuItem>Old Sigmites</MenuItem>
+                  </RRLink>
                 </MenuList>
               </Menu>
 

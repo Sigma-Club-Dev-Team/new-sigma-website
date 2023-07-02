@@ -1,5 +1,5 @@
 import { Container } from "@chakra-ui/react";
-import InterviewImage from "../../assets/pic1.jpg";
+import { ScholarShipScheme } from "../../constants/image_assets.ts";
 import { Flex } from "@chakra-ui/react";
 import Video from "../../components/Video";
 import { Text, Box, Image } from "@chakra-ui/react";
@@ -13,7 +13,7 @@ const Scholarship = () => {
             mt={6}
             borderRadius="lg"
             width={{ base: "100%", sm: "100%" }}
-            src={InterviewImage}
+            src={ScholarShipScheme}
             alt="presentation of prize"
           />
         </Box>

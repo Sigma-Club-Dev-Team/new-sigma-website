@@ -10,7 +10,7 @@ export const ArticleArray: Article[] = [
       "This is a quiz competition that stemed out of the need to improve education. It started in 2019 with 10 schools, and then progressed to Oyo state and is now organizing a South west level with more than 1000+ schools.",
     abridgedContent:
       "This is a quiz competition that stemed out of the need to improve education. It started in 2019 with 10 schools, and then progressed to Oyo state and is now organizing a South west level with more than 1000+ schools.",
-    image: ImageAssets.SecSchoolQuizJPG,
+    image: ImageAssets.SecSchoolQuizGroupJPG,
     date: new Date("2021-04-06T19:01:27Z"),
   },
 

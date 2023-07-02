@@ -21,7 +21,7 @@ const DoanteModal = () => {
         fontSize={"md"}
         fontWeight={600}
         color={"white"}
-        bg={"purple"}
+        bg={"brand.purple"}
         _hover={"brand.purple"}
         onClick={onOpen}
       >

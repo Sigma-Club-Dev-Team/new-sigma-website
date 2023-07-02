@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import heroBg from "../../assets/hero-bg.jpg";
+import DonateModal from "../../components/Donate";
 
 export default function Hero() {
   return (
@@ -70,16 +71,7 @@ export default function Hero() {
                 KNOW ABOUT US
               </Button>
             </Link>
-            <Link to={"#"}>
-              <Button
-                bg={"brand.purple"}
-                _hover={"brand.purple"}
-                rounded={"md"}
-                color={"white"}
-              >
-                DONATE
-              </Button>
-            </Link>
+            <DonateModal />
           </Stack>
         </Stack>
       </VStack>

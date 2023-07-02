@@ -1,5 +1,5 @@
 import { Container } from "@chakra-ui/react";
-import QuizImage from "../../assets/QuizImage.jpg";
+import { SecSchoolQuizGroupJPG } from "../../constants/image_assets.ts";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
 import Video from "../../components/Video";
@@ -14,7 +14,7 @@ const Quiz = () => {
               mt={6}
               borderRadius="lg"
               width={{ base: "100%", sm: "100%" }}
-              src={QuizImage}
+              src={SecSchoolQuizGroupJPG}
               alt="presentation of prize"
             />
           </Box>

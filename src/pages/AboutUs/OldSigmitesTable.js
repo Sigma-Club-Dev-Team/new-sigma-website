@@ -13,7 +13,6 @@ import {
   Input,
   InputGroup,
   InputRightElement,
-  Link,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
 import {
@@ -25,6 +24,7 @@ import {
   Tr,
   Td,
 } from "@chakra-ui/react";
+import { Link as RRLink } from "react-router-dom";
 
 const OldSigmites = () => {
   const [selectedYear, setSelectedYear] = useState("");
@@ -61,7 +61,7 @@ const OldSigmites = () => {
     setShowAll(false);
   };
 
-//Fetch all Old Sigmites
+  //Fetch all Old Sigmites
   const fetchAllItems = () => {
     setOldSigmites(OldSigmitesOBJ);
     setShowAll(true);
@@ -87,9 +87,9 @@ const OldSigmites = () => {
                 Old Sigmites
               </MenuButton>
               <MenuList>
-                <MenuItem>
-                  <Link href="roll-of-honour"> Old Chiefs</Link>
-                </MenuItem>
+                <RRLink to={"/about/roll-of-honour"}>
+                  <MenuItem>Old Chiefs</MenuItem>
+                </RRLink>
               </MenuList>
             </Menu>
 
