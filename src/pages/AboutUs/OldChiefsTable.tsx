@@ -24,7 +24,7 @@ import {
   Tr,
   Td,
 } from "@chakra-ui/react";
-import { Link as RRLink } from "react-router-dom";
+import AlumniTypeDropDown from "./AlumniTypeDropDown";
 
 const OldChiefs = () => {
   const [selectedYear, setSelectedYear] = useState(""); // State for selected year in the dropdown
@@ -32,23 +32,22 @@ const OldChiefs = () => {
   const [oldChiefs, setOldChiefs] = useState(OldChiefsOBJ); // State for old chiefs, initialized with the object array
 
   // Filter old chiefs based on selected year
-  const handleYearFilter = (year) => {
+  const handleYearFilter = (year: string) => {
     setSelectedYear(year);
-
-    const filteredChiefs = OldChiefsOBJ.filter((chief) => {
-      return year === "" || chief.year === year;
-    });
-
     if (year === "") {
       // If "All Years" is selected, show all old chiefs
       setOldChiefs(OldChiefsOBJ);
     } else {
+      const filteredChiefs = OldChiefsOBJ.filter((chief) => {
+        return year === "" || chief.sigmaYear === year;
+      });
+
       setOldChiefs(filteredChiefs);
     }
   };
 
   // Filter old chiefs based on search query
-  const handleSearch = (query) => {
+  const handleSearch = (query:string) => {
     setSearchQuery(query);
     const filteredChiefs = OldChiefsOBJ.filter((chief) =>
       chief.name.toLowerCase().includes(query.toLowerCase())
@@ -63,27 +62,13 @@ const OldChiefs = () => {
         <Center mt={5}>
           <Box>
             <Flex display="flex" my={3} justify="center">
-              <Menu>
-                <MenuButton
-                  as={Button}
-                  rightIcon={<ChevronDownIcon />}
-                  variant="outline"
-                  mx={2}
-                >
-                  Old Chiefs
-                </MenuButton>
-                <MenuList>
-                  <RRLink to={"/about/old-sigmites"}>
-                    <MenuItem>Old Sigmites</MenuItem>
-                  </RRLink>
-                </MenuList>
-              </Menu>
+              <AlumniTypeDropDown label={'Old Chiefs'}/>
 
               <Menu>
                 <MenuButton
                   as={Button}
                   bg={"purple"}
-                  _hover={"brand.purple"}
+                  _hover={{bg: "brand.purple"}}
                   color={"white"}
                   rightIcon={<ChevronDownIcon />}
                 >
@@ -97,9 +82,9 @@ const OldChiefs = () => {
                   {OldChiefsOBJ.map((data) => (
                     <MenuItem
                       key={data.id}
-                      onClick={() => handleYearFilter(data.year)}
+                      onClick={() => handleYearFilter(data.sigmaYear)}
                     >
-                      {data.year}
+                      {data.sigmaYear}
                     </MenuItem>
                   ))}
                 </MenuList>
@@ -136,7 +121,7 @@ const OldChiefs = () => {
             </Thead>
             <Tbody>
               {oldChiefs.length > 0 ? (
-                oldChiefs.map(({ name, year, id }) => (
+                oldChiefs.map(({ name, sigmaYear, id }) => (
                   <Tr key={id}>
                     <Td width="50px" textAlign="left" py={3} px={6}>
                       {id}
@@ -145,13 +130,13 @@ const OldChiefs = () => {
                       {name}
                     </Td>
                     <Td width="400px" textAlign="center" py={3}>
-                      {year}
+                      {sigmaYear}
                     </Td>
                   </Tr>
                 ))
               ) : (
                 <Tr>
-                  <Td colSpan="3" textAlign="center">
+                  <Td colSpan={3} textAlign="center">
                     Query not found!
                   </Td>
                 </Tr>

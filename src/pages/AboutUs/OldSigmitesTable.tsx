@@ -24,7 +24,7 @@ import {
   Tr,
   Td,
 } from "@chakra-ui/react";
-import { Link as RRLink } from "react-router-dom";
+import AlumniTypeDropDown from "./AlumniTypeDropDown";
 
 const OldSigmites = () => {
   const [selectedYear, setSelectedYear] = useState("");
@@ -77,21 +77,7 @@ const OldSigmites = () => {
       <Center mt={5}>
         <Box>
           <Flex display="flex" my={3} justify="center">
-            <Menu>
-              <MenuButton
-                as={Button}
-                rightIcon={<ChevronDownIcon />}
-                variant="outline"
-                mx={2}
-              >
-                Old Sigmites
-              </MenuButton>
-              <MenuList>
-                <RRLink to={"/about/roll-of-honour"}>
-                  <MenuItem>Old Chiefs</MenuItem>
-                </RRLink>
-              </MenuList>
-            </Menu>
+            <AlumniTypeDropDown label="Old Sigmites"/>
 
             <Menu>
               <MenuButton
