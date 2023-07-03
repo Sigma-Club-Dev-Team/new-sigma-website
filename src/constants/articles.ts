@@ -7,7 +7,28 @@ export const ArticleArray: Article[] = [
     authorName: "Sigma Club",
     title: "Roseline Etuokwu Secondary School Quiz Competition",
     content:
-      "This is a quiz competition that stemed out of the need to improve education. It started in 2019 with 10 schools, and then progressed to Oyo state and is now organizing a South west level with more than 1000+ schools.",
+      "This also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots.  "
+    + "It is the club’s believe that the secondary school students would grow to become  "
+              + "University students.As such, introducing the club to them right  "
+              + "from their secondary school days would guide them in manners to  "
+              + "act and way of life to live as a student of higher  "
+              + "institutions.During this competition, moral and educational  "
+              + "knowledge are displayed and students are being trained in manners  "
+              + "to become whole human and stand “for all that is pure”. These will  "
+              + "believe would keep the students on the right track before entering  "
+              + "the university. It also serve as a means of orientating students on  "
+              + "steps to take while making choices as a secondary school student  "
+              + "aspiring for higher institutions.   "
+              + "\n\n "
+              + "With the inceptions of the competition, over 300 secondary  "
+                + "schools across the 33 local government of Oyo State have  "
+                + "participated and witnessed the participation of over 700  "
+                + "students in this competition. Apart from the participation of  "
+                + "these students and schools, gift items are also won by different  "
+                + "schools, students, and teachers for their participation. In the  "
+                + "last competition, first position won the sum of #250 000 worth  "
+                + "of price, first runner won #200 000 worth of price and second  "
+                + "runner up won #150 000 worth of price.",
     abridgedContent:
       "This is a quiz competition that stemed out of the need to improve education. It started in 2019 with 10 schools, and then progressed to Oyo state and is now organizing a South west level with more than 1000+ schools.",
     image: ImageAssets.SecSchoolQuizGroupJPG,
@@ -20,7 +41,51 @@ export const ArticleArray: Article[] = [
     date: new Date("11-06-2023"),
     title: "The Sigma Chief's Cup 2023",
     content:
-      "As part of the innovations and plans of the Sigma Chief, the Sigma Chief's Cup was birthed. The competition was for both male and female undergraduates of the University of Ibadan, both regular students. The male teams were formed randomly by students comprising 7players per team while the female teams were in the Halls of residence category - Alexander Brown Hall, Queen Elizabeth Hall, Queen Idia Hall and Obafemi Awolowo Hall. Out of 36 male teams that showed interest by filling the application form, only 16 were selected after much screening, scrutiny and accreditation.",
+      "As part of the innovations and plans of the Sigma Chief, the Sigma  " +
+      "Chief's Cup was birthed. The competition was for both male and  " +
+      "female undergraduates of the University of Ibadan, both regular students.  " +
+      "\n  " +
+      "The male teams were formed randomly by students comprising 7players  " +
+      "per team while the female teams were in the Halls of residence  " +
+      "category - Alexander Brown Hall, Queen Elizabeth Hall, Queen Idia  " +
+      "Hall and Obafemi Awolowo Hall. Out of 36 male teams that showed  " +
+      "interest by filling the application form, only 16 were selected  " +
+      "after much screening, scrutiny and accreditation.   " +
+      "\n\n  " +
+      "The competition started on Friday, 28th April with the round of 16  " +
+      "matches of the male category with the matches being played  " +
+      "simultaneously both at Zik and Indy Maracanas. 8 teams qualified  " +
+      "from the Friday matches (though 2 matches were due to walkovers  " +
+      "due to absence of opponents), and they proceeded to the quarter  " +
+      "finals of the competition which was played on Saturday morning.  " +
+      "\n \n  " +
+      "The female category also had their semi final matches on Saturday  " +
+      "morning at the Zik Maracana where 2 teams qualified for the final.  " +
+      "The male category had their quarter final matches in the morning and  " +
+      "the qualified teams played the semi finals in the evening.  " +
+      "\n   " +
+      "Sunday, which was the final day of the competition witnessed 3  " +
+      "matches - the female final, friendly match between loyal Sigmites  " +
+      "and the male final. The female final was keenly contested by the  " +
+      "ladies from Idia Hall and Awo Hall where Idia Hall emerged winner of  " +
+      "the female category of the maiden Sigma Chief's  " +
+      "\n\n  " +
+      "The match between loyal Sigmites was also an interesting one as the  " +
+      "two teams - Team purple and Team gold, entertained the guests and  " +
+      "spectators with some exciting skills of football though Team Gold  " +
+      "later won the match by a goal to nil. The final of the male category  " +
+      "was between Gentlemen's Club and Raid FC. The match was an  " +
+      "interesting one that was played by skilled and experienced players.  " +
+      "After the final whistle was blown, the Gentlemen's Club emerged the  " +
+      "winner having defeated Raid FC by a total of 6goals to 1  " +
+      "\n\n  " +
+      "It was also a sight to behold as people came in droves to see the  " +
+      "teams slug it against themselves with the population of spectators  " +
+      "peaking 300. Raffle draws were made and prizes were presented to the  " +
+      "winners. Afterwards the teams that emerged first position and First  " +
+      "runner-ups of both categories were presented with certificates of  " +
+      "sportsmanship and trophies were presented to the winners of both  " +
+      "categories.",
     abridgedContent:
       "As part of the innovations and plans of the Sigma Chief, the Sigma Chief's Cup was birthed. The competition was for both male and female undergraduates of the University of Ibadan, both regular students.",
     image: ImageAssets.SigmaChiefCupJPG,
@@ -31,7 +96,41 @@ export const ArticleArray: Article[] = [
     date: new Date("11-06-2023"),
     title: "Sigma Health Outreach.",
     content:
-      "As part of the activities of the Club for this Sigma year, we organized the SIGMA HEALTH OUTREACH. The health outreach was aimed at promoting good health practices among the student body. It provided an opportunity for students to get free medical checkups, health screenings, scaling and polishing and access to health education resources. Our objectives for the Health Outreach event were clear. We aimed to offer scaling and polishing services to enhance oral hygiene; provide free HIV and syphilis screening to promote sexual health awareness; conduct mental health assistance and conduct vital signs checks to identify potential health concerns and offer guidance.",
+      "As part of the activities of the Club for this Sigma year, we organized the SIGMA HEALTH OUTREACH." +
+      "The health outreach was aimed at promoting good health practices among the student body.  " +
+      "It provided an opportunity for students to get free medical checkups,  " +
+      " health screenings, scaling and polishing and access to health  education resources.  " +
+      "\n\n  " +
+      "Our objectives for the Health Outreach event were clear. We aimed  " +
+      "to offer scaling and polishing services to enhance oral hygiene  " +
+      "provide free HIV and syphilis screening to promote sexual health  " +
+      "awareness; conduct mental health assistance and conduct vital  " +
+      "signs checks to identify potential health concerns and offer  " +
+      "guidance.  " +
+      "\n\n  " +
+      "We worked alongside Unibadan Association of Dental Students. Their  " +
+      "expertise in oral healthcare was instrumental in offering scaling  " +
+      "and polishing services to our participants. They also offered  " +
+      "trainings on healthy oral health hygiene. Another of our esteemed  " +
+      "partners was ASIDO, an organization specializing in mental health  " +
+      "support. Recognizing the importance of mental well-being, we aimed  " +
+      "to provide holistic care to our participants, addressing both  " +
+      "their physical and emotional needs.  " +
+      "\n\n  " +
+      "Additionally, we partnered with iCARE, an organization focused on  " +
+      "HIV screening and education. Their invaluable support enabled us  " +
+      "to provide free and confidential HIV screening to all  " +
+      "participants. The impact of the Health Outreach event cannot be  " +
+      "understated. Over 300 students within the university community,  " +
+      "benefited from the free services provided. The positive feedback  " +
+      "and engagement we received from the community served as a  " +
+      "testament to the importance of such initiatives in addressing the  " +
+      "health needs of our student population.  " +
+      "\n\n  " +
+      "We are inspired by the impact we have made and the lives we have  " +
+      "touched through this Health Outreach. Moving forward, we will  " +
+      "continue to dedicate ourselves to giving back to the community.  " +
+      "\n",
     abridgedContent:
       "As part of the activities of the Club for this Sigma year, we organized the SIGMA HEALTH OUTREACH. The health outreach was aimed at promoting good health practices among the student body.",
     image: ImageAssets.SigmaHealthOutreachJPG,

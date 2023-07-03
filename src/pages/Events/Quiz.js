@@ -27,7 +27,7 @@ const Quiz = () => {
               fontWeight="semibold"
             >
               Roseline Etuokwu Sigma Secondary School Quiz Competition
-            </Text>
+            </Text> 
             <br />
 
             <Text fontSize="16px" lineHeight="normal">

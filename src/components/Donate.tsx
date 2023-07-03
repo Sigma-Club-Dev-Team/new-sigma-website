@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Button,
   Heading,
@@ -22,7 +23,7 @@ const DoanteModal = () => {
         fontWeight={600}
         color={"white"}
         bg={"brand.purple"}
-        _hover={"brand.purple"}
+        _hover={{bg: "brand.purple"}}
         onClick={onOpen}
       >
         Donation

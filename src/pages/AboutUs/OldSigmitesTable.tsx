@@ -24,7 +24,7 @@ import {
   Tr,
   Td,
 } from "@chakra-ui/react";
-import { Link as RRLink } from "react-router-dom";
+import AlumniTypeDropDown from "./AlumniTypeDropDown";
 
 const OldSigmites = () => {
   const [selectedYear, setSelectedYear] = useState("");
@@ -32,23 +32,23 @@ const OldSigmites = () => {
   const [oldSigmites, setOldSigmites] = useState(OldSigmitesOBJ.slice(0, 100));
   const [showAll, setShowAll] = useState(false);
 
-  const handleYearFilter = (year) => {
+  const handleYearFilter = (year: string) => {
     setSelectedYear(year);
-    // Filter old sigmites based on selected year
-    const filteredSigmites = OldSigmitesOBJ.filter((sigmite) => {
-      return year === "" || sigmite.year === year;
-    });
 
     if (year === "") {
       setOldSigmites(OldSigmitesOBJ.slice(0, 100));
     } else {
-      setOldSigmites(filteredSigmites.slice(0, 100));
+      // Filter old sigmites based on selected year
+      const filteredSigmites = OldSigmitesOBJ.filter((sigmite) => {
+        return year === "" || sigmite.sigmaYear === year;
+      });
+      setOldSigmites(filteredSigmites);
     }
     setShowAll(false);
   };
 
   // Filter old sigmites based on search query
-  const handleSearch = (query) => {
+  const handleSearch = (query: string) => {
     setSearchQuery(query);
 
     const filteredSigmites = query
@@ -67,9 +67,9 @@ const OldSigmites = () => {
     setShowAll(true);
   };
 
-  //Fetch reouccuring years once into the dropdown menu to filter by year
+  //Fetch reoccuring years once into the dropdown menu to filter by year
   const UniqueYears = Array.from(
-    new Set(OldSigmitesOBJ.map((sigmite) => sigmite.year))
+    new Set(OldSigmitesOBJ.map((sigmite) => sigmite.sigmaYear))
   );
 
   return (
@@ -77,27 +77,13 @@ const OldSigmites = () => {
       <Center mt={5}>
         <Box>
           <Flex display="flex" my={3} justify="center">
-            <Menu>
-              <MenuButton
-                as={Button}
-                rightIcon={<ChevronDownIcon />}
-                variant="outline"
-                mx={2}
-              >
-                Old Sigmites
-              </MenuButton>
-              <MenuList>
-                <RRLink to={"/about/roll-of-honour"}>
-                  <MenuItem>Old Chiefs</MenuItem>
-                </RRLink>
-              </MenuList>
-            </Menu>
+            <AlumniTypeDropDown label="Old Sigmites"/>
 
             <Menu>
               <MenuButton
                 as={Button}
                 bg={"purple"}
-                _hover={"brand.purple"}
+                _hover={{ bg: "brand.purple" }}
                 color={"white"}
                 rightIcon={<ChevronDownIcon />}
               >
@@ -145,7 +131,7 @@ const OldSigmites = () => {
             </Thead>
             <Tbody>
               {oldSigmites.length > 0 ? (
-                oldSigmites.map(({ name, year, id }) => (
+                oldSigmites.map(({ name, sigmaYear, id }) => (
                   <Tr key={id}>
                     <Td width="50px" textAlign="left" py={3} px={6}>
                       {id}
@@ -154,13 +140,13 @@ const OldSigmites = () => {
                       {name}
                     </Td>
                     <Td width="400px" textAlign="center" py={3}>
-                      {year}
+                      {sigmaYear}
                     </Td>
                   </Tr>
                 ))
               ) : (
                 <Tr>
-                  <Td colSpan="3" textAlign="center">
+                  <Td colSpan={3} textAlign="center">
                     Query not found!
                   </Td>
                 </Tr>
@@ -173,7 +159,7 @@ const OldSigmites = () => {
           <Center mt={4}>
             <Button
               bg={"purple"}
-              _hover={"brand.purple"}
+              _hover={{ bg: "brand.purple" }}
               color={"white"}
               onClick={fetchAllItems}
             >
