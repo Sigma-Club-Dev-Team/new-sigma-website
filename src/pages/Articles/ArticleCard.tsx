@@ -10,6 +10,7 @@ import {
   Stack,
   Container,
   Flex,
+  Box,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Article } from "types";
@@ -58,15 +59,18 @@ const Blog = ({ article }: BlogProps) => {
           </CardBody>
 
           <CardFooter>
-            <Button
-              fontWeight={600}
-              color={"white"}
-              bg={"brand.purple"}
-              _hover={{ bgColor: "brand.purple" }}
-              ml="auto"
-            >
-              <Link to={`/blogs/${id}`}>Read More</Link>
-            </Button>
+            <Box ml="auto">
+              <Link to={`/blogs/${id}`}>
+                <Button
+                  fontWeight={600}
+                  color={"white"}
+                  bg={"brand.purple"}
+                  _hover={{ bgColor: "brand.purple" }}
+                >
+                  Read More
+                </Button>
+              </Link>
+            </Box>
           </CardFooter>
         </Stack>
       </Card>
