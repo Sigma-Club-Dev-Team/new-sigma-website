@@ -34,8 +34,8 @@ export default function UpcomingEvents() {
     <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-{/*           <Heading>Upcoming Event</Heading> */}
-          <Heading pb={6} size={"lg"}>
+          <Heading>Ongoing Programme</Heading>
+          <Heading pt={8} as={h3} pb={6} size={"lg"}>
             {upcomingEvent.title}
           </Heading>
 
