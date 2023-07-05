@@ -34,8 +34,8 @@ export default function UpcomingEvents() {
     <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading>Upcoming Event</Heading>
-          <Heading as="h4" pt={8} pb={6} size={"lg"}>
+{/*           <Heading>Upcoming Event</Heading> */}
+          <Heading pb={6} size={"lg"}>
             {upcomingEvent.title}
           </Heading>
 
@@ -67,7 +67,7 @@ export default function UpcomingEvents() {
               justifyContent={"space-between"}
               paddingTop={8}
             >
-              <Link fontSize={16} href={upcomingEvent.url}>
+              <Link fontSize={16} target="_blank" href={upcomingEvent.url}>
                 <Button
                   bg="brand.gold"
                   color={"white"}
