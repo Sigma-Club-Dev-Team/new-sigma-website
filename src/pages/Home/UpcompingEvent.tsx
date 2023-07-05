@@ -13,25 +13,34 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { SigmaScholarship } from "constants/image_assets";
+import { format } from "date-fns";
 import React from "react";
+import { UpcomingEvent } from "types";
+
+const upcomingEvent: UpcomingEvent = {
+  title: "Sigma Scholarship Scheme",
+  description:
+    "Sigma Club is here again! At the heart of our club lies a profound commitment to philanthropy, with the Sigma Scholarship serving as a testament to our unwavering dedication to humanitarian endeavors. Seize this unparalleled opportunity to partake in our noble cause by clicking on this link to apply for the Sigma Scholarship.",
+  image: SigmaScholarship,
+  startDate: new Date("2023-06-24"),
+  endDate: new Date("2023-07-14"),
+  url: "https://forms.gle/MRgxTsTPCC1SMahd9",
+};
+
+const customDateFormat = "do 'of' MMMM";
 
 export default function UpcomingEvents() {
   return (
     <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading>Sigma Scholarship Scheme</Heading>
-          {/* <Text
-            color={"white"}
-            fontWeight={600}
-            fontSize={20}
-            alignSelf={"flex-start"}
-            rounded={"md"}
-          >
-            Sigma Scholarship Scheme
-          </Text> */}
-          <Text fontSize={16}>
-            <p>content...</p>
+          <Heading>Upcoming Event</Heading>
+          <Heading as="h4" pt={8} pb={6} size={"lg"}>
+            {upcomingEvent.title}
+          </Heading>
+
+          <Text fontSize={20}>
+            <p>{upcomingEvent.description}</p>
           </Text>
           <Stack
             direction={useBreakpointValue({ base: "column", sm: "row" })}
@@ -40,35 +49,47 @@ export default function UpcomingEvents() {
             paddingTop={5}
           >
             <Box>
-              <Text fontSize={18}>Date: 24th of June - 14th of July</Text>
+              <Text fontSize={20} fontWeight={600}>
+                Date: {format(upcomingEvent.startDate, customDateFormat)}{" "}
+                {upcomingEvent.endDate &&
+                  " - " + format(upcomingEvent.endDate, customDateFormat)}
+              </Text>
             </Box>
-            {/* <Box>
-              <Text fontSize={18}>Venue: Various Locations</Text>
-            </Box> */}
+            {upcomingEvent.venue && (
+              <Box>
+                <Text fontSize={18}>Venue: Various Locations</Text>
+              </Box>
+            )}
           </Stack>
-          <HStack spacing="5px" justifyContent={"space-between"} paddingTop={2}>
-            <Link fontSize={16} href="#">
-              <Button
-                bg="brand.gold"
-                color={"white"}
-                _hover={{ bg: "brand.gold", color: "white" }}
-                fontWeight={"bold"}
-              >
-                Apply Now
-              </Button>
-            </Link>
-          </HStack>
+          {upcomingEvent.url && (
+            <HStack
+              spacing="5px"
+              justifyContent={"space-between"}
+              paddingTop={8}
+            >
+              <Link fontSize={16} href={upcomingEvent.url}>
+                <Button
+                  bg="brand.gold"
+                  color={"white"}
+                  _hover={{ bg: "brand.gold", color: "white" }}
+                  fontWeight={"bold"}
+                >
+                  Apply Now
+                </Button>
+              </Link>
+            </HStack>
+          )}
         </Stack>
         <Flex>
           <Image
-            rounded={"md"}
-            alt={"feature image"}
-            src={SigmaScholarship}
+            rounded={"base"}
+            alt={"upcoming event image"}
+            src={upcomingEvent.image}
             fit={"contain"}
-            maxH={"600px"}
+            maxH={"550px"}
             w={"full"}
             overflow={"hidden"}
-            borderRadius={15}
+            borderRadius={25}
           />
         </Flex>
       </SimpleGrid>

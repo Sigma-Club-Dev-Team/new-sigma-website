@@ -34,3 +34,13 @@ export type OldSigmite = {
   sigmaYear: string;
   name: string;
 };
+
+export type UpcomingEvent = {
+  title: string;
+  description: string;
+  image: string;
+  startDate: Date;
+  endDate?: Date;
+  venue?: string;
+  url?: string
+}
