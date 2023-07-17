@@ -24,7 +24,7 @@ const Blog = ({ article }: BlogProps) => {
   return (
     <Container maxW="full" m="auto">
       <Card
-        direction={{ sm: "column", md: "row" }}
+        direction={{ base: "column", md: "row" }}
         overflow="hidden"
         shadow="md"
         bg={"rgba(143, 25, 231, 0.07)"}
