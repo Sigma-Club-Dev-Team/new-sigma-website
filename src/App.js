@@ -15,6 +15,7 @@ import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
+import Talents from "./pages/AboutUs/Sigma Talents/profile";
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="executives" element={<Executives />} />
         <Route path="roll-of-honour" element={<OldChiefs />} />
         <Route path="old-sigmites" element={<OldSigmites />} />
+        <Route path="sigma-talents" element={<Talents />} />
       </Route>
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blogs/:id" element={<Blogdetails />} />
