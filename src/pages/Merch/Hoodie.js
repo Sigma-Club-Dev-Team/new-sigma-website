@@ -7,18 +7,20 @@ import {
   Stack,
   useColorModeValue,
   IconButton,
+  Flex
 } from "@chakra-ui/react";
+import { FaTag } from "react-icons/fa";
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
-import image1 from "../../assets/hoodie 3.jpg";
-import image2 from "../../assets/hoodie white and purple.jpg";
-import image3 from "../../assets/sweatshirt 1.jpg";
-import image4 from "../../assets/sweatshirt gold chest.jpg";
-import image5 from "../../assets/sweatshirt gold.jpg";
-import image6 from "../../assets/sweatshirt more white.jpg";
-import image7 from "../../assets/sweatshirt purple chesrt.jpg";
-import image8 from "../../assets/sweatshirt purple.jpg";
+import image1 from "../../assets/Merch-Assets/Sweatshirts/hoodie 3.jpg";
+import image2 from "../../assets/Merch-Assets/Sweatshirts/hoodie white and purple.jpg";
+import image3 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt 1.jpg";
+import image4 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt gold chest.jpg";
+import image5 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt gold.jpg";
+import image6 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt more white.jpg";
+import image7 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt purple chesrt.jpg";
+import image8 from "../../assets/Merch-Assets/Sweatshirts/sweatshirt purple.jpg";
 
 const CarouselCard = ({ content, interval }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,7 +68,8 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <IconButton
@@ -80,23 +83,25 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <Image
           src={content[currentIndex].imageUrl}
           layout={"fill"}
-          height="450px"
+          height="300px"
           w="100vw"
-          objectFit="cover"
         />
       </Box>
 
       <Stack bg="purple">
-        <Text textAlign="Center" color="white" py={3}>
-          {content[currentIndex].note}
-        </Text>
-
+        <Flex justifyContent="space-around" color="white" py={3}>
+          <Text transition="ease-in-out">{content[currentIndex].note}</Text>
+          <Text display="flex">
+            <FaTag />{content[currentIndex].Price}
+          </Text>
+        </Flex>
         <Box p={4} display="flex" justifyContent="center">
           {Array.from({ length: totalSlides }, (_, index) => (
             <Box
@@ -129,37 +134,45 @@ const HoodieCard = () => {
   const content = [
     {
       imageUrl: image1,
-      note: "Hoodie",
+      note: "Black and white hoodie",
+      Price: "N8,0000",
     },
     {
       imageUrl: image2,
       note: "White and purple Hoodie",
+      Price: "N8,0000",
     },
     {
       imageUrl: image3,
       note: "Sweatshirt",
+      Price: "N7,0000",
     },
 
     {
       imageUrl: image4,
       note: "Gold Sweatshirt",
+      Price: "N7,0000",
     },
     {
       imageUrl: image5,
       note: "Gold Sweatshirt v2",
+      Price: "N7,0000",
     },
     {
       imageUrl: image6,
       note: " White Sweatshirt",
+      Price: "N7,0000",
     },
 
     {
       imageUrl: image7,
       note: "Purple Sweatshirt",
+      Price: "N7,0000",
     },
     {
       imageUrl: image8,
       note: "Purple Sweatshirt v2",
+      Price: "N7,0000",
     },
   ];
 

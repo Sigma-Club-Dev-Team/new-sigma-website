@@ -7,15 +7,18 @@ import {
   Stack,
   useColorModeValue,
   IconButton,
+  Flex
 } from "@chakra-ui/react";
+import { FaTag} from "react-icons/fa";
+
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
-import image1 from "../../assets/short black.png";
-import image2 from "../../assets/short purple.png";
-import image3 from "../../assets/short white.png";
-import image4 from "../../assets/pants purple sigma club text with art-1.png";
-import image5 from "../../assets/pants white sigma club text with art.png";
+import image1 from "../../assets/Merch-Assets/Pants/short black.png";
+import image2 from "../../assets/Merch-Assets/Pants/short purple.png";
+import image3 from "../../assets/Merch-Assets/Pants/short white.png";
+import image4 from "../../assets/Merch-Assets/Pants/pants purple sigma club text with art-1.png";
+import image5 from "../../assets/Merch-Assets/Pants/pants white sigma club text with art.png";
 
 const CarouselCard = ({ content, interval }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,7 +66,8 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <IconButton
@@ -77,23 +81,26 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <Image
           src={content[currentIndex].imageUrl}
           layout={"fill"}
-          height="450px"
+          height="300px"
           w="100vw"
-          objectFit="cover"
         />
       </Box>
 
       <Stack bg="purple">
-        <Text textAlign="Center" color="white" py={3}>
-          {content[currentIndex].note}
-        </Text>
-
+        <Flex justifyContent="space-around" color="white" py={3}>
+          <Text transition="ease-in-out">{content[currentIndex].note}</Text>
+          <Text display="flex">
+            <FaTag />
+            {content[currentIndex].Price}
+          </Text>
+        </Flex>
         <Box p={4} display="flex" justifyContent="center">
           {Array.from({ length: totalSlides }, (_, index) => (
             <Box
@@ -127,23 +134,28 @@ const ShortsCard = () => {
     {
       imageUrl: image1,
       note: "Black Short",
+      Price: "N4,000",
     },
     {
       imageUrl: image2,
       note: "Purple Short",
+      Price: "N4,000",
     },
     {
       imageUrl: image3,
       note: "White Short",
+      Price: "N4,000",
     },
 
     {
       imageUrl: image4,
       note: "Purple Pant",
+      Price: "N4,500",
     },
     {
       imageUrl: image5,
       note: "White Pant",
+      Price: "N4,500",
     },
   ];
 
