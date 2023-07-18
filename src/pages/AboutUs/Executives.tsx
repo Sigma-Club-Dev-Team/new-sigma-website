@@ -16,20 +16,20 @@ import { Executive } from "types";
 const ExecutiveObj: Executive[] = [
   {
     id: 1,
-    name: "Loyalist Azeez Adewale",
-    post: "Deputy Chief (Band Committe Chairman)",
+    name: "Loyalist Rasheed Habeeb",
+    post: "Deputy Chief (Band Committee Chairman)",
     image: DeputyChiefJPG,
   },
   {
     id: 2,
     name: "Loyalist Babatola Benjamin",
-    post: "Chief Scribe (Secretariat Committe Chairman)",
+    post: "Chief Scribe (Secretariat Committee Chairman)",
     image: ChiefScribeJPG,
   },
   {
     id: 3,
     name: "Loyalist Eniola Moses",
-    post: "Financial Scribe (Food & Drinks Commitee Chairman)",
+    post: "Financial Scribe (Food & Drinks Committee Chairman)",
     image: FDChairJPG,
   },
   {
@@ -41,26 +41,26 @@ const ExecutiveObj: Executive[] = [
   {
     id: 5,
     name: "Loyalist Fadipe Charles",
-    post: "Publicity Committe ",
+    post: "Publicity Committee ",
     image: PublicityChairJPG,
     space: "Chairman",
   },
   {
     id: 6,
     name: "Loyalist Onifari Emmanuel",
-    post: "Sigma Treasurer (Sponsorship & Gate-keeping Committe Chairman)",
+    post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
     image: SigmaTJPG,
   },
   {
     id: 7,
     name: "Loyalist Olugbenro Fredrick",
-    post: "Investment and Special Duties Committe Chairman",
+    post: "Investment and Special Duties Committee Chairman",
     image: InvestmentChairJPG,
   },
   {
     id: 8,
     name: "Loyalist Akparanta Simeon",
-    post: "Security Committe",
+    post: "Security Committee",
     image: SecurityChairJPG,
     space: "Chairman",
   },
