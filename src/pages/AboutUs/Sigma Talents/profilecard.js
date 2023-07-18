@@ -13,12 +13,7 @@ import {
   useColorModeValue,
   chakra,
 } from "@chakra-ui/react";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -84,27 +79,26 @@ const Talents = ({
       >
         <Box>
           <Stack direction={"row"} spacing={6} mb={4} mt={4}>
-            <SocialButton label={"Linkedin"} href={LinkedIn}>
-              <FaLinkedin />
-            </SocialButton>
-
-            <SocialButton label={"Email"} href={`mailto:${Email}`}>
-              <FaEnvelope />
-            </SocialButton>
-
-            <SocialButton
-              label={"Instagram"}
-              href={Instagram}
-            >
-              <FaInstagram />
-            </SocialButton>
-
-            <SocialButton
-              label={"Twitter"}
-              href={Twitter}
-            >
-              <FaTwitter />
-            </SocialButton>
+            {LinkedIn !== "#" && (
+              <SocialButton label={"Linkedin"} href={LinkedIn}>
+                <FaLinkedin />
+              </SocialButton>
+            )}
+            {Email !== "#" && (
+              <SocialButton label={"Email"} href={`mailto:${Email}`}>
+                <FaEnvelope />
+              </SocialButton>
+            )}
+            {Instagram !== "#" && (
+              <SocialButton label={"Instagram"} href={Instagram}>
+                <FaInstagram />
+              </SocialButton>
+            )}
+            {Twitter !== "#" && (
+              <SocialButton label={"Twitter"} href={Twitter}>
+                <FaTwitter />
+              </SocialButton>
+            )}
           </Stack>
         </Box>
       </CardFooter>

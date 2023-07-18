@@ -35,7 +35,7 @@ export default function UpcomingEvents() {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Heading>Ongoing Programme</Heading>
-          <Heading pt={8} as={h3} pb={6} size={"lg"}>
+          <Heading pt={8} as="h3" pb={6} size={"lg"}>
             {upcomingEvent.title}
           </Heading>
 

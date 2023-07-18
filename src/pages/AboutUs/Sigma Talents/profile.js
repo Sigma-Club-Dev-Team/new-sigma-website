@@ -2,26 +2,36 @@ import React from "react";
 import { Container, Flex, Heading, Text, Box } from "@chakra-ui/react";
 
 import Profilecard from "./profilecard";
-import { TomiwaHeadshot, TimothyHeadshot, AfiaHeadshot } from "constants/image_assets";
+import {
+  TomiwaHeadshot,
+  TimothyHeadshot,
+  AfiaHeadshot,
+  akorede,
+  oyerohabib,
+} from "constants/image_assets";
 
 const ProfileOBJ = [
   {
     id: 1,
+    Headshot: akorede,
     name: "Adeyanju Akorede",
     skill: "Backend Developer",
-    intro: "Committe Chairman wey no dey pamper",
-    LinkedIn: "#",
-    Email: "#",
+    intro:
+      "People, Technology, Financial Analysis and LIteracy, Entrepreneurship. In no particular order, those are the pillars upon which I am building my life and career",
+    LinkedIn: "https://www.linkedin.com/in/adeyanju-akorede-588014222/",
+    Email: "adeyanju.akorede1@gmail.com",
     Twitter: "#",
     Instagram: "#",
   },
   {
     id: 2,
     name: "Oyero Habibulah",
-    skill: "Backend Developer",
-    intro: "uerhiugheugheoiufhiuheiu",
-    LinkedIn: "#",
-    Email: "#",
+    Headshot: oyerohabib,
+    skill: "Software Engineer",
+    intro:
+      "Habib is a seasoned software engineer with a passion for bringing creative ideas to life. With over 5 years of experience in web development, he brings a unique blend of technical know-how and project management skills to the table.",
+    LinkedIn: "https://www.linkedin.com/in/oyerohabib/",
+    Email: "oyerhabib@yahoo.com",
     Twitter: "#",
     Instagram: "#",
   },
@@ -45,18 +55,19 @@ const ProfileOBJ = [
     intro:
       " 400 level law student of the University of Ibadan. I am a product designer (UI/UX) and I love to cook up innovative ideas to solve human problems through technology.",
     LinkedIn: "https://www.linkedin.com/in/timothy-ilegbusi-669004237",
-    Email: "me@youremail.com",
-    Twitter: "https://twitter.com/warlordbolade?t=Klzi76yitacdBcDaQhnz_Q&s=08",
+    Email: "ilegbusitimothy@gmail.com",
+    Twitter: "https://twitter.com/warlordbolade",
     Instagram: "#",
   },
   {
     id: 5,
     Headshot: AfiaHeadshot,
     name: "Afia Victor",
-    skill: "Product Designer",
-    intro: "",
-    LinkedIn: "#",
-    Email: "#",
+    skill: "Growth Strategist (Acquisition and Retention)",
+    intro:
+      "Victor Afia is a growth marketing professional who specializes in building and optimizing growth funnels for SaaS and EdTech startups. He acquires and retains customers for brands through content marketing strategies and data-driven marketing.",
+    LinkedIn: "https://www.linkedin.com/in/victor-afia-7112b81ab/",
+    Email: "victorafia13@gmail.com",
     Twitter: "#",
     Instagram: "#",
   },
@@ -64,7 +75,7 @@ const ProfileOBJ = [
 
 export default function profile() {
   return (
-    <Container p={2} maxW={"7xl"} className="animate-bottom">
+    <Container p={2} maxW={"7xl"} mb={12} className="animate-bottom">
       <Box ml="4" p="5">
         <Heading fontSize="25px" fontWeight={"bold"}>
           Sigma Talents
