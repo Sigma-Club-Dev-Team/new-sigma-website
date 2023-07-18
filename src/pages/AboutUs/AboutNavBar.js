@@ -20,6 +20,10 @@ const EventNavBar = () => {
         <NavLink to="roll-of-honour" className="nav">
           Role of Honour
         </NavLink>
+        
+        <NavLink to="sigma-talents" className="nav">
+          Sigma Talents
+        </NavLink>
       </nav>
       <Outlet />
       <Footer />

@@ -7,17 +7,19 @@ import {
   Stack,
   useColorModeValue,
   IconButton,
+  Flex
 } from "@chakra-ui/react";
+import { FaTag } from "react-icons/fa";
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
-import image1 from "../../assets/cap_black.png";
-import image2 from "../../assets/cap_purple and gold v2.png";
-import image3 from "../../assets/cap_purple and gold.png";
-import image4 from "../../assets/cap_white.png";
-import image5 from "../../assets/pueple cap.jpg";
-import image6 from "../../assets/HatGold.png";
-import image7 from "../../assets/gold cap alternate v.jpg";
+import BlackCap from "../../assets/Merch-Assets/Caps/cap_black.png";
+import PurpleGoldCap2 from "../../assets/Merch-Assets/Caps/cap_purple and gold v2.png";
+import PurpleGold1 from "../../assets/Merch-Assets/Caps/cap_purple and gold.png";
+import WhiteCap from "../../assets/Merch-Assets/Caps/cap_white.png";
+import PurpleCap from "../../assets/Merch-Assets/Caps/pueple cap.jpg";
+import GoldHat from "../../assets/Merch-Assets/Caps/HatGold.png";
+import GoldCap from "../../assets/Merch-Assets/Caps/gold cap alternate v.jpg";
 
 const CarouselCard = ({ content, interval }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -65,7 +67,8 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <IconButton
@@ -79,23 +82,25 @@ const CarouselCard = ({ content, interval }) => {
           top="50%"
           transform="translateY(-50%)"
           zIndex="2"
-          fontSize={28}
+          fontSize={40}
+          variant="outline"
         />
 
         <Image
           src={content[currentIndex].imageUrl}
           layout={"fill"}
-          height="450px"
+          height="300px"
           w="100vw"
-          objectFit="cover"
         />
       </Box>
 
       <Stack bg="purple">
-        <Text textAlign="Center" color="white" py={3}>
-          {content[currentIndex].note}
-        </Text>
-
+        <Flex justifyContent="space-around" color="white" py={3}>
+          <Text transition="ease-in-out">{content[currentIndex].note}</Text>
+          <Text display="flex">
+            <FaTag />{content[currentIndex].Price}
+          </Text>
+        </Flex>
         <Box p={4} display="flex" justifyContent="center">
           {Array.from({ length: totalSlides }, (_, index) => (
             <Box
@@ -127,34 +132,41 @@ const CarouselCard = ({ content, interval }) => {
 const CapCard = () => {
   const content = [
     {
-      imageUrl: image1,
+      imageUrl: BlackCap,
       note: "Black Cap",
+      Price: "N5,500",
     },
     {
-      imageUrl: image2,
+      imageUrl: PurpleGoldCap2,
       note: "Purple and gold",
+      Price: "N5,500",
     },
     {
-      imageUrl: image3,
+      imageUrl: PurpleGold1,
       note: "Purple and gold v2",
+      Price: "N5,500",
     },
 
     {
-      imageUrl: image4,
+      imageUrl: WhiteCap,
       note: "White Cap",
+      Price: "N5,500",
     },
     {
-      imageUrl: image5,
+      imageUrl: PurpleCap,
       note: "Purple Cap",
+      Price: "N5,500",
     },
     {
-      imageUrl: image6,
+      imageUrl: GoldHat,
       note: "Gold Hat",
+      Price: "N5,500",
     },
 
     {
-      imageUrl: image7,
+      imageUrl: GoldCap,
       note: "Gold Cap",
+      Price: "N5,500",
     },
   ];
 

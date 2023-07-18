@@ -20,6 +20,10 @@ import SigmaTJPG from "assets/images/excos/sigma_t.jpg";
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
+import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg"
+import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg"
+import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg"
+
 
 
 export {
@@ -44,5 +48,8 @@ export {
   PublicityChairJPG,
   DeputyChiefScribeJPG,
   SigmaScholarship,
-  ScholarShipScheme
+  ScholarShipScheme,
+   TomiwaHeadshot,
+    TimothyHeadshot,
+     AfiaHeadshot
 };
