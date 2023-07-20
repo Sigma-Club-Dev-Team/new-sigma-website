@@ -18,7 +18,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 type SocialButtonProps = {
   label: string;
@@ -76,9 +76,9 @@ export default function Footer() {
           <Stack spacing={6}>
             <Heading>Sigma Club</Heading>
             <Text>
-              Oldest club in Sub-Saharan Africa. Social and Philanthropic club
-              building whole men capable and willing to make positive impacts in
-              the nation and in the world.
+              Oldest Students' Organisation in Sub-Saharan Africa. Social and
+              Philanthropic club building whole men capable and willing to make
+              positive impacts in the nation and in the world.
             </Text>
             <Box>
               <VStack spacing={3} align="stretch">
@@ -144,18 +144,24 @@ export default function Footer() {
               <Text fontSize={"sm"} pt={4}>
                 © 2023 Sigma Club. All rights reserved.
               </Text>
-               <Text
-                fontSize={"sm"}
+              <Text
+                fontSize={"lg"}
                 pt={2}
                 textAlign="center"
                 fontFamily={"body"}
                 fontWeight="bold"
               >
                 Powered By{" "}
-                <Text as="a" href="/about/sigma-talents"
-                 color={useColorModeValue("purple.600", "white")}>
+                <NavLink
+                  to={"/about/sigma-talents"}
+                  style={(isActive) => ({
+                    color: isActive ? "purple" : "purple",
+                    fontSize: isActive ? "20px" : "20px",
+                    textDecoration: isActive ? "underline" : "underline",
+                  })}
+                >
                   Sigma Talents
-                </Text>
+                </NavLink>
               </Text>
             </Stack>
           </Box>

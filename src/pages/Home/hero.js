@@ -56,9 +56,9 @@ export default function Hero() {
             align={"center"}
             fontSize="18px"
           >
-            Oldest club in Sub-Saharan Africa. Social and Philanthropic club
-            building whole men capable and willing to make positive impacts in
-            the nation and in the world.
+            Oldest Students' Organisation in Sub-Saharan Africa. Social and
+            Philanthropic club building whole men capable and willing to make
+            positive impacts in the nation and in the world.
           </Text>
           <Stack direction={"row"} gap={4}>
             <Link to={"/about/history"}>

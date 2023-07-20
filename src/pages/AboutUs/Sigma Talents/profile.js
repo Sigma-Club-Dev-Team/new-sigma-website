@@ -63,7 +63,7 @@ const ProfileOBJ = [
     id: 5,
     Headshot: AfiaHeadshot,
     name: "Afia Victor",
-    skill: "Growth Strategist (Acquisition and Retention)",
+    skill: "Growth Strategist",
     intro:
       "Victor Afia is a growth marketing professional who specializes in building and optimizing growth funnels for SaaS and EdTech startups. He acquires and retains customers for brands through content marketing strategies and data-driven marketing.",
     LinkedIn: "https://www.linkedin.com/in/victor-afia-7112b81ab/",
