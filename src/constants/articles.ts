@@ -7,7 +7,7 @@ export const ArticleArray: Article[] = [
     authorName: "Sigma Club",
     title: "Roseline Etuokwu Secondary School Quiz Competition",
     content:
-      "This also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots.  "
+      "This is also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots.  "
     + "It is the club’s believe that the secondary school students would grow to become  "
               + "University students.As such, introducing the club to them right  "
               + "from their secondary school days would guide them in manners to  "
