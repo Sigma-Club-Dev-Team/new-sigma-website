@@ -27,10 +27,10 @@ const Quiz = () => {
               fontWeight="semibold"
             >
               Roseline Etuokwu Sigma Secondary School Quiz Competition
-            </Text> 
+            </Text>
             <br />
 
-            <Text fontSize="16px" lineHeight="normal">
+            <Text fontSize="16px" lineHeight="normal" textAlign="justify">
               This also known as the Roseline Etuokwu Sigma Secondary School
               Quiz Competition is one of the philanthropic activities of the
               club to bring the club closer to the grassroots.It is the club’s
