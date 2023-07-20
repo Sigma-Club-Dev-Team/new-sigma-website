@@ -39,7 +39,7 @@ const Blogdetails = () => {
               rounded="md"
             />
 
-            <Text py="6" fontSize={"lg"} whiteSpace={"pre-line"}>{article.content.toString()}</Text>
+            <Text py="6" fontSize={"sm"} whiteSpace={"pre-line"} textAlign='justify'>{article.content.toString()}</Text>
 
             <FilterBtn />
           </Box>
