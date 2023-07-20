@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <Container maxW="8xl" m="auto" p={10}>
+      <Container maxW="8xl" m="auto" p={{ base: "0", md: "5", lg: "7" }}>
         {ArticleArray.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
