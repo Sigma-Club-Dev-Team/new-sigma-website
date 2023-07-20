@@ -29,7 +29,7 @@ const Sport = () => {
           </Text>
           <br />
 
-          <Text fontSize="16px" lineHeight="normal">
+          <Text fontSize="16px" lineHeight="normal" textAlign="justify">
             As part of the innovations and plans of the Sigma Chief, the Sigma
             Chief's Cup was birthed. The competition was for both male and
             female undergraduates of the University of Ibadan, both regular

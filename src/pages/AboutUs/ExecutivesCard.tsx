@@ -20,7 +20,7 @@ export default function ExecutivesCard({
   const { image, name, post, space } = executive;
   return (
     <div>
-      <Center py={6}>
+      <Center py={1}>
         <Box
           className="animate-bottom"
           maxW={"290px"}

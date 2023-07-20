@@ -31,7 +31,7 @@ const customDateFormat = "do 'of' MMMM";
 
 export default function UpcomingEvents() {
   return (
-    <Container mt={20} maxW={"full"} p={12} bg={"brand.purple"} color={"white"}>
+    <Container mt={20} maxW={"full"} p={{ base: '3', md: '6', lg: '9' }} bg={"brand.purple"} color={"white"}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Heading>Ongoing Programme</Heading>

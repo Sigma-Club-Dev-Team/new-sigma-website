@@ -29,7 +29,7 @@ const Health = () => {
           </Text>
           <br />
 
-          <Text fontSize="16px" lineHeight="normal">
+          <Text fontSize="16px" lineHeight="normal" textAlign="justify">
             As part of the activities of the Club for this Sigma year, we
             organized the SIGMA HEALTH OUTREACH. The health outreach was aimed
             at promoting good health practices among the student body. It

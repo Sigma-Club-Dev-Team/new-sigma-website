@@ -14,7 +14,7 @@ const Blogdetails = () => {
     <>
       <Header />
       {article ? (
-        <Flex m="auto" p={10} flexDirection={{ base: "column", md: "row" }}>
+        <Flex m="auto" p={{ base: '3', md: '5', lg: '7' }} flexDirection={{ base: "column", md: "row" }}>
           <Box flex={10}>
             <Flex pb={5}>
               <Text px={3} color="purple" fontSize="sm">
@@ -39,7 +39,7 @@ const Blogdetails = () => {
               rounded="md"
             />
 
-            <Text py="6" fontSize={"lg"} whiteSpace={"pre-line"}>{article.content.toString()}</Text>
+            <Text py="6" fontSize={"sm"} whiteSpace={"pre-line"} textAlign='justify'>{article.content.toString()}</Text>
 
             <FilterBtn />
           </Box>

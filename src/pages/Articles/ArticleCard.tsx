@@ -53,7 +53,7 @@ const Blog = ({ article }: BlogProps) => {
 
             <Heading size="md">{title}</Heading>
 
-            <Text py="2" className="article">
+            <Text py="2" className="article" textAlign='justify'>
               {content}
             </Text>
           </CardBody>

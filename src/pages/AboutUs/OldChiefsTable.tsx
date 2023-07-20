@@ -127,7 +127,7 @@ const OldChiefs = () => {
                       {id}
                     </Td>
                     <Td width="600px" textAlign="left" py={3} px={6}>
-                      {name}
+                     Old Chief {name}
                     </Td>
                     <Td width="400px" textAlign="center" py={3}>
                       {sigmaYear}

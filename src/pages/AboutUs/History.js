@@ -6,7 +6,7 @@ const History = () => {
     <div className="animate-bottom">
       <Container maxW="7xl">
         <Text px={{ base: "3", lg: "10" }} pb={24}>
-          <Text>
+          <Text textAlign="justify">
             <Text py={6} fontWeight={500} fontSize={25}>
               History of The Sigma Club.
             </Text>

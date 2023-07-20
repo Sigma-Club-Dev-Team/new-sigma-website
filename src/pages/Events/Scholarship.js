@@ -29,7 +29,7 @@ const Scholarship = () => {
           </Text>
           <br />
 
-          <Text fontSize="16px" lineHeight="normal">
+          <Text fontSize="16px" lineHeight="normal" textAlign="justify">
             This scheme awards Undergraduate and Post-graduate scholarships to
             deserving indigent students to enable them complete their education.
             Over 7 decades of the clubs existence, it has awarded several

@@ -144,6 +144,19 @@ export default function Footer() {
               <Text fontSize={"sm"} pt={4}>
                 © 2023 Sigma Club. All rights reserved.
               </Text>
+               <Text
+                fontSize={"sm"}
+                pt={2}
+                textAlign="center"
+                fontFamily={"body"}
+                fontWeight="bold"
+              >
+                Powered By{" "}
+                <Text as="a" href="/about/sigma-talents"
+                 color={useColorModeValue("purple.600", "white")}>
+                  Sigma Talents
+                </Text>
+              </Text>
             </Stack>
           </Box>
         </SimpleGrid>
