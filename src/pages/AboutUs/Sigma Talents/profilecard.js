@@ -65,7 +65,7 @@ const Talents = ({
         </Flex>
       </CardHeader>
       <CardBody>
-        <Text>{intro}</Text>
+        <Text textAlign="justify">{intro}</Text>
       </CardBody>
 
       <CardFooter
