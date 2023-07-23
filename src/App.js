@@ -18,29 +18,33 @@ import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <Routes element={<Header />}>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutNavBar />}>
-        <Route path="sigma-chief" element={<Chief />} />
-        <Route path="history" element={<History />} />
-        <Route path="executives" element={<Executives />} />
-        <Route path="roll-of-honour" element={<OldChiefs />} />
-        <Route path="old-sigmites" element={<OldSigmites />} />
-        <Route path="sigma-talents" element={<Talents />} />
-      </Route>
-      <Route path="/blog" element={<BlogPage />} />
-      <Route path="/blogs/:id" element={<Blogdetails />} />
-      <Route path="/merch" element={<MerchPage />} />
-      <Route path="/events" element={<EventNavBar />}>
-        <Route path="scholarship" element={<Scholarship />} />
-        <Route path="quiz-competition" element={<Quiz />} />
-        <Route path="health-outreach" element={<HealthOutreach />} />
-        <Route path="sport-competition" element={<SportCompetition />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes element={<Header />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutNavBar />}>
+          <Route path="sigma-chief" element={<Chief />} />
+          <Route path="history" element={<History />} />
+          <Route path="executives" element={<Executives />} />
+          <Route path="roll-of-honour" element={<OldChiefs />} />
+          <Route path="old-sigmites" element={<OldSigmites />} />
+          <Route path="sigma-talents" element={<Talents />} />
+        </Route>
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blogs/:id" element={<Blogdetails />} />
+        <Route path="/merch" element={<MerchPage />} />
+        <Route path="/events" element={<EventNavBar />}>
+          <Route path="scholarship" element={<Scholarship />} />
+          <Route path="quiz-competition" element={<Quiz />} />
+          <Route path="health-outreach" element={<HealthOutreach />} />
+          <Route path="sport-competition" element={<SportCompetition />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
