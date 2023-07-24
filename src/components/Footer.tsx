@@ -10,6 +10,7 @@ import {
   useColorModeValue,
   Heading,
   VStack,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import {
   FaInstagram,
@@ -86,10 +87,22 @@ export default function Footer() {
                   For Enquiries
                 </Heading>
                 <Text>
-                  <Text as={"b"}>Email:</Text> Sigmaclub1950@gmail.com
+                  <Text as={"b"}>Email:</Text>{" "}
+                  <ChakraLink
+                    href="mailto:sigmaclub1950@gmail.com"
+                    textDecoration={"underline"}
+                  >
+                    sigmaclub1950@gmail.com
+                  </ChakraLink>
                 </Text>
                 <Text>
-                  <Text as={"b"}>Phone Number:</Text> +234 818 254 3200
+                  <Text as={"b"}>Phone Number:</Text>{" "}
+                  <ChakraLink
+                    href="tel: +234 818 254 3200"
+                    textDecoration={"underline"}
+                  >
+                    +234 818 254 3200
+                  </ChakraLink>
                 </Text>
               </VStack>
             </Box>

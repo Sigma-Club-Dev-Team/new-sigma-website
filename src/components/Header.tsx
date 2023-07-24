@@ -15,7 +15,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link, NavLink } from "react-router-dom";
 import DonateModal from "./Donate";
-import {SigmaLogoJPG} from "constants/image_assets"
+import { SigmaLogoJPG } from "constants/image_assets";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -90,7 +90,7 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <NavLink to={navItem.href}>
-                {navItem.label}
+                <Text fontSize={"md"}>{navItem.label}</Text>
               </NavLink>
             </PopoverTrigger>
           </Popover>
@@ -104,7 +104,7 @@ const MobileNav = () => {
   return (
     <Stack bg={"white"} p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label}  {...navItem} />
+        <MobileNavItem key={navItem.label} {...navItem} />
       ))}
     </Stack>
   );

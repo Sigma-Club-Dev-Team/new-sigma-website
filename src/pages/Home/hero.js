@@ -68,7 +68,7 @@ export default function Hero() {
                 rounded={"md"}
                 color={"white"}
               >
-                KNOW ABOUT US
+                About Sigma Club
               </Button>
             </Link>
             <DonateModal />
