@@ -25,6 +25,7 @@ import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg"
 import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg"
 import akorede from "assets/Sigma-Talents/akorede.jpeg"
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg"
+import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg"
 
 
 
@@ -53,5 +54,5 @@ export {
   ScholarShipScheme,
    TomiwaHeadshot,
     TimothyHeadshot,
-     AfiaHeadshot,akorede, oyerohabib
+     AfiaHeadshot,akorede, oyerohabib, sigmachief
 };

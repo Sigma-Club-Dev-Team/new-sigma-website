@@ -8,13 +8,26 @@ import {
   AfiaHeadshot,
   akorede,
   oyerohabib,
+  sigmachief,
 } from "constants/image_assets";
 
 const ProfileOBJ = [
   {
     id: 1,
+    Headshot: sigmachief,
+    name: "Sigma Chief",
+    skill: "Software tester",
+    intro:
+      "He is a Quality Assurance Software Tester with over four years of expertise manually and assists in discovering relevant content and visual issues, participates in numerous test cases, and contributes to Tester Work with published software testing publications.",
+    LinkedIn: "https://www.linkedin.com/in/adeyanju-akorede-588014222/",
+    Email: "adeyanju.akorede1@gmail.com",
+    Twitter: "#",
+    Instagram: "#",
+  },
+  {
+    id: 2,
     Headshot: akorede,
-    name: "Adeyanju Akorede",
+    name: "Loyalist Adeyanju Akorede",
     skill: "Backend Developer",
     intro:
       "People, Technology, Financial Analysis and LIteracy, Entrepreneurship. In no particular order, those are the pillars upon which I am building my life and career",
@@ -24,8 +37,8 @@ const ProfileOBJ = [
     Instagram: "#",
   },
   {
-    id: 2,
-    name: "Oyero Habibulah",
+    id: 3,
+    name: "Loyalist Oyero Habibulah",
     Headshot: oyerohabib,
     skill: "Software Engineer",
     intro:
@@ -36,9 +49,9 @@ const ProfileOBJ = [
     Instagram: "#",
   },
   {
-    id: 3,
+    id: 4,
     Headshot: TomiwaHeadshot,
-    name: "Olasupo Tomiwa",
+    name: "Loyalist Olasupo Tomiwa",
     skill: "Front-End Developer",
     intro:
       "I develop and design visual elements and interactive features using modern technologies, which enable users to have a seamless user experience.",
@@ -48,9 +61,9 @@ const ProfileOBJ = [
     Instagram: "https://instagram.com/tomiwa_olasupo?igshid=OTk0YzhjMDVlZA==",
   },
   {
-    id: 4,
+    id: 5,
     Headshot: TimothyHeadshot,
-    name: "Ilegbusi Timothy",
+    name: "Loyalist Ilegbusi Timothy",
     skill: "Product Designer",
     intro:
       " 400 level law student of the University of Ibadan. I am a product designer (UI/UX) and I love to cook up innovative ideas to solve human problems through technology.",
@@ -60,9 +73,9 @@ const ProfileOBJ = [
     Instagram: "#",
   },
   {
-    id: 5,
+    id: 6,
     Headshot: AfiaHeadshot,
-    name: "Afia Victor",
+    name: "Loyalist Afia Victor",
     skill: "Growth Strategist",
     intro:
       "Victor Afia is a growth marketing professional who specializes in building and optimizing growth funnels for SaaS and EdTech startups. He acquires and retains customers for brands through content marketing strategies and data-driven marketing.",
@@ -81,9 +94,9 @@ export default function profile() {
           Sigma Talents
         </Heading>
 
-        <Text my={4}>
+        <Text fontSize={"md"} my={4}>
           Sigma Talents are Loyal Sigmites with diverse skills and innate
-          abilities who are commited to the growth of the club
+          abilities who are commited to the growth of the club.
         </Text>
       </Box>
       <Container my={1} maxW={"100%"}>

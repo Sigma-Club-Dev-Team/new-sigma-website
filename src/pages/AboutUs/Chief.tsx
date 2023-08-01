@@ -35,7 +35,7 @@ const Scholarship = () => {
           <Text
             mt={{ lg: "40", md: "35%", sm: "5%" }}
             display="block"
-            fontSize="18"
+            fontSize="24"
             lineHeight="normal"
             fontWeight="semibold"
           >
@@ -43,11 +43,14 @@ const Scholarship = () => {
           </Text>
           <br />
 
-          <Text fontSize="16px" lineHeight="normal">
-            He is a 400L student of Music Department, Faculty of Arts. He is a
-            business Enthusiast and a lover of music
+          <Text fontSize="16px" lineHeight="7">
+            He is a final year student of the Department of Linguistics and
+            African Languages, Faculty of Arts. He assists in discovering
+            relevant content and visual issues, participates in numerous test
+            cases, and contributes to Tester Work with published software
+            testing publications.
             <br />
-            <Text fontWeight={500} py={10}>
+            <Text fontSize="20" fontWeight={500} py={10}>
               "The Sigma Chief is the Embodiment of Sigma Traditions"
             </Text>
           </Text>

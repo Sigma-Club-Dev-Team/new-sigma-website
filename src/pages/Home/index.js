@@ -13,7 +13,7 @@ function HomePage() {
     <>
       <Header />
       <Hero />
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
       <Philantrophy />
       <Documentary />
       <Blog />

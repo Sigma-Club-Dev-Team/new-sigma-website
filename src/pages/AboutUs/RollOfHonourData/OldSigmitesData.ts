@@ -4351,6 +4351,41 @@ const OldSigmitesOBJ: OldSigmite[] = [
         "id": "870",
         "sigmaYear": "2020/2021",
         "name": "Kolawole Samuel"
+    },
+    {
+        "id": "871",
+        "sigmaYear": "2021/2022",
+        "name": "Eluwa Lucky"
+    },
+    {
+        "id": "872",
+        "sigmaYear": "2021/2022",
+        "name": "Adewale AbddulAzeez"
+    },
+    {
+        "id": "873",
+        "sigmaYear": "2021/2022",
+        "name": "Babatola Benjamen"
+    },
+    {
+        "id": "874",
+        "sigmaYear": "2021/2022",
+        "name": "Onifari Emmanuel"
+    },
+    {
+        "id": "875",
+        "sigmaYear": "2021/2022",
+        "name": "Ajah Chinedu"
+    },
+    {
+        "id": "876",
+        "sigmaYear": "2021/2022",
+        "name": "Mustapha Oluwakayode"
+    },
+    {
+        "id": "877",
+        "sigmaYear": "2021/2022",
+        "name": "Akintunde Akintayo"
     }
 
  

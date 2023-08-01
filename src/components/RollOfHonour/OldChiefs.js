@@ -332,6 +332,11 @@ const RollOfHonour = () => {
       year: "2020/2021",
       name: "Old Chief Ibrahim Olanrewaju",
     },
+    {
+      id: 67,
+      year: "2021/2022",
+      name: "Old Chief Eluwa Lucky",
+    },
   ];
 
   return (

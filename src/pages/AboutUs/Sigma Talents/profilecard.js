@@ -58,7 +58,7 @@ const Talents = ({
             <Avatar name={name} src={Headshot} size="lg" objectFit="cover" />
 
             <Box>
-              <Heading size="sm">Loyalist {name}</Heading>
+              <Heading size="sm">{name}</Heading>
               <Text>{skill}</Text>
             </Box>
           </Flex>
