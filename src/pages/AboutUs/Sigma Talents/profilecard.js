@@ -1,4 +1,3 @@
-import { LinkIcon } from "@chakra-ui/icons";
 import {
   Avatar,
   Flex,
