@@ -7,9 +7,9 @@ import {
   Stack,
   useColorModeValue,
   IconButton,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
-import { FaTag} from "react-icons/fa";
+import { FaTag } from "react-icons/fa";
 
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 
@@ -93,10 +93,10 @@ const CarouselCard = ({ content, interval }) => {
         />
       </Box>
 
-      <Stack bg="purple">
+      <Stack bg={"brand.purple"}>
         <Flex justifyContent="space-around" color="white" py={3}>
           <Text transition="ease-in-out">{content[currentIndex].note}</Text>
-          <Text display="flex">
+          <Text display="flex" alignItems={"center"} gap={"1"}>
             <FaTag />
             {content[currentIndex].Price}
           </Text>
@@ -117,7 +117,7 @@ const CarouselCard = ({ content, interval }) => {
           ))}
           <Link
             target="_blank"
-            href="https://wa.me/2349030883078?text=Hi%2C%20I%27m%20interested%20in%20the%20Sigma%20merch.%20My%20name%20is%20________"
+            href="https://wa.me/2348182056847?text=Hi%2C%20I%27m%20interested%20in%20the%20Sigma%20merch.%20My%20name%20is%20________"
           >
             <Button position="absolute" right={5} bottom={3} px={4}>
               Buy

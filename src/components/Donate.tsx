@@ -26,7 +26,7 @@ const DoanteModal = () => {
         _hover={{ bg: "brand.purple" }}
         onClick={onOpen}
       >
-        Donate to Charity
+        Donate
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>

@@ -1,3 +1,4 @@
+import { LinkIcon } from "@chakra-ui/icons";
 import {
   Avatar,
   Flex,
@@ -13,7 +14,13 @@ import {
   useColorModeValue,
   chakra,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaEnvelope,
+  FaLink,
+} from "react-icons/fa";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -49,6 +56,7 @@ const Talents = ({
   Email,
   Twitter,
   Instagram,
+  Link,
 }) => {
   return (
     <Card width="350px" variant="filled" shadow="md">
@@ -97,6 +105,11 @@ const Talents = ({
             {Twitter !== "#" && (
               <SocialButton label={"Twitter"} href={Twitter}>
                 <FaTwitter />
+              </SocialButton>
+            )}
+            {Link !== "#" && (
+              <SocialButton label={"Link"} href={Link}>
+                <FaLink />
               </SocialButton>
             )}
           </Stack>

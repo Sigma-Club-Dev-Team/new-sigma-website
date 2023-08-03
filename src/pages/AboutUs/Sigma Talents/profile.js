@@ -19,8 +19,10 @@ const ProfileOBJ = [
     skill: "Software tester",
     intro:
       "He is a Quality Assurance Software Tester with over four years of expertise manually and assists in discovering relevant content and visual issues, participates in numerous test cases, and contributes to Tester Work with published software testing publications.",
-    LinkedIn: "https://www.linkedin.com/in/adeyanju-akorede-588014222/",
-    Email: "adeyanju.akorede1@gmail.com",
+    LinkedIn:
+      "https://www.linkedin.com/in/moses-%E1%BA%B9ni%E1%BB%8Dl%C3%A1-88758517a",
+    Email: "jenyoeniola@gmail.com",
+    Link: "https://testerwork.com/author/ana/",
     Twitter: "#",
     Instagram: "#",
   },
@@ -34,6 +36,7 @@ const ProfileOBJ = [
     LinkedIn: "https://www.linkedin.com/in/adeyanju-akorede-588014222/",
     Email: "adeyanju.akorede1@gmail.com",
     Twitter: "#",
+    Link: "#",
     Instagram: "#",
   },
   {
@@ -45,6 +48,7 @@ const ProfileOBJ = [
       "Habib is a seasoned software engineer with a passion for bringing creative ideas to life. With over 5 years of experience in web development, he brings a unique blend of technical know-how and project management skills to the table.",
     LinkedIn: "https://www.linkedin.com/in/oyerohabib/",
     Email: "oyerhabib@yahoo.com",
+    Link: "https://oyerohabib.com/",
     Twitter: "#",
     Instagram: "#",
   },
@@ -59,6 +63,7 @@ const ProfileOBJ = [
     Email: "tomiwaolasupo@gmail.com",
     Twitter: "https://twitter.com/Tomiwaolasupo_",
     Instagram: "https://instagram.com/tomiwa_olasupo?igshid=OTk0YzhjMDVlZA==",
+    Link: "#",
   },
   {
     id: 5,
@@ -70,6 +75,7 @@ const ProfileOBJ = [
     LinkedIn: "https://www.linkedin.com/in/timothy-ilegbusi-669004237",
     Email: "ilegbusitimothy@gmail.com",
     Twitter: "https://twitter.com/warlordbolade",
+    Link: "#",
     Instagram: "#",
   },
   {
@@ -82,6 +88,7 @@ const ProfileOBJ = [
     LinkedIn: "https://www.linkedin.com/in/victor-afia-7112b81ab/",
     Email: "victorafia13@gmail.com",
     Twitter: "#",
+    Link: "#",
     Instagram: "#",
   },
 ];
@@ -111,6 +118,7 @@ export default function profile() {
               Email,
               Twitter,
               Instagram,
+              Link,
             }) => (
               <Profilecard
                 Headshot={Headshot}
@@ -118,6 +126,7 @@ export default function profile() {
                 skill={skill}
                 intro={intro}
                 Email={Email}
+                Link={Link}
                 LinkedIn={LinkedIn}
                 Twitter={Twitter}
                 Instagram={Instagram}
