@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -20,7 +21,7 @@ const EventNavBar = () => {
         <NavLink to="roll-of-honour" className="nav">
           Role of Honour
         </NavLink>
-        
+
         <NavLink to="sigma-talents" className="nav">
           Sigma Talents
         </NavLink>

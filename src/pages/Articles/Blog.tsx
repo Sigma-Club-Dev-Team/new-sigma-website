@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "@chakra-ui/react";
 import ArticleCard from "./ArticleCard";
 import Header from "../../components/Header";

@@ -1,6 +1,6 @@
+import React from "react";
 import { Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import HonSigmiteCard from "./HonSigmiteCard";
-import React from "react";
 import { HonourarySigmite } from "../../types";
 import * as ImageAssets from "constants/image_assets";
 

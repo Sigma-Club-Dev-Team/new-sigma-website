@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -29,9 +30,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/0LQKoj3XXgo"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
             <SwiperSlide>
@@ -40,9 +41,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/nfZghgRm4Po"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
             <SwiperSlide>
@@ -51,9 +52,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/OUkCR0rhjwA"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
             <SwiperSlide>
@@ -62,9 +63,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/pvEXAjHgdOs"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
             <SwiperSlide>
@@ -73,9 +74,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/zo0hv9tKTF0"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
             <SwiperSlide>
@@ -84,9 +85,9 @@ export default function Documentary() {
                 height="315"
                 src="https://www.youtube.com/embed/wt0WmqYwNPE"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
+                style={{ border: 0 }}
               ></iframe>
             </SwiperSlide>
           </Swiper>
