@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Stack,
   Flex,
@@ -64,7 +65,7 @@ export default function Hero() {
             <Link to={"/about/history"}>
               <Button
                 bg={"brand.gold"}
-                _hover={"brand.gold"}
+                _hover={{ bg: "brand.gold" }}
                 rounded={"md"}
                 color={"white"}
               >
