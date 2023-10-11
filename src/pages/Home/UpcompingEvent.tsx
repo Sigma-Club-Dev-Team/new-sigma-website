@@ -13,7 +13,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { GuestLuncheon } from "constants/image_assets";
-import { format, isAfter, isBefore, isWithinInterval } from "date-fns";
+import { isAfter, isBefore, isWithinInterval } from "date-fns";
 import React from "react";
 import { UpcomingEvent } from "types";
 
@@ -31,7 +31,7 @@ const upcomingEvent: UpcomingEvent = {
   startDate: new Date("2023-10-25")
 };
 
-const customDateFormat = "do 'of' MMMM";
+// const customDateFormat = "do 'of' MMMM";
 
 const getStatus = () => {
   const today = new Date();
