@@ -16,18 +16,17 @@ import FDChairJPG from "assets/images/excos/f&d_chair.jpg";
 import InvestmentChairJPG from "assets/images/excos/investment.jpg";
 import SecurityChairJPG from "assets/images/excos/security_chair.jpg";
 import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpeg";
-import SigmaTJPG from "assets/images/excos/sigma_t.jpg"; 
+import SigmaTJPG from "assets/images/excos/sigma_t.jpg";
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
-import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg"
-import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg"
-import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg"
-import akorede from "assets/Sigma-Talents/akorede.jpeg"
-import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg"
-import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg"
-
-
+import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
+import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
+import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg";
+import akorede from "assets/Sigma-Talents/akorede.jpeg";
+import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
+import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg";
+import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
 
 export {
   HsLamidoSanusiJPG,
@@ -52,7 +51,11 @@ export {
   DeputyChiefScribeJPG,
   SigmaScholarship,
   ScholarShipScheme,
-   TomiwaHeadshot,
-    TimothyHeadshot,
-     AfiaHeadshot,akorede, oyerohabib, sigmachief
+  TomiwaHeadshot,
+  TimothyHeadshot,
+  AfiaHeadshot,
+  akorede,
+  oyerohabib,
+  sigmachief,
+  GuestLuncheon,
 };

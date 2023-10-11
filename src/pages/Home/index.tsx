@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Hero from "./Hero";
-// import UpcomingEvents from "./UpcompingEvent";
+import UpcomingEvent from "./UpcompingEvent";
 import Documentary from "./Documentary";
 import Philantrophy from "./Philantrophy";
 import Blog from "./TopStories";
@@ -14,7 +14,7 @@ function HomePage() {
     <>
       <Header />
       <Hero />
-      {/* <UpcomingEvents /> */}
+      <UpcomingEvent />
       <Philantrophy />
       <Documentary />
       <Blog />
