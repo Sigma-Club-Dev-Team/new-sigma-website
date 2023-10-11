@@ -15,7 +15,7 @@ import DeputyChiefJPG from "assets/images/excos/deputy_chief.jpeg";
 import FDChairJPG from "assets/images/excos/f&d_chair.jpg";
 import InvestmentChairJPG from "assets/images/excos/investment.jpg";
 import SecurityChairJPG from "assets/images/excos/security_chair.jpg";
-import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpg";
+import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpeg";
 import SigmaTJPG from "assets/images/excos/sigma_t.jpg"; 
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
