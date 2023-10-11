@@ -19,7 +19,7 @@ const EventNavBar = () => {
           Executives/Committes
         </NavLink>
         <NavLink to="roll-of-honour" className="nav">
-          Role of Honour
+          Roll of Honour
         </NavLink>
 
         <NavLink to="sigma-talents" className="nav">
