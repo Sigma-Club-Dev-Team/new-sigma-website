@@ -1,6 +1,11 @@
+import React from "react";
 import { AspectRatio } from "@chakra-ui/react";
 
-const Video = ({ src }) => {
+type Props = {
+  src: string
+}
+
+const Video = ({ src }: Props) => {
   if (!src) {
     return null; // If src is not provided, don't render the component
   }
