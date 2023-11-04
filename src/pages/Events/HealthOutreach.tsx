@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "@chakra-ui/react";
 import health from "../../assets/health.jpg";
 import { Flex } from "@chakra-ui/react";
