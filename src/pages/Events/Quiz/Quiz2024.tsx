@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container } from "@chakra-ui/react";
+import { Button, Container, Link } from "@chakra-ui/react";
 import { SecSchoolQuizGroupJPG } from "../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
@@ -7,6 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Header from "components/Header";
 import { FiChevronLeft, FiArrowRight } from "react-icons/fi";
 import Footer from "components/Footer";
+import ExternalLinks from "constants/external_links";
 
 const Quiz = () => {
   return (
@@ -16,17 +17,17 @@ const Quiz = () => {
       <Container maxW="7xl" className="animate-bottom">
         <Flex justify={"space-between"} marginTop={"32px"}>
           <BackButton />
-          <Text
+          <Link
+            // Hidden till the competition stages are built
+            visibility={"hidden"}
             fontWeight={600}
             fontSize={"20px"}
             lineHeight={"30px"}
             color={"brand.purple"}
             textDecoration={"underline"}
-            as={"a"}
-            _hover={{cursor: "pointer"}}
           >
             View Competition Stages
-          </Text>
+          </Link>
         </Flex>
         <Text
           mt={15}
@@ -93,25 +94,23 @@ const Quiz = () => {
           </Box>
         </Flex>
 
-        <Button
-          display={{ base: "inline-flex" }}
-          fontSize={"18px"}
-          lineHeight={"27px"}
-          fontWeight={500}
-          color={"white"}
-          bg={"brand.purple"}
-          gap={"8px"}
-          alignItems={"center"}
-          padding={"15px "}
-          _hover={{ bg: "brand.purple" }}
-          as={"a"}
-          href="https://forms.gle/vRhYyVyGZXjbEATi6"
-          target="_blank"
-          onClick={() => {}}
-        >
-          <Text>Register Your School</Text>
-          <FiArrowRight />
-        </Button>
+        <Link href={ExternalLinks.SigmaRegGoogleForm}>
+          <Button
+            display={{ base: "inline-flex" }}
+            fontSize={"18px"}
+            lineHeight={"27px"}
+            fontWeight={500}
+            color={"white"}
+            bg={"brand.purple"}
+            gap={"8px"}
+            alignItems={"center"}
+            padding={"15px"}
+            _hover={{ bg: "brand.purple" }}
+          >
+            <Text>Register Your School</Text>
+            <FiArrowRight />
+          </Button>
+        </Link>
       </Container>
 
       <Footer />
