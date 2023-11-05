@@ -24,7 +24,7 @@ export default function ExecutivesCard({
         <Box
           className="animate-bottom"
           maxW={"290px"}
-          height={320}
+          height={370}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"md"}
@@ -34,9 +34,9 @@ export default function ExecutivesCard({
           <Box bg={"gray.100"} mb={4} pos={"relative"}>
             <Image
               src={image}
-              fit={"fill"}
+             objectFit='cover'
               width="288px"
-              height="200px"
+              height="250px"
             />
           </Box>
           <Stack p={3} mb={4}>
