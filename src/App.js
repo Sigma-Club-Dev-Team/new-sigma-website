@@ -11,7 +11,7 @@ import OldChiefs from "./pages/AboutUs/OldChiefsTable";
 import OldSigmites from "./pages/AboutUs/OldSigmitesTable";
 
 import Scholarship from "./pages/Events/Scholarship";
-import Quiz from "./pages/Events/QuizStages2024";
+import Quiz from "./pages/Events/Quiz";
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
