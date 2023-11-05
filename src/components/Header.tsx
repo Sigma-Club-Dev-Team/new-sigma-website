@@ -53,7 +53,7 @@ export default function Header() {
 
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
             <Link to="/">
-              <Image src={SigmaLogoJPG} w={140} alt="Sigma logo" />
+              <Image src={SigmaLogoJPG} w={120} h={100} alt="Sigma logo" />
             </Link>
 
             <Flex

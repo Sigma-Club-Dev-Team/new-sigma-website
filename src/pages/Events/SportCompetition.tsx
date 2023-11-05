@@ -1,5 +1,6 @@
+import React from "react";
 import { Container } from "@chakra-ui/react";
-import { SigmaChiefCupJPG } from "../../constants/image_assets.ts";
+import { SigmaChiefCupJPG } from "../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import Video from "../../components/Video";
 import { Text, Box, Image } from "@chakra-ui/react";

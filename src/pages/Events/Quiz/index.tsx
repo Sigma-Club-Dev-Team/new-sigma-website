@@ -1,8 +1,9 @@
+import React from "react";
 import { Container } from "@chakra-ui/react";
-import { SecSchoolQuizGroupJPG } from "../../constants/image_assets.ts";
+import { SecSchoolQuizGroupJPG } from "../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
-import Video from "../../components/Video";
+import Video from "../../../components/Video";
 
 const Quiz = () => {
   return (

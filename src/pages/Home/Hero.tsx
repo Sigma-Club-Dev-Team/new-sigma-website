@@ -2,7 +2,6 @@ import React from "react";
 import {
   Stack,
   Flex,
-  Button,
   Text,
   VStack,
   useBreakpointValue,
@@ -11,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import heroBg from "../../assets/hero-bg.jpg";
 import DonateModal from "../../components/Donate";
+import CTAButton from "components/CTAButton";
 
 export default function Hero() {
   return (
@@ -61,21 +61,23 @@ export default function Hero() {
             Philanthropic club building whole men capable and willing to make
             positive impacts in the nation and in the world.
           </Text>
-          <Stack direction={"row"} gap={4}>
+          <Stack
+            direction={"row"}
+            width={"100%"}
+            justify={"space-between"}
+            fontSize={"20px"}
+            lineHeight={"30px"}
+          >
             <Link to={"/about/history"}>
-              <Button
-                bg={"brand.gold"}
-                _hover={{ bg: "brand.gold" }}
-                rounded={"md"}
-                color={"white"}
-              >
-                About Sigma Club
-              </Button>
+              <CTAButton bg="#FFFFFFCC" textColor="brand.purple">
+                KNOW ABOUT US
+              </CTAButton>
             </Link>
-            <DonateModal />
+            <DonateModal width={"250px"} height={"60px"} text="DONATE" />
           </Stack>
         </Stack>
       </VStack>
     </Flex>
   );
 }
+

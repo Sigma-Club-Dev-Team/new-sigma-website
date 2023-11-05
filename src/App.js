@@ -12,6 +12,7 @@ import OldSigmites from "./pages/AboutUs/OldSigmitesTable";
 
 import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
+import Quiz2024 from "./pages/Events/Quiz/Quiz2024"
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
@@ -43,6 +44,7 @@ function App() {
           <Route path="health-outreach" element={<HealthOutreach />} />
           <Route path="sport-competition" element={<SportCompetition />} />
         </Route>
+        <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
       </Routes>
     </>
   );
