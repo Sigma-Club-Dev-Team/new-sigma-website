@@ -23,9 +23,8 @@ export default function ExecutivesCard({
       <Center py={1}>
         <Box
           className="animate-bottom"
-          maxW={"290px"}
+          width={"280px"}
           height={320}
-          w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"md"}
           rounded={"md"}
@@ -34,8 +33,8 @@ export default function ExecutivesCard({
           <Box bg={"gray.100"} mb={4} pos={"relative"}>
             <Image
               src={image}
-              fit={"fill"}
-              width="288px"
+              fit={"scale-down"}
+              width={"100%"}
               height="200px"
             />
           </Box>
