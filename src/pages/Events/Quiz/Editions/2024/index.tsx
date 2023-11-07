@@ -18,13 +18,12 @@ const Quiz = () => {
         <Flex justify={"space-between"} marginTop={"32px"}>
           <BackButton />
           <Link
-            // Hidden till the competition stages are built
-            visibility={"hidden"}
             fontWeight={600}
             fontSize={"20px"}
             lineHeight={"30px"}
             color={"brand.purple"}
             textDecoration={"underline"}
+            href="/events/quiz-competition/2024/stages"
           >
             View Competition Stages
           </Link>
