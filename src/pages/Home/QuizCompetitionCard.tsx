@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import CTAButton from "components/CTAButton";
-// import ExternalLinks from "constants/external_links";
+import ExternalLinks from "constants/external_links";
 import React from "react";
 // import { appColors } from "theme";
 
@@ -50,7 +50,7 @@ const QuizCompetitionCard = () => {
                 View more Details
               </Link> */}
             </Flex>
-            <Link href="https://docs.google.com/forms/d/1a0MB5AdFWWp8AfjL_aKq8sZVizLjxOMV6JSsc7Hk9xw">
+            <Link href="https://docs.google.com/forms/d/1a0MB5AdFWWp8AfjL_aKq8sZVizLjxOMV6JSsc7Hk9xw" ExternalLinks>
               <CTAButton>REGISTER NOW</CTAButton>
             </Link>
           </Flex>
