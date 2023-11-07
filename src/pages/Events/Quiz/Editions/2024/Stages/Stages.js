@@ -32,7 +32,13 @@ const StagesContainer = () => {
 
   return (
     <Container maxW="7xl" className="animate-bottom">
-      <Flex flexDirection={{ base: "column", md: "row" }}>
+      {/* // We hide the section for previous editions till those contents are ready */}
+      <Flex
+        flexDirection={{
+          base: "column",
+          // md: "row"
+        }}
+      >
         <Box flex={{ base: "none", md: 7 }}>
           <BackButton />
 
@@ -69,26 +75,47 @@ const StagesContainer = () => {
           </Tabs>
         </Box>
 
-        <Divider my={4} bg="#1C1C1CB2" height="100vh" mr={2} px={0} borderWidth="2px" orientation="vertical" display={{base: 'none', md: 'block'}} />
+        {/* // We hide the section for previous editions till those contents are ready */}
+        <Divider
+          my={4}
+          bg="#1C1C1CB2"
+          height="100vh"
+          mr={2}
+          px={0}
+          borderWidth="2px"
+          orientation="vertical"
+          display={{ base: "none", md: "block" }}
+          visibility={"hidden"}
+        />
 
-        <Box flex={{ base: "none", md: 3 }} my={5} pl={2} fontWeight='500'>
-         <Text >Previous version of the competition</Text>
+        <Box
+          flex={{ base: "none", md: 3 }}
+          my={5}
+          pl={2}
+          fontWeight="500"
+          visibility={"hidden"}
+        >
+          <Text>Previous version of the competition</Text>
 
-         <Box py={4}>
-          <Text>2023 South-West region secondary schools quiz competition</Text>
-          <Text textDecoration='underline' textAlign='right' color='#8F19E7'>View</Text>
-         </Box>
+          <Box py={4}>
+            <Text>
+              2023 South-West region secondary schools quiz competition
+            </Text>
+            <Text textDecoration="underline" textAlign="right" color="#8F19E7">
+              View
+            </Text>
+          </Box>
 
-         <Box py={4}>
-          <Text>2023 South-West region secondary schools quiz competition</Text>
-          <Text textDecoration='underline' textAlign='right'color='#8F19E7'>View</Text>
-         </Box>
-
-
+          <Box py={4}>
+            <Text>
+              2023 South-West region secondary schools quiz competition
+            </Text>
+            <Text textDecoration="underline" textAlign="right" color="#8F19E7">
+              View
+            </Text>
+          </Box>
         </Box>
       </Flex>
-
-     
     </Container>
   );
 };
