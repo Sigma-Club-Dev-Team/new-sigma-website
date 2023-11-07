@@ -69,7 +69,7 @@ export default function Hero() {
             lineHeight={"30px"}
           >
             <Link to={"/about/history"}>
-              <CTAButton bg="#FFFFFFCC" textColor="brand.purple">
+              <CTAButton bg="#FFFFFFCC" _hover={{bg: "#FFFFFFCC", color: "white"}} textColor="brand.purple">
                 KNOW ABOUT US
               </CTAButton>
             </Link>
