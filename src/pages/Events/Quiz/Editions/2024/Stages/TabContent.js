@@ -1,11 +1,5 @@
 import React from "react";
 import {
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
   Text,
   Box,
   Button,

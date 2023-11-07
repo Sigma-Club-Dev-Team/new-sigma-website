@@ -24,7 +24,7 @@ export default function Hero() {
       <VStack
         w={"full"}
         justify={"center"}
-        px={useBreakpointValue({ base: 4, md: 8 })}
+        p={{ base: 4, md: 8 }}
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
         <Stack maxW={"2xl"} align={"center"} spacing={6}>
@@ -62,9 +62,11 @@ export default function Hero() {
             positive impacts in the nation and in the world.
           </Text>
           <Stack
-            direction={"row"}
+            direction={{ base: "column", md: "row"}}
             width={"100%"}
             justify={"space-between"}
+            gap={"6px"}
+            align={"center"}
             fontSize={"20px"}
             lineHeight={"30px"}
           >
