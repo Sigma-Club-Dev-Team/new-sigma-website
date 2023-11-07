@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import CTAButton from "components/CTAButton";
-import ExternalLinks from "constants/external_links";
+// import ExternalLinks from "constants/external_links";
 import React from "react";
 // import { appColors } from "theme";
 
