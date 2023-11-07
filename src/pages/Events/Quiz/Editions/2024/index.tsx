@@ -3,11 +3,11 @@ import { Button, Container, Link } from "@chakra-ui/react";
 import { SecSchoolQuizGroupJPG } from "../../../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
-import { useLocation, useNavigate } from "react-router-dom";
 import Header from "components/Header";
-import { FiChevronLeft, FiArrowRight } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import Footer from "components/Footer";
 import ExternalLinks from "constants/external_links";
+import BackButton from "components/BackButton";
 
 const Quiz = () => {
   return (
@@ -117,28 +117,5 @@ const Quiz = () => {
   );
 };
 
-const BackButton = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-  return (
-    <Button
-      leftIcon={<FiChevronLeft color="#333333" />}
-      padding={"0"}
-      margin={"0"}
-      backgroundColor={"transparent"}
-      _hover={{bg: "transparent"}}
-      onClick={() => {
-        if (location.key !== "default") {
-          navigate(-1);
-        }
-        navigate("/");
-      }}
-    >
-      <Text fontSize={"16px"} lineHeight={"24px"} color={"#1C1C1CB2"}>
-        Back
-      </Text>
-    </Button>
-  );
-};
 
 export default Quiz;

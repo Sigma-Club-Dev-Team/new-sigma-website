@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Container, Heading, Text, Icon, Box, Flex, Divider } from "@chakra-ui/react";
-import { FaChevronLeft } from "react-icons/fa";
+import { Container, Heading, Text, Box, Flex, Divider } from "@chakra-ui/react";
 import { Tabs, TabList, Tab, TabPanel, TabPanels } from "@chakra-ui/react";
 import TabContent from "./TabContent"; 
 import stagesData from "./StagesData"; 
+import BackButton from "components/BackButton";
 
 
 function StageTab({ index, selectedTab, handleTabChange, label }) {
@@ -34,9 +34,7 @@ const StagesContainer = () => {
     <Container maxW="7xl" className="animate-bottom">
       <Flex flexDirection={{ base: "column", md: "row" }}>
         <Box flex={{ base: "none", md: 7 }}>
-          <Text fontSize="md">
-            <Icon as={FaChevronLeft} mt={2} /> Back
-          </Text>
+          <BackButton />
 
           <Heading py={4} fontSize="24px">
             Competition Stages
