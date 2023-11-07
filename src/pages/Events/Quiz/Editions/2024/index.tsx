@@ -1,5 +1,11 @@
 import React from "react";
-import { Button, Container, Link } from "@chakra-ui/react";
+import {
+  Button,
+  Container,
+  Link,
+  ListItem,
+  OrderedList,
+} from "@chakra-ui/react";
 import { SecSchoolQuizGroupJPG } from "../../../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
@@ -50,18 +56,17 @@ const Quiz = () => {
           </Box>
           <Box py={{ lg: "8", md: "4", sm: "4" }}>
             <Text fontSize="16px" lineHeight="24px" textAlign="justify">
-              The is also known as the Roseline Etuokwu Sigma Secondary School
-              Quiz Competition is one of the philanthropic activities of the
-              club to bring the club closer to the grassroots. It is the club’s
-              believe that the secondary school students would grow to become
-              University students. As such, introducing the club to them right
-              from their secondary school days would guide them in manners to
-              act and way of life to live as a student of higher institutions.
-              During this competition, moral and educational knowledge are
-              displayed and students are being trained in manners to become
-              whole human and stand “for all that is pure”. This we believe
-              would keep the students on the right track before entering the
-              university.
+              The Roseline Etuokwu Sigma Secondary School Quiz Competition is
+              one of the philanthropic activities of the club to bring the club
+              closer to the grassroots. It is the club’s believe that the
+              secondary school students would grow to become University
+              students. As such, introducing the club to them right from their
+              secondary school days would guide them in manners to act and way
+              of life to live as a student of higher institutions. During this
+              competition, moral and educational knowledge are displayed and
+              students are being trained in manners to become whole human and
+              stand “for all that is pure”. This we believe would keep the
+              students on the right track before entering the university.
               <br />
               <br />
               <p>
@@ -74,19 +79,60 @@ const Quiz = () => {
                 schools, students, and teachers for their participation.
               </p>
               <br />
+              <p>
+                {" "}
+                For the 2024 edition Sigma Club is the quiz
+                competition for all available secondary schools across all
+                states in Nigeria. The areas of concentration are Mathematics,
+                English Language, and General Knowledge.
+              </p>
+              <br />
+              <br />
+              <p>
+                {" "}
+                <Text as="i" fontWeight={600}>
+                  STAGES OF THE COMPETITION
+                  <OrderedList>
+                    <ListItem>
+                      First or State stage : A winner will emerge from each of
+                      the 37 states (including FCT)
+                    </ListItem>
+                    <ListItem>
+                      Second or Regional stage : State winners in each region
+                      will meet to determine the regional winner.
+                    </ListItem>
+                    <ListItem>
+                      Final or National stage : The six regional winners will
+                      meet in Ibadan on the Children's day (May 27, 2024).
+                    </ListItem>
+                    <ListItem> State winners : N100,000 each (x 37).</ListItem>
+                  </OrderedList>
+                </Text>
+              </p>
+              <br />
               <br />
               <p>
                 {" "}
                 <Text as="i" fontWeight={600}>
                   Prices to be won
-                  <br />
-                  Overall winner - N5,000,000; Overall 1st Runner Up -
-                  N3,000,000;
-                  <br />
-                  Overall 2nd Runner up - N2,000,000 State Champions - N150,000;
-                  <br />
-                  Regional Champions - N500,000 Including various Electronic
-                  appliances, notebooks, textbooks and gadgets to students.
+                  <OrderedList>
+                    <ListItem>State winners : N100,000 each (x 37).</ListItem>
+                    <ListItem>Regional winners : N250,000 each (x 6)</ListItem>
+                    <ListItem>
+                      National 6th Position : N100,000 (Consolation Price)
+                    </ListItem>
+                    <ListItem>
+                      National 5th Position : N100,000 (Consolation Price)
+                    </ListItem>
+                    <ListItem>
+                      National 4th Position : N100,000 (Consolation Price)
+                    </ListItem>
+                    <ListItem>National 3rd Position : N500,000</ListItem>
+                    <ListItem>National 2nd Position : N750,000</ListItem>
+                    <ListItem>
+                      National 1st Position : (champion) N1,000,000
+                    </ListItem>
+                  </OrderedList>
                 </Text>
               </p>
             </Text>
@@ -116,6 +162,5 @@ const Quiz = () => {
     </div>
   );
 };
-
 
 export default Quiz;
