@@ -62,7 +62,7 @@ export default function Hero() {
             positive impacts in the nation and in the world.
           </Text>
           <Stack
-            direction={{ base: "column", sm: "row"}}
+            direction={{ base: "column", md: "row"}}
             width={"100%"}
             justify={"space-between"}
             gap={"6px"}
