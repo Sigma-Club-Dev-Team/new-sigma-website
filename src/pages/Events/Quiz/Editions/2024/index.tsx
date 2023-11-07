@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Link } from "@chakra-ui/react";
-import { SecSchoolQuizGroupJPG } from "../../../constants/image_assets";
+import { SecSchoolQuizGroupJPG } from "../../../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";

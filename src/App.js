@@ -12,7 +12,7 @@ import OldSigmites from "./pages/AboutUs/OldSigmitesTable";
 
 import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
-import Quiz2024 from "./pages/Events/Quiz/Quiz2024"
+import Quiz2024 from "./pages/Events/Quiz/Editions/2024"
 import HealthOutreach from "./pages/Events/HealthOutreach";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
