@@ -2,6 +2,7 @@ import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import CTAButton from "components/CTAButton";
 import ExternalLinks from "constants/external_links";
 import React from "react";
+import { Link as RRLink } from "react-router-dom";
 import { appColors } from "theme";
 
 const QuizCompetitionCard = () => {
@@ -54,7 +55,8 @@ const QuizCompetitionCard = () => {
             <Link
               color={appColors.brand.purple}
               textDecoration={"underline"}
-              href="/events/quiz-competition/2024"
+              to="/events/quiz-competition/2024"
+              as={RRLink}
             >
               View more Details
             </Link>

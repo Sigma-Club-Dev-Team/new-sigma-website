@@ -2,16 +2,17 @@ import React from "react";
 import {
   Button,
   Container,
-  Link,
+  Link as ChakraLink,
   ListItem,
   OrderedList,
 } from "@chakra-ui/react";
+import {Link as RRLink} from 'react-router-dom'
 import { SecSchoolQuizGroupJPG } from "../../../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
 import Header from "components/Header";
-import { FiArrowRight } from "react-icons/fi";
 import Footer from "components/Footer";
+import { FiArrowRight } from "react-icons/fi";
 import ExternalLinks from "constants/external_links";
 import BackButton from "components/BackButton";
 
@@ -23,16 +24,17 @@ const Quiz = () => {
       <Container maxW="7xl" className="animate-bottom">
         <Flex justify={"space-between"} marginTop={"32px"}>
           <BackButton />
-          <Link
+          <ChakraLink
             fontWeight={600}
             fontSize={"20px"}
             lineHeight={"30px"}
             color={"brand.purple"}
             textDecoration={"underline"}
-            href="/events/quiz-competition/2024/stages"
+            to="/events/quiz-competition/2024/stages"
+            as={RRLink}
           >
             View Competition Stages
-          </Link>
+          </ChakraLink>
         </Flex>
         <Text
           mt={15}
@@ -81,10 +83,10 @@ const Quiz = () => {
               <br />
               <p>
                 {" "}
-                For the 2024 edition Sigma Club is the quiz
-                competition for all available secondary schools across all
-                states in Nigeria. The areas of concentration are Mathematics,
-                English Language, and General Knowledge.
+                For the 2024 edition Sigma Club is the quiz competition for all
+                available secondary schools across all states in Nigeria. The
+                areas of concentration are Mathematics, English Language, and
+                General Knowledge.
               </p>
               <br />
               <br />
@@ -139,7 +141,7 @@ const Quiz = () => {
           </Box>
         </Flex>
 
-        <Link href={ExternalLinks.SigmaRegGoogleForm}>
+        <ChakraLink href={ExternalLinks.SigmaRegGoogleForm}>
           <Button
             display={{ base: "inline-flex" }}
             fontSize={"18px"}
@@ -155,7 +157,7 @@ const Quiz = () => {
             <Text>Register Your School</Text>
             <FiArrowRight />
           </Button>
-        </Link>
+        </ChakraLink>
       </Container>
 
       <Footer />
