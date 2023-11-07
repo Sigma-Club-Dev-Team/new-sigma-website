@@ -50,7 +50,7 @@ const QuizCompetitionCard = () => {
                 View more Details
               </Link> */}
             </Flex>
-            <Link href="https://docs.google.com/forms/d/1a0MB5AdFWWp8AfjL_aKq8sZVizLjxOMV6JSsc7Hk9xw" ExternalLinks>
+            <Link href="https://docs.google.com/forms/d/1a0MB5AdFWWp8AfjL_aKq8sZVizLjxOMV6JSsc7Hk9xw" isExternal>
               <CTAButton>REGISTER NOW</CTAButton>
             </Link>
           </Flex>
