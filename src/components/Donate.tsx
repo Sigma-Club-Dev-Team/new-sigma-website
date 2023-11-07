@@ -13,7 +13,13 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const DoanteModal = () => {
+type Props = {
+  width?: string;
+  height?: string;
+  text?: string
+}
+
+const DoanteModal = ({width, height, text="Donate"}: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -24,9 +30,11 @@ const DoanteModal = () => {
         color={"white"}
         bg={"brand.purple"}
         _hover={{ bg: "brand.purple" }}
+        width={width}
+        height={height}
         onClick={onOpen}
       >
-        Donate
+        {text}
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>

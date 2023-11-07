@@ -66,12 +66,11 @@ const ExecutiveObj: Executive[] = [
 
 export default function Executives() {
   return (
-    <Container p={2} maxW={"7xl"}>
-      <Heading fontSize="30px" fontWeight={"bold"}>
-        The Executives
-      </Heading>
-
-      <Container my={1} maxW={"100%"}>
+    <Container maxW={"7xl"}>
+      <Container my={"25px"} maxW={"100%"}>
+        <Heading fontSize="30px" fontWeight={"bold"} marginBottom={"25px"}>
+          The Executives
+        </Heading>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           {ExecutiveObj.map((executive) => (
             <ExecutivesCard executive={executive} />

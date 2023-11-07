@@ -8,12 +8,14 @@ import Philantrophy from "./Philantrophy";
 import Blog from "./TopStories";
 import HonourarySigmites from "./HonSigmites";
 import MerchHero from "./MerchHero";
+import QuizCompetitionCard from "./QuizCompetitionCard";
 
 function HomePage() {
   return (
     <>
       <Header />
       <Hero />
+      <QuizCompetitionCard />
       <UpcomingEvent />
       <Philantrophy />
       <Documentary />

@@ -2,7 +2,7 @@ import React from "react";
 import { AspectRatio } from "@chakra-ui/react";
 
 type Props = {
-  src: string
+  src?: string
 }
 
 const Video = ({ src }: Props) => {
