@@ -13,7 +13,7 @@ const QuizCompetitionCard = () => {
       >
         <Flex flexDirection={"column"} color={"#1C1C1C"} fontWeight={600}>
           <Text fontSize={"40px"} lineHeight={"60px"}>
-            2024 Roseline Etuokwu quiz competition
+            2023 Sigma Admission Interview
           </Text>
 
           <Text
@@ -23,13 +23,7 @@ const QuizCompetitionCard = () => {
             color={"#1C1C1CB2"}
             marginTop={"20px"}
           >
-            Sigma Club is organising another quiz competition for all available
-            secondary schools across all states in Nigeria. All schools
-            interested are expected register for this competition following the
-            link below. There are various prices to be won and other
-            beneficiaries.
-            <br />
-            There are various stages to the competition.
+            This is to inform all male undergraduate students of university of University of Ibadan that Sigma Club admission is currently ongoing. <br/> <br/> Kindly fill in your application now.
           </Text>
 
           <Flex
@@ -45,18 +39,18 @@ const QuizCompetitionCard = () => {
               lineHeight="24px"
             >
               <Flex gap={"100px"}>
-                <Text>Date: 10th of May - 30th of May</Text>
-                <Text>Venue: Various Locations</Text>
+                <Text>Deadline: Friday, 18th November, 2023.</Text>
+{/*                 <Text>Venue: Various Locations</Text> */}
               </Flex>
-              <Link
+{/*               <Link
                 color={appColors.brand.purple}
                 textDecoration={"underline"}
                 href="/events/quiz-competition/2024"
               >
                 View more Details
-              </Link>
+              </Link> */}
             </Flex>
-            <Link href={ExternalLinks.SigmaRegGoogleForm} isExternal={true}>
+            <Link href="https://docs.google.com/forms/d/1a0MB5AdFWWp8AfjL_aKq8sZVizLjxOMV6JSsc7Hk9xw">
               <CTAButton>REGISTER NOW</CTAButton>
             </Link>
           </Flex>
