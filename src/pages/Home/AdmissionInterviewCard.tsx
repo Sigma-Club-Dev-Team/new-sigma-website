@@ -21,8 +21,8 @@ const AdmissionInterviewCard = () => {
           color={"#1C1C1CB2"}
           marginTop={"20px"}
         >
-          This is to inform all male undergraduate students of university of
-          University of Ibadan that Sigma Club admission is currently ongoing.{" "}
+          This is to inform all male undergraduate students of the
+          The University of Ibadan that Sigma Club admission is currently ongoing.{" "}
           <br /> <br /> Kindly fill in your application now.
         </Text>
 
@@ -39,7 +39,7 @@ const AdmissionInterviewCard = () => {
             lineHeight="24px"
           >
             <Flex gap={"100px"}>
-              <Text>Deadline: Friday, 18th November, 2023.</Text>
+              <Text>Deadline: 20th November, 2023.</Text>
             </Flex>
           </Flex>
           <Link
