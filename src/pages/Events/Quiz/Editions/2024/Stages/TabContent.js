@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  Text,
-  Box,
-  Button,
-  Link,
-} from "@chakra-ui/react";
+import { Text, Box, Button, Link } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
+import ExternalLinks from "../../../../../../constants/external_links";
 
 function TabContent({ title, content, buttonText, tableData }) {
   return (
@@ -50,7 +46,7 @@ function TabContent({ title, content, buttonText, tableData }) {
         </Table>
       </div>
       */}
-      <Link href="https://www.ola.com">
+      <Link href={ExternalLinks.SigmaRegGoogleForm} target="_blank">
         <Button
           rightIcon={<FaArrowRight />}
           fontWeight={600}

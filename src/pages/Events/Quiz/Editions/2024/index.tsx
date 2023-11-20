@@ -142,7 +142,7 @@ const Quiz = () => {
           </Box>
         </Flex>
 
-        <ChakraLink href={ExternalLinks.SigmaRegGoogleForm}>
+        <ChakraLink href={ExternalLinks.SigmaRegGoogleForm} target="_blank">
           <Button
             display={{ base: "inline-flex" }}
             fontSize={"18px"}

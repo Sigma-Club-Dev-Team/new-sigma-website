@@ -118,7 +118,7 @@ const CarouselCard = ({ content, interval }) => {
           ))}
           <Link
             target="_blank"
-            href="https://wa.me/2348182056847?text=Hi%2C%20I%27m%20interested%20in%20the%20Sigma%20merch.%20My%20name%20is%20________"
+            href="https://wa.me/2349037469878?text=Hi%2C%20I%27m%20interested%20in%20the%20Sigma%20merch.%20My%20name%20is%20________"
           >
             <Button position="absolute" right={5} bottom={3} px={4}>
               Buy
