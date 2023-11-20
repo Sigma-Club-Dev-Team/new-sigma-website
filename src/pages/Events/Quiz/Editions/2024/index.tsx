@@ -6,7 +6,7 @@ import {
   ListItem,
   OrderedList,
 } from "@chakra-ui/react";
-import {Link as RRLink} from 'react-router-dom'
+import { Link as RRLink } from "react-router-dom";
 import { SecSchoolQuizGroupJPG } from "../../../../../constants/image_assets";
 import { Flex } from "@chakra-ui/react";
 import { Text, Box, Image } from "@chakra-ui/react";
@@ -52,6 +52,7 @@ const Quiz = () => {
               mt={"18px"}
               borderRadius="15px"
               width={{ base: "100%", sm: "100%" }}
+              maxHeight={"lg"}
               src={SecSchoolQuizGroupJPG}
               alt="presentation of prize"
             />
