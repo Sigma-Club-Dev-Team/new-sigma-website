@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import {
-  // DeputyChiefJPG,
+  DeputyChiefJPG,
   // ChiefScribeJPG,
   FDChairJPG,
-  // SigmaTJPG,
+  SigmaTJPG,
   InvestmentChairJPG,
   SecurityChairJPG,
   PublicityChairJPG,
@@ -19,7 +19,7 @@ const ExecutiveObj: Executive[] = [
     id: 1,
     name: "Loyalist Olalekan Michael",
     post: "Deputy Chief (Band Committee Chairman)",
-    image: DEFAULT,
+    image: DeputyChiefJPG,
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const ExecutiveObj: Executive[] = [
     id: 6,
     name: "Loyalist Abdulazeez Yusuff",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
-    image: DEFAULT,
+    image: SigmaTJPG,
   },
   {
     id: 7,
