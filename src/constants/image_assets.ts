@@ -13,6 +13,7 @@ import SecSchoolQuizWinnerJPG from "assets/quizCompetition.jpg";
 import ChiefScribeJPG from "assets/images/excos/chief_scribe.jpeg";
 import DeputyChiefJPG from "assets/images/excos/deputy_chief.jpeg";
 import FDChairJPG from "assets/images/excos/f&d_chair.jpg";
+import DEFAULT from "assets/images/excos/default.jpg";
 import InvestmentChairJPG from "assets/images/excos/investment.jpg";
 import SecurityChairJPG from "assets/images/excos/security_chair.jpg";
 import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpeg";
@@ -26,6 +27,7 @@ import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg";
 import akorede from "assets/Sigma-Talents/akorede.jpeg";
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
 import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg";
+import FredHeadshot from "assets/Sigma-Talents/FredHeadshot.jpeg";
 import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
 
 export {
@@ -58,4 +60,6 @@ export {
   oyerohabib,
   sigmachief,
   GuestLuncheon,
+  DEFAULT,
+  FredHeadshot
 };

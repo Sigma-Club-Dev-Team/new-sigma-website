@@ -9,6 +9,7 @@ import {
   akorede,
   oyerohabib,
   sigmachief,
+  FredHeadshot,
 } from "constants/image_assets";
 
 const ProfileOBJ = [
@@ -90,6 +91,19 @@ const ProfileOBJ = [
     Twitter: "#",
     Link: "#",
     Instagram: "#",
+  },
+  {
+    id: 7,
+    Headshot: FredHeadshot,
+    name: "Loyalist Olugbenro Fredrick",
+    skill: "Video editor- Motion designer",
+    intro:
+      "I am a video editor and creative director. I specialize in editing videos for social media and youtube, and directing creative projects. I lead a teamed of skilled individuals who possess the services I require to successfully undergo whatever visual project ahead of us. I am a proficient user of Adobe After Effects, Adobe Premiere Pro, Davinci resolve and VSDC editor",
+    LinkedIn: "https://www.linkedin.com/in/fredthe03/",
+    Email: "olugbenrofredrick@gmail.com",
+    Twitter: "https://twitter.com/fredthe03/",
+    Link: "fredth03.vzy.io",
+    Instagram: "https://www.instagram.com/fredthe03/",
   },
 ];
 

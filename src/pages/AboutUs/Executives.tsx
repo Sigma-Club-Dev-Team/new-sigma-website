@@ -2,29 +2,30 @@ import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import {
-  DeputyChiefJPG,
-  ChiefScribeJPG,
+  // DeputyChiefJPG,
+  // ChiefScribeJPG,
   FDChairJPG,
-  SigmaTJPG,
+  // SigmaTJPG,
   InvestmentChairJPG,
   SecurityChairJPG,
   PublicityChairJPG,
   DeputyChiefScribeJPG,
+  DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
 
 const ExecutiveObj: Executive[] = [
   {
     id: 1,
-    name: "Loyalist Adesoji Ezekiel",
+    name: "Loyalist Olalekan Michael",
     post: "Deputy Chief (Band Committee Chairman)",
-    image: DeputyChiefJPG,
+    image: DEFAULT,
   },
   {
     id: 2,
-    name: "Loyalist Abiola Joshua",
+    name: "Loyalist Adegoke Faith",
     post: "Chief Scribe (Secretariat Committee Chairman)",
-    image: ChiefScribeJPG,
+    image: DEFAULT,
   },
   {
     id: 3,
@@ -46,9 +47,9 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 6,
-    name: "Loyalist Ibosiola Oluwatobi",
+    name: "Loyalist Abdulazeez Yusuff",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
-    image: SigmaTJPG,
+    image: DEFAULT,
   },
   {
     id: 7,
