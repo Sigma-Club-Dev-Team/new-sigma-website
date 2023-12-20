@@ -10,7 +10,7 @@ import SigmaChiefCupJPG from "assets/images/events/sigma_chief_cup.jpg";
 import ScholarShipScheme from "assets/images/events/ScholarShipScheme.jpeg";
 import SigmaHealthOutreachJPG from "assets/images/events/sigma_health_outreach.jpg";
 import SecSchoolQuizWinnerJPG from "assets/quizCompetition.jpg";
-// import ChiefScribeJPG from "assets/images/excos/chief_scribe.jpeg";
+import ChiefScribeJPG from "assets/images/excos/chief_scribe.jpg";
 import DeputyChiefJPG from "assets/images/excos/deputy_chief.jpeg";
 import FDChairJPG from "assets/images/excos/f&d_chair.jpg";
 import DEFAULT from "assets/images/excos/default.jpg";
@@ -42,7 +42,7 @@ export {
   SecSchoolQuizGroupJPG,
   SigmaChiefCupJPG,
   SigmaHealthOutreachJPG,
-  // ChiefScribeJPG,
+  ChiefScribeJPG,
   DeputyChiefJPG,
   FDChairJPG,
   InvestmentChairJPG,
