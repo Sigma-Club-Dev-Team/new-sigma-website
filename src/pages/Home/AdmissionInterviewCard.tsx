@@ -8,6 +8,7 @@ const AdmissionInterviewCard = () => {
       width={"100%"}
       shadow={"10px 10px 20px 5px #00000040"}
       padding={"75px 50px"}
+      display={"none"}
     >
       <Flex flexDirection={"column"} color={"#1C1C1C"} fontWeight={600}>
         <Text fontSize={"40px"} lineHeight={"60px"}>
