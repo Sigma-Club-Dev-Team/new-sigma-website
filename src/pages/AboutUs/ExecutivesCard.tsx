@@ -14,9 +14,7 @@ type ExecutivesCardProps = {
   executive: Executive;
 };
 
-export default function ExecutivesCard({
-  executive
-}: ExecutivesCardProps) {
+export default function ExecutivesCard({ executive }: ExecutivesCardProps) {
   const { image, name, post, space } = executive;
   return (
     <div>
@@ -32,12 +30,7 @@ export default function ExecutivesCard({
           overflow={"hidden"}
         >
           <Box bg={"gray.100"} mb={4} pos={"relative"}>
-            <Image
-              src={image}
-             objectFit='cover'
-              width="288px"
-              height="250px"
-            />
+            <Image src={image} objectFit="fill" width="288px" height="250px" />
           </Box>
           <Stack p={3} mb={4}>
             <Heading
