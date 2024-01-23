@@ -5,11 +5,11 @@ import Profilecard from "./profilecard";
 import {
   TomiwaHeadshot,
   TimothyHeadshot,
-  AfiaHeadshot,
+  // AfiaHeadshot,
   akorede,
   oyerohabib,
   sigmachief,
-  FredHeadshot,
+  // FredHeadshot,
 } from "constants/image_assets";
 
 const ProfileOBJ = [
@@ -79,32 +79,32 @@ const ProfileOBJ = [
     Link: "#",
     Instagram: "#",
   },
-  {
-    id: 6,
-    Headshot: AfiaHeadshot,
-    name: "Loyalist Afia Victor",
-    skill: "Growth Strategist",
-    intro:
-      "Victor Afia is a growth marketing professional who specializes in building and optimizing growth funnels for SaaS and EdTech startups. He acquires and retains customers for brands through content marketing strategies and data-driven marketing.",
-    LinkedIn: "https://www.linkedin.com/in/victor-afia-7112b81ab/",
-    Email: "victorafia13@gmail.com",
-    Twitter: "#",
-    Link: "#",
-    Instagram: "#",
-  },
-  {
-    id: 7,
-    Headshot: FredHeadshot,
-    name: "Loyalist Olugbenro Fredrick",
-    skill: "Video editor- Motion designer",
-    intro:
-      "I am a video editor and creative director. I specialize in editing videos for social media and youtube, and directing creative projects. I lead a teamed of skilled individuals who possess the services I require to successfully undergo whatever visual project ahead of us. I am a proficient user of Adobe After Effects, Adobe Premiere Pro, Davinci resolve and VSDC editor",
-    LinkedIn: "https://www.linkedin.com/in/fredthe03/",
-    Email: "olugbenrofredrick@gmail.com",
-    Twitter: "https://twitter.com/fredthe03/",
-    Link: "fredth03.vzy.io",
-    Instagram: "https://www.instagram.com/fredthe03/",
-  },
+  // {
+  //   id: 6,
+  //   Headshot: AfiaHeadshot,
+  //   name: "Loyalist Afia Victor",
+  //   skill: "Growth Strategist",
+  //   intro:
+  //     "Victor Afia is a growth marketing professional who specializes in building and optimizing growth funnels for SaaS and EdTech startups. He acquires and retains customers for brands through content marketing strategies and data-driven marketing.",
+  //   LinkedIn: "https://www.linkedin.com/in/victor-afia-7112b81ab/",
+  //   Email: "victorafia13@gmail.com",
+  //   Twitter: "#",
+  //   Link: "#",
+  //   Instagram: "#",
+  // },
+  // {
+  //   id: 7,
+  //   Headshot: FredHeadshot,
+  //   name: "Loyalist Olugbenro Fredrick",
+  //   skill: "Video editor- Motion designer",
+  //   intro:
+  //     "I am a video editor and creative director. I specialize in editing videos for social media and youtube, and directing creative projects. I lead a teamed of skilled individuals who possess the services I require to successfully undergo whatever visual project ahead of us. I am a proficient user of Adobe After Effects, Adobe Premiere Pro, Davinci resolve and VSDC editor",
+  //   LinkedIn: "https://www.linkedin.com/in/fredthe03/",
+  //   Email: "olugbenrofredrick@gmail.com",
+  //   Twitter: "https://twitter.com/fredthe03/",
+  //   Link: "fredth03.vzy.io",
+  //   Instagram: "https://www.instagram.com/fredthe03/",
+  // },
 ];
 
 export default function profile() {
