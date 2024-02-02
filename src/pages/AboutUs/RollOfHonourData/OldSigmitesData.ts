@@ -4386,6 +4386,11 @@ const OldSigmitesOBJ: OldSigmite[] = [
         "id": "877",
         "sigmaYear": "2021/2022",
         "name": "Akintunde Akintayo"
+    },
+    {
+        "id": "878",
+        "sigmaYear": "2021/2022",
+        "name": "Dauda Wale Japhet"
     }
 
  
