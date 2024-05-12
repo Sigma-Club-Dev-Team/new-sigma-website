@@ -29,7 +29,15 @@ import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
 import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg";
 import FredHeadshot from "assets/Sigma-Talents/FredHeadshot.jpeg";
 import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
-
+import Participants from "assets/HealthOutreach2024/Participants.png";
+import BloodTest from "assets/HealthOutreach2024/Blood sugar test.png";
+import CounsellingSession from "assets/HealthOutreach2024/CounsellingSession.png";
+import RegisteringAttendees from "assets/HealthOutreach2024/RegisteringAttendees.png";
+import JajaDirector from "assets/HealthOutreach2024/JajaDirector.png";
+import OSGani from "assets/HealthOutreach2024/OS Gani.png";
+import GroupPicture from "assets/HealthOutreach2024/GroupPicture.png";
+import SigmaChief from 'assets/HealthOutreach2024/SigmaChief.png';
+import Volunteers from 'assets/HealthOutreach2024/Volunteers.png'
 export {
   HsLamidoSanusiJPG,
   HsWaleBabalakin,
@@ -61,5 +69,14 @@ export {
   sigmachief,
   GuestLuncheon,
   DEFAULT,
-  FredHeadshot
+  FredHeadshot,
+  Participants,
+  BloodTest,
+  CounsellingSession,
+  GroupPicture,
+  JajaDirector,
+  OSGani,
+  RegisteringAttendees,
+  SigmaChief,
+  Volunteers
 };
