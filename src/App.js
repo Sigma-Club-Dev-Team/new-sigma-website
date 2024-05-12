@@ -14,7 +14,8 @@ import Scholarship from "./pages/Events/Scholarship";
 import Quiz from "./pages/Events/Quiz";
 import Quiz2024 from "./pages/Events/Quiz/Editions/2024"
 import Quiz2024Stages from "./pages/Events/Quiz/Editions/2024/Stages";
-import HealthOutreach from "./pages/Events/HealthOutreach";
+import HealthOutreach2024 from "./pages/Events/HealthOutreach/HealthOutreach2024";
+import HealthOutreach2023 from "./pages/Events/HealthOutreach/HeathOutreach2023";
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
@@ -42,7 +43,8 @@ function App() {
         <Route path="/events" element={<EventNavBar />}>
           <Route path="scholarship" element={<Scholarship />} />
           <Route path="quiz-competition" element={<Quiz />} />
-          <Route path="health-outreach" element={<HealthOutreach />} />
+          <Route path="health-outreach/2024" element={<HealthOutreach2024 />} />
+          <Route path="health-outreach/2023" element={<HealthOutreach2023 />} />
           <Route path="sport-competition" element={<SportCompetition />} />
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
