@@ -1,35 +1,40 @@
 import React from "react";
-import { Container, Divider } from "@chakra-ui/react";
-import health from "../../../assets/health.jpg";
+import { Container } from "@chakra-ui/react";
+
 import { Flex } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+
 import Video from "../../../components/Video";
 import { Text, Box, Image } from "@chakra-ui/react";
 import {
   Participants,
+  Participants2,
   BloodTest,
   CounsellingSession,
+  CounsellingSession2,
   GroupPicture,
   JajaDirector,
   OSGani,
   RegisteringAttendees,
   SigmaChief,
   Volunteers,
+  Volunteers2,
 } from "../../../constants/image_assets";
+import SideBar from "./RightBar";
 
 const Health = () => {
   return (
     <Container maxW="7xl" className="animate-bottom">
       <Flex direction={{ base: "column", md: "row" }}>
-        <Box flex={{ base: "none", md: 8 }}>
+        <Box flex={{ base: "none", md: 7.5 }}>
           <Flex direction={{ base: "column", md: "column" }}>
             <Box p={{ lg: "8", md: "4", sm: "4" }}>
               <Text
                 mt={0}
                 display="block"
-                fontSize="xlg"
+                textAlign={"center"}
+                fontSize="3xl"
                 lineHeight="normal"
-                fontWeight="semibold"
+                fontWeight="700"
               >
                 Sigma Health Outreach
               </Text>
@@ -51,17 +56,41 @@ const Health = () => {
                   these checks or had no means and access to quality and
                   periodic medical check up.
                 </p>
-                <Box py={4} mb={6}>
-                  <Image
-                    mt={4}
-                    borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
-                    src={Participants}
-                    alt="Picture showing one of the participants during medical check"
-                  />
-                  <figcaption>
-                    MEDICAL TESTS GOING ON AT THE OUTREACH .
-                  </figcaption>
+                <Box>
+                  <Box
+                    pt={4}
+                    mb={0}
+                    display={{ sm: "block", md: "flex" }}
+                    mx={"auto"}
+                  >
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={Participants2}
+                        alt="Picture showing one of the participants during medical check"
+                        textAlign={"center"}
+                      />
+                    </Box>
+
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={Participants}
+                        alt="Picture showing one of the participants during medical check"
+                        textAlign={"center"}
+                      />
+                    </Box>
+                  </Box>
+                  <Box mb={"6"}>
+                    {" "}
+                    <Text fontWeight={"500"} textAlign={"center"}>
+                      Medical test going on at the outreach
+                    </Text>
+                  </Box>
                 </Box>
                 <p>
                   On the early hours of the D-Day, canopies were already erected
@@ -69,17 +98,23 @@ const Health = () => {
                   attendees, volunteers and members of the club as they waited
                   their turn for the various medical checks available.
                 </p>
-                <Box py={8}>
+                <Box
+                  py={8}
+                  textAlign={"center"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={BloodTest}
                     alt="Picture showing one of the participants during medical check"
+                    mx={"auto"}
                   />
-                   <figcaption>
-                   Blood sugar test at the health outreach 
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    Blood sugar test at the health outreach
+                  </Text>
                 </Box>
                 <br />
                 <p>
@@ -94,17 +129,18 @@ const Health = () => {
                   pressure,blood glucose levels,dental health and several other
                   routine checks.
                 </p>
-                <Box py={8}>
+                <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={RegisteringAttendees}
                     alt="Picture showing Loyal Sigmites registering attendees"
+                    mx={"auto"}
                   />
-                   <figcaption>
-                  Loyal Sigmites registering attendees
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    Loyal Sigmites registering attendees
+                  </Text>
                 </Box>
                 <br />
                 <p>
@@ -120,17 +156,44 @@ const Health = () => {
                   felt really good to talk to someone about nothing and
                   everything at the same time,to be honest,it was a huge relief'
                 </p>
-                <Box py={8}>
-                  <Image
-                    mt={4}
-                    borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
-                    src={CounsellingSession}
-                    alt=" "
-                  />
-                   <figcaption>
-                   Ongoing therapy/counselling session at the Health outreach
-                  </figcaption>
+               
+                <Box>
+                  <Box
+                    pt={4}
+                    mb={0}
+                    display={{ sm: "block", md: "flex" }}
+                    mx={"auto"}
+                  >
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={CounsellingSession}
+                        alt="Counselling session"
+                        textAlign={"center"}
+                      />
+                    </Box>
+
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={CounsellingSession2}
+                        alt="Counselling session"
+                        textAlign={"center"}
+                      />
+                    </Box>
+                 
+                  
+                </Box>
+                <Box mb={"6"}>
+                    {" "}
+                    <Text fontWeight={"500"} textAlign={"center"}>
+                    Ongoing therapy/counselling session at the Health outreach
+                    </Text>
+                  </Box>
                 </Box>
                 <br />
                 <p>
@@ -139,17 +202,44 @@ const Health = () => {
                   clinic,Asido Campus Network and volunteers were engaged to
                   carry out the tests and counselling.
                 </p>
-                <Box py={8}>
-                  <Image
-                    mt={4}
-                    borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
-                    src={Volunteers}
-                    alt="picture showing the volunteers at the health outreach"
-                  />
-                   <figcaption>
-                   VOLUNTEERS AT THE HEALTH OUTEACH
-                  </figcaption>
+                <Box>
+
+                  <Box
+                    pt={4}
+                    mb={0}
+                    display={{ sm: "block", md: "flex" }}
+                    mx={"auto"}
+                  >
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={Volunteers}
+                        alt="Counselling session"
+                        textAlign={"center"}
+                      />
+                    </Box>
+
+                    <Box textAlign={"center"} px={4}>
+                      <Image
+                        mt={4}
+                        borderRadius="lg"
+                        width={{ sm: "100%", md: "100%" }}
+                        src={Volunteers2}
+                        alt="Counselling session"
+                        textAlign={"center"}
+                      />
+                    </Box>
+                 
+                  
+                </Box>
+                <Box mb={"6"}>
+                    {" "}
+                    <Text fontWeight={"500"} textAlign={"center"}>
+                   Volunteers at the Health Outreach
+                    </Text>
+                  </Box>
                 </Box>
                 <br />
                 <p>
@@ -168,30 +258,33 @@ const Health = () => {
                   Services over the years hereby making the Outreach of mutual
                   benefit.
                 </p>
-                <Box py={8}>
+                <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={JajaDirector}
                     alt="Image showing Dr Ajav Aderonke"
+                    mx={"auto"}
                   />
-                    <figcaption>
-                    An interview with Dr Ajav Aderonke, director of UHS,Jaja clinic.
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    An interview with Dr Ajav Aderonke, director of UHS,Jaja
+                    clinic.
+                  </Text>
                 </Box>
                 <br />
-                <Box py={8}>
+                <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={SigmaChief}
                     alt="SIGMA CHIEF IN AN INTERVIEW SESSION WITH NEWSMEN FROM NTA IBADAN."
+                    mx={"auto"}
                   />
-                   <figcaption>
-                   SIGMA CHIEF IN AN INTERVIEW SESSION WITH NEWSMEN FROM NTA IBADAN.
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    Sigma Chief in an interview session with newsmen from NTA Ibadan.
+                  </Text>
                 </Box>
                 <br />
                 <p>
@@ -203,17 +296,19 @@ const Health = () => {
                   years the Health Outreach would include more sophisticated
                   tests and care.
                 </p>
-                <Box py={8}>
+                <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={OSGani}
                     alt="One of the beneficiary of the health outreach"
+                    mx={"auto"}
                   />
-                   <figcaption>
-                   Sigma Chief in discuss with Old Sigmite Dr Gani Adeniran at the outreach
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    Sigma Chief in discuss with Old Sigmite Dr Gani Adeniran at
+                    the outreach
+                  </Text>
                 </Box>
                 <br />
                 <p>
@@ -225,17 +320,18 @@ const Health = () => {
                   student from the Faculty of Agriculture was glad. 'I
                   definitely need therapy after these exams' he said.
                 </p>
-                <Box py={8}>
+                <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
                     borderRadius="lg"
-                    width={{ base: "100%", sm: "100%" }}
+                    width={{ sm: "100%", md: "60%" }}
                     src={GroupPicture}
                     alt="Group picture"
+                    mx={"auto"}
                   />
-                   <figcaption>
-                   SIGMA CHIEF,OLD SIGMITE GANI ADEDIRAN AND LOYAL SIGMITES IN ATTENDANCE 
-                  </figcaption>
+                  <Text fontWeight={"500"}>
+                    Sigma Chief, Old Sigmite Gani Adediran and Loyal Sigmites in attendance.
+                  </Text>
                 </Box>
                 <br />
                 <p>
@@ -253,37 +349,13 @@ const Health = () => {
           </div>
         </Box>
 
-        <Divider
-          my={10}
-          bg="#1C1C1CB2"
-          height="200vh"
-          mr={2}
-          px={0}
-          borderWidth="1px"
-          orientation="vertical"
-          display={{ base: "none", md: "block" }}
-        />
-
         <Box
-          flex={{ base: "none", md: 2 }}
+          flex={{ base: "none", md: 2.5 }}
           mt={4}
           p={{ lg: "10", md: "3", sm: "4" }}
           fontWeight="500"
         >
-          <Text>Previous edition of the Health Outreach</Text>
-
-          <Box py={4}>
-            <Text>2023 Sigma Health Outreach</Text>
-            <Link to="/events/health-outreach/2023">
-              <Text
-                textDecoration="underline"
-                textAlign="right"
-                color="#8F19E7"
-              >
-                View
-              </Text>
-            </Link>
-          </Box>
+          <SideBar />
         </Box>
       </Flex>
     </Container>

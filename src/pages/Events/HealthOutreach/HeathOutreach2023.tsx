@@ -4,28 +4,37 @@ import health from "../../../assets/health.jpg";
 import { Flex } from "@chakra-ui/react";
 import Video from "../../../components/Video";
 import { Text, Box, Image } from "@chakra-ui/react";
+import SideBar from "./RightBar";
 
 const Health = () => {
   return (
     <Container maxW="7xl" className="animate-bottom">
-      <Flex direction={{ base: "column", md: "row" }}>
-        <Box flex="4.5" color="white" p={{ lg: "10", md: "3", sm: "4" }}>
+
+<Flex direction={{ base: "column", md: "row" }}>
+        <Box flex={{ base: "none", md: 7.5 }}>
+
+
+
+      <Box>
+     
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
           <Image
             mt={6}
             borderRadius="lg"
-            width={{ base: "100%", sm: "100%" }}
+            width={{ sm: "100%", md: "65%" }}
             src={health}
             alt="presentation of prize"
           />
         </Box>
-        <Box flex="5.5" p={{ lg: "8", md: "4", sm: "4" }}>
-          <Text
-            mt={6}
-            display="block"
-            fontSize="xlg"
-            lineHeight="normal"
-            fontWeight="semibold"
-          >
+        <Box flex="6.5" p={{ lg: "4", md: "4", sm: "4" }}>
+        <Text
+                mt={0}
+                display="block"
+                textAlign={"center"}
+                fontSize="3xl"
+                lineHeight="normal"
+                fontWeight="700"
+              >
             Sigma Health Outreach
           </Text>
           <br />
@@ -77,11 +86,24 @@ const Health = () => {
             </p>
           </Text>
         </Box>
-      </Flex>
+     
 
       <div>
         <Video src={"https://www.youtube.com/shorts/Hzb47AEIMkM"} />
       </div>
+      </Box>
+      </Box>
+
+      <Box
+          flex={{ base: "none", md: 2.5 }}
+          mt={4}
+          p={{ lg: "6", md: "3", sm: "4" }}
+          fontWeight="500"
+        >
+          <SideBar/>
+        </Box>
+      </Flex>
+      
     </Container>
   );
 };

@@ -17,7 +17,7 @@ const PhilantrophyObj: PhilantrophyActivity[] = [
     name: "Sigma Health Outreach.",
     description:
       "The health outreach was aimed at promoting good health practices among the student body. It provided an opportunity for students to get free medical checkups, health screenings, scaling and polishing and access to health education resources. Our objectives for the Health Outreach event were clear. We aimed to offer scaling and polishing services to enhance oral hygiene; provide free HIV and syphilis screening to promote sexual health awareness; conduct mental health assistance and conduct vital signs checks to identify potential health concerns and offer guidance.",
-    link: "events/health-outreach",
+    link: "events/health-outreach/2024",
   },
   {
     image: ImageAssets.ScholarShipScheme,
