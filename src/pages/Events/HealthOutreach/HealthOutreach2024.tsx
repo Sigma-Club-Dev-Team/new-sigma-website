@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
-
 import { Flex } from "@chakra-ui/react";
 
 import Video from "../../../components/Video";
