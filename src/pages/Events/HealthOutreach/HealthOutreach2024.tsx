@@ -41,20 +41,20 @@ const Health = () => {
               <br />
 
               <Text fontSize="16px" lineHeight="normal" textAlign="justify">
-                For the second time in a long time,the University of Ibadan
-                Student Union Building (S.U.B) car park served a purpose other
-                than transportation.
+                <br />
                 <br />
                 <p>
-                  20th of April,2024,the University of Ibadan community
-                  witnessed another Health Outreach from the most prestigious
-                  Sigma Club,UI. The program was designed to bring free medical
-                  care to members of the University community many of whom were
-                  oblivious of their health status. The outreach was carried out
-                  in a central location so all could access it easily. It was
-                  important especially for people who usually had no time for
-                  these checks or had no means and access to quality and
-                  periodic medical check up.
+                  For the second time in a long time,the University of Ibadan
+                  Student Union Building (S.U.B) car park served a purpose other
+                  than transportation. On the 20th of April,2024, the University
+                  of Ibadan community witnessed another Health Outreach from the
+                  most prestigious Sigma Club,UI. The program was designed to
+                  bring free medical care to members of the University community
+                  many of whom were oblivious of their health status. The
+                  outreach was carried out in a central location so all could
+                  access it easily. It was important especially for people who
+                  usually had no time for these checks or had no means and
+                  access to quality and periodic medical check up.
                 </p>
                 <Box>
                   <Box
@@ -87,7 +87,11 @@ const Health = () => {
                   </Box>
                   <Box mb={"6"}>
                     {" "}
-                    <Text fontWeight={"500"} textAlign={"center"}>
+                    <Text
+                      fontWeight={"400"}
+                      textAlign={"center"}
+                      fontSize={"12px"}
+                    >
                       Medical test going on at the outreach
                     </Text>
                   </Box>
@@ -112,7 +116,7 @@ const Health = () => {
                     alt="Picture showing one of the participants during medical check"
                     mx={"auto"}
                   />
-                  <Text fontWeight={"500"}>
+                  <Text fontWeight={"400"} fontSize={"12px"}>
                     Blood sugar test at the health outreach
                   </Text>
                 </Box>
@@ -122,12 +126,9 @@ const Health = () => {
                   given a slip which would contain personal details such as
                   age,sex,weight,height,body mass index (BMI) . As they moved
                   from stand to stand the results from each test was recorded on
-                  the sheets.
-                </p>
-                <p>
-                  The stands were arranged to carry out checks on blood
-                  pressure,blood glucose levels,dental health and several other
-                  routine checks.
+                  the sheets. The stands were arranged to carry out checks on
+                  blood pressure,blood glucose levels,dental health and several
+                  other routine checks.
                 </p>
                 <Box py={8} textAlign={"center"}>
                   <Image
@@ -138,7 +139,7 @@ const Health = () => {
                     alt="Picture showing Loyal Sigmites registering attendees"
                     mx={"auto"}
                   />
-                  <Text fontWeight={"500"}>
+                  <Text fontWeight={"400"} fontSize={"12px"}>
                     Loyal Sigmites registering attendees
                   </Text>
                 </Box>
@@ -150,13 +151,13 @@ const Health = () => {
                   health experts and Asido Campus Network. The mental health
                   check recorded stunning number of attendance which was quite
                   surprising considering the supposed mental stability within
-                  the University community. In an interview with Kehinde,a part
+                  the University community. In an interview with Kehinde, a part
                   3 student of the Physics department,he expressed gratitude and
                   his happiness in the Mental health check. In his words 'It
                   felt really good to talk to someone about nothing and
-                  everything at the same time,to be honest,it was a huge relief'
+                  everything at the same time, to be honest, it was a huge
+                  relief'
                 </p>
-               
                 <Box>
                   <Box
                     pt={4}
@@ -185,25 +186,28 @@ const Health = () => {
                         textAlign={"center"}
                       />
                     </Box>
-                 
-                  
-                </Box>
-                <Box mb={"6"}>
+                  </Box>
+                  <Box mb={"6"}>
                     {" "}
-                    <Text fontWeight={"500"} textAlign={"center"}>
-                    Ongoing therapy/counselling session at the Health outreach
+                    <Text
+                      fontWeight={"400"}
+                      textAlign={"center"}
+                      fontSize={"12px"}
+                    >
+                      Ongoing therapy/counselling session at the Health outreach
                     </Text>
                   </Box>
                 </Box>
                 <br />
                 <p>
-                  To make the outreach a possibility,qualified medical
-                  experts,staff of the University Health Services (U H.S) Jaja
-                  clinic,Asido Campus Network and volunteers were engaged to
-                  carry out the tests and counselling.
+                  To make the outreach a possibility, qualified medical experts,
+                  staff of the University Health Services (U H.S) Jaja clinic,
+                  Asido Campus Network and volunteers were engaged to carry out
+                  the tests and counselling. Particularly noteworthy was the HIV
+                  test which was carried out behind a screened canopy in order
+                  to maintain anonymity of the participants.
                 </p>
                 <Box>
-
                   <Box
                     pt={4}
                     mb={0}
@@ -231,22 +235,19 @@ const Health = () => {
                         textAlign={"center"}
                       />
                     </Box>
-                 
-                  
-                </Box>
-                <Box mb={"6"}>
+                  </Box>
+                  <Box mb={"6"}>
                     {" "}
-                    <Text fontWeight={"500"} textAlign={"center"}>
-                   Volunteers at the Health Outreach
+                    <Text
+                      fontWeight={"400"}
+                      textAlign={"center"}
+                      fontSize={"12px"}
+                    >
+                      Volunteers at the Health Outreach
                     </Text>
                   </Box>
                 </Box>
                 <br />
-                <p>
-                  Particularly noteworthy was the HIV test which was carried out
-                  behind a screened canopy in order to maintain anonymity of the
-                  participants.
-                </p>
                 <p>
                   Whilst interviewing Dr Ajav Aderonke,the Director of Health
                   Services, University of Ibadan,she spoke of the importance of
@@ -267,23 +268,9 @@ const Health = () => {
                     alt="Image showing Dr Ajav Aderonke"
                     mx={"auto"}
                   />
-                  <Text fontWeight={"500"}>
+                  <Text fontWeight={"400"} fontSize={"12px"}>
                     An interview with Dr Ajav Aderonke, director of UHS,Jaja
                     clinic.
-                  </Text>
-                </Box>
-                <br />
-                <Box py={8} textAlign={"center"}>
-                  <Image
-                    mt={4}
-                    borderRadius="lg"
-                    width={{ sm: "100%", md: "60%" }}
-                    src={SigmaChief}
-                    alt="SIGMA CHIEF IN AN INTERVIEW SESSION WITH NEWSMEN FROM NTA IBADAN."
-                    mx={"auto"}
-                  />
-                  <Text fontWeight={"500"}>
-                    Sigma Chief in an interview session with newsmen from NTA Ibadan.
                   </Text>
                 </Box>
                 <br />
@@ -296,6 +283,30 @@ const Health = () => {
                   years the Health Outreach would include more sophisticated
                   tests and care.
                 </p>
+                <br />
+                <Box py={8} textAlign={"center"}>
+                  <Image
+                    mt={4}
+                    borderRadius="lg"
+                    width={{ sm: "100%", md: "60%" }}
+                    src={SigmaChief}
+                    alt="SIGMA CHIEF IN AN INTERVIEW SESSION WITH NEWSMEN FROM NTA IBADAN."
+                    mx={"auto"}
+                  />
+                  <Text fontWeight={"400"} fontSize={"12px"}>
+                    Sigma Chief in an interview session with newsmen from NTA
+                    Ibadan.
+                  </Text>
+                </Box>
+                <p>
+                  As the event proceeded,Loyal Sigmites were present at halls of
+                  residence and nearby faculties to invite passers-by and
+                  residents of halls to participate in the program. Faces were
+                  lit with smiles at the kind gestures especially at the Faculty
+                  of Arts where students just concluded exams. Oyewale Agboola, a
+                  student from the Faculty of Agriculture was glad. 'I
+                  definitely need therapy after these exams' he said.
+                </p>
                 <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
@@ -305,21 +316,12 @@ const Health = () => {
                     alt="One of the beneficiary of the health outreach"
                     mx={"auto"}
                   />
-                  <Text fontWeight={"500"}>
+                  <Text fontWeight={"400"} fontSize={"12px"}>
                     Sigma Chief in discuss with Old Sigmite Dr Gani Adeniran at
                     the outreach
                   </Text>
                 </Box>
                 <br />
-                <p>
-                  As the event proceeded,Loyal Sigmites were present at halls of
-                  residence and nearby faculties to invite passers-by and
-                  residents of halls to participate in the program. Faces were
-                  lit with smiles at the kind gestures especially at the Faculty
-                  of Arts where students just concluded exams. Oyewale Agboola,a
-                  student from the Faculty of Agriculture was glad. 'I
-                  definitely need therapy after these exams' he said.
-                </p>
                 <Box py={8} textAlign={"center"}>
                   <Image
                     mt={4}
@@ -329,15 +331,16 @@ const Health = () => {
                     alt="Group picture"
                     mx={"auto"}
                   />
-                  <Text fontWeight={"500"}>
-                    Sigma Chief, Old Sigmite Gani Adediran and Loyal Sigmites in attendance.
+                  <Text fontWeight={"400"} fontSize={"12px"}>
+                    Sigma Chief, Old Sigmite Gani Adediran and Loyal Sigmites in
+                    attendance.
                   </Text>
                 </Box>
                 <br />
                 <p>
                   As the day drew to an end after check ups were conducted for
                   well over 250 members of the University community,
-                  participants began to thin,but one thing they all had in
+                  participants began to thin, but one thing they all had in
                   common was smiles of gratitude and appreciation to the club.
                 </p>
               </Text>
