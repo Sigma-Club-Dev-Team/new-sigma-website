@@ -1,8 +1,5 @@
 import React from 'react'
 import styles from "./ourPosts.module.scss"
-import { CoverImage } from 'components/myImage'
-import TextBtn from 'components/Buttons/TextBtn'
-import { ChevronsRight } from 'lucide-react'
 import PryBtn from 'components/Buttons/PryBtn'
 import Post from './Post'
 

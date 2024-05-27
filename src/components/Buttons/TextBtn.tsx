@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import {Loading3QuartersOutlined, CaretLeftOutlined} from "@ant-design/icons"
+import React from 'react'
+import {Loading3QuartersOutlined} from "@ant-design/icons"
 import {Spin} from "antd"
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import "./button.scss"

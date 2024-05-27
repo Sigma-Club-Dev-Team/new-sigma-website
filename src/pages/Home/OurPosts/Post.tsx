@@ -3,7 +3,6 @@ import styles from "./ourPosts.module.scss"
 import { CoverImage } from 'components/myImage'
 import TextBtn from 'components/Buttons/TextBtn'
 import { ChevronsRight } from 'lucide-react'
-import PryBtn from 'components/Buttons/PryBtn'
 import { Text } from '@chakra-ui/react'
 
 function Post() {
