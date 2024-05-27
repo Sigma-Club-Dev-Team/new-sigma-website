@@ -41,6 +41,7 @@ import GroupPicture from "assets/HealthOutreach2024/GroupPicture.png";
 import SigmaChief from 'assets/HealthOutreach2024/SigmaChief.png';
 import Volunteers from 'assets/HealthOutreach2024/Volunteers.png'
 import Volunteers2 from 'assets/HealthOutreach2024/Volunteers2.png'
+
 export {
   HsLamidoSanusiJPG,
   HsWaleBabalakin,

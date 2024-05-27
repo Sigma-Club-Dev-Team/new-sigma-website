@@ -1,0 +1,147 @@
+@import "./_variables";
+
+@mixin flexSpaceBetween($flex-direction){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $flex-direction;
+};
+@mixin flexAlign($flex-direction: row, $js: flex-start, $a-items: flex-start){
+    display: flex;
+    justify-content: $js;
+    align-items: $a-items;
+    flex-direction: $flex-direction;
+};
+
+@mixin flexScrollX{
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none
+    }
+
+    @include largeMobile(){
+        gap: 1rem
+    }
+};
+
+@mixin flexGap2{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    @include largeMobile(){
+        gap: 1rem;
+    }
+}
+
+@mixin nextImageContainer{
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin textGradient{
+    // background: linear-gradient(129deg, #FFF 19.18%, #98E7F7 72.16%);
+    background: linear-gradient(129deg, #FFF 19.18%, #98E7F7 72.16%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin clipGradient{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@mixin imageStyle{
+    position: relative;
+    overflow: hidden;
+}
+
+
+@mixin customScrollBar($width){
+
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+}
+
+
+@mixin removeSelectDropDown(){
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+@mixin removeScrollBar(){
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none
+    }
+}
+
+@mixin textEllipsis($noOfLines){
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: $noOfLines; /* number of lines to show */
+           line-clamp: $noOfLines; 
+   -webkit-box-orient: vertical;
+}
+
+// media query
+// 1000 - larger screens
+@mixin desktop{
+    @media screen and (max-width: 1280px) {
+        @content
+    }
+};
+// 500 - 1000 
+@mixin tablet{
+    @media screen and (max-width: 1024px) {
+        @content
+    }
+};
+
+// 500 - 750 
+@mixin largeMobile{
+    @media screen and (max-width: 768px) {
+        @content
+    }
+};
+// 0 - 500
+@mixin mobile{
+    @media screen and (max-width: 540px) {
+        @content
+    }
+};
+
+// 0 - 500
+@mixin smallMobile{
+    @media screen and (max-width: 370px) {
+        @content
+    }
+}

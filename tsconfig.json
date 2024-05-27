@@ -17,7 +17,7 @@
     "jsx": "react",
     "module": "ESNext",
     "moduleResolution": "node",
-    "baseUrl": "src"
+    "baseUrl": "src",
   },
   "include": ["src"]
 }
