@@ -3,6 +3,7 @@ import { Box, Flex, Heading, Text, SimpleGrid, Button, Icon } from '@chakra-ui/r
 import { ChevronsRight } from 'lucide-react';
 import { CoverImage } from 'components/myImage';
 import Post from './Post';
+import { Link } from "react-router-dom"
 
 export default function OurPosts() {
   const posts = [1, 2, 3, 4, 5, 6];
@@ -31,7 +32,9 @@ export default function OurPosts() {
       
       <Flex justifyContent="space-between" alignItems="center">
         <Box />
-        <Button colorScheme="blue">VIEW ALL</Button>
+        <Link to={"/posts"}>
+          <Button colorScheme="blue">VIEW ALL</Button>
+        </Link>
       </Flex>
     </Box>
   );
