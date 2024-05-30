@@ -1,4 +1,5 @@
 import HomePage from "./pages/Home";
+import ViewAllPosts from "./pages/Posts/Posts";
 import BlogPage from "./pages/Articles/Blog";
 import MerchPage from "./pages/Merch";
 import Header from "./components/Header";
@@ -23,6 +24,7 @@ import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 function App() {
   return (
     <>
@@ -38,6 +40,7 @@ function App() {
           <Route path="sigma-talents" element={<Talents />} />
         </Route>
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/posts" element={<ViewAllPosts />} />
         <Route path="/blogs/:id" element={<Blogdetails />} />
         <Route path="/merch" element={<MerchPage />} />
         <Route path="/events" element={<EventNavBar />}>
