@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Flex, IconButton, Image, Text, Link as ChakraLink, Heading, Stack, Button, Icon } from '@chakra-ui/react';
-import { ChevronLeft, ChevronsLeft } from 'lucide-react';
+import { Box, Flex, Image, Text, Link as ChakraLink, Heading, Stack, Button, Icon } from '@chakra-ui/react';
+import { ChevronLeft } from 'lucide-react';
 import { CoverImage } from 'components/myImage';
 import { Link } from "react-router-dom";
 
