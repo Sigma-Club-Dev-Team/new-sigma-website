@@ -1,7 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, SimpleGrid, Button, Icon } from '@chakra-ui/react';
-import { ChevronsRight } from 'lucide-react';
-import { CoverImage } from 'components/myImage';
+import { Box, Flex, Heading, Text, Button } from '@chakra-ui/react';
 import Post from './Post';
 import { Link } from "react-router-dom"
 

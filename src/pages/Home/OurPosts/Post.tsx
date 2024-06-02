@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from "./ourPosts.module.scss"
 import { CoverImage } from 'components/myImage'
 import { ChevronsRight } from 'lucide-react'
 import { Box, Button, Icon, Text } from '@chakra-ui/react'
