@@ -19,6 +19,9 @@ import HealthOutreach2023 from "./pages/Events/HealthOutreach/HeathOutreach2023"
 import SportCompetition from "./pages/Events/SportCompetition";
 import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
+
+import QuizHomepage from "./pages/Quiz/UsersHomepage"
+import Login from './pages/Quiz/Login'
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
@@ -49,6 +52,8 @@ function App() {
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
+        <Route path="/roseline-etuokwu-quiz-competiton" element={<QuizHomepage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
