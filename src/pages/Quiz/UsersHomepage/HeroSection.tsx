@@ -22,7 +22,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
+
 import {
   QuizHeroBg,
   SigmaLogo,

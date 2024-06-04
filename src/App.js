@@ -22,6 +22,7 @@ import Talents from "./pages/AboutUs/Sigma Talents/profile";
 
 import QuizHomepage from "./pages/Quiz/UsersHomepage"
 import Login from './pages/Quiz/Login'
+import SignUp from './pages/Quiz/SignUp'
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
@@ -54,6 +55,7 @@ function App() {
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
         <Route path="/roseline-etuokwu-quiz-competiton" element={<QuizHomepage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Sign-up" element={<SignUp />} />
       </Routes>
     </>
   );
