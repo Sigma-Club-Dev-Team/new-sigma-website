@@ -21,6 +21,7 @@ import {
   MenuItem,
   Box,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 import {
@@ -61,7 +62,9 @@ export default function Hero() {
         align="flex-start"
       >
         <Box py={4}>
+        <Link to="/roseline-etuokwu/quiz-competition">
           <Image src={SigmaLogo} />
+          </Link>
         </Box>
         <Stack maxW={"2xl"} align={"flex-start"}>
           <Heading
@@ -131,6 +134,8 @@ export default function Hero() {
               <ChakraProvider>
                 <Box position="relative">
                   <Button
+                  as={Link}
+                  to='/roseline-etuokwu/login'
                     width="9.875rem"
                     height="74px"
                     padding="16px 24px"
@@ -167,13 +172,17 @@ export default function Hero() {
             >
               <Flex align="center">
                 <Avatar name="John Doe" src={Avatarpng} size="md" />
+               
                 <Text ml="4">
                   Watch our documentary on the Quiz Competition
                 </Text>
+                
         
               </Flex>
               <Box pt={4}>
                   <Button
+                  as={Link}
+                  to='/roseline-etuokwu/quiz-documentary'
                     leftIcon={<Icon as={FaPlay} />}
                     bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
                      fontSize={"12px"}
