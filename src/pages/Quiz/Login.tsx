@@ -36,23 +36,34 @@ const LoginPage: React.FC = () => {
 
   return (
     <Flex
-      width="95vw"
-      height="95vh"
-      alignItems="center"
-      justifyContent="center"
-      bg="white"
-      fontFamily={"Poppins"}
-    >
-      <Box
-        width={{base: '100%', md: '60%', lg: '45rem'}}
-        height="43.75rem"
-        padding="2rem"
-        borderRadius="1.875rem"
-        boxShadow="lg"
-        bg="#EDEDED"
+       
+        alignItems="center"
+        justifyContent="center"
+        bg="white"
+        fontFamily="Poppins"
+        p={{ base: '.5rem', md: '1rem', lg: '2rem' }}
       >
+        <Box
+          width={{ base: '90%', md: '60%', lg: '849px' }}
+          justifyContent="center"
+          alignItems="center"
+          height="auto"
+          padding="2rem"
+          borderRadius="1.875rem"
+          boxShadow="lg"
+          bg="#EDEDED"
+          my={6}
+        >
         <Box py={4}>
-          <Image src={SigmaLogo} />
+        <Link to="/roseline-etuokwu/quiz-competition">
+          <Image
+            src={SigmaLogo}
+            maxWidth={{ base: "150px", md: "200px", lg: "300px" }}
+            width="100%"
+            objectFit="contain"
+            alt="Sigma Logo"
+          />
+          </Link>
         </Box>
         <VStack align="stretch">
           <Box py={4}>
@@ -117,17 +128,18 @@ const LoginPage: React.FC = () => {
 
           </Box>
           <Button
-            width={{base: '80%', md: '60%', lg: '35rem'}}
-            height="3.75rem"
-            position="relative"
-            left="50%"
-            transform="translateX(-50%)"
-            borderRadius=".625rem"
-            opacity={0.8}
-            bg="#8F19E7"
-            color="white"
-            _hover={{ opacity: 1 }}
-          >
+              width={{ base: '80%', md: '60%', lg: '35rem' }}
+              height="3.75rem"
+            
+              left="50%"
+              transform="translateX(-50%)"
+              borderRadius=".625rem"
+              opacity={0.8}
+              bg="#8F19E7"
+              color="white"
+              _hover={{ opacity: 1 }}
+              zIndex={100}
+            >
             Log In
           </Button>
         </VStack>
@@ -136,12 +148,12 @@ const LoginPage: React.FC = () => {
           display={"flex"}
           mx={"auto"}
           justifyContent={"center"}
-          mt={20}
+          mt={10}
           gap={4}
         >
           <Text>Don't have an account ?</Text>
 
-          <Link to="/sign-up" color="#8F19E7">
+          <Link to="/roseline-etuokwu/sign-up" color="#8F19E7">
             <Text color="#8F19E7" textDecoration={"underline"}> Sign up</Text>
           </Link>
         </Box>
