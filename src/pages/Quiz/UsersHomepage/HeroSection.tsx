@@ -49,7 +49,7 @@ export default function Hero() {
   return (
     <Flex
       w={"full"}
-      h={"60.3125rem"}
+      h={{base: 'auto', md: '60.3rem'}}
       backgroundImage={QuizHeroBg}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -63,7 +63,7 @@ export default function Hero() {
       >
         <Box py={4}>
         <Link to="/roseline-etuokwu/quiz-competition">
-          <Image src={SigmaLogo} />
+          <Image src={SigmaLogo}   maxWidth={{ base: "150px", md: "200px", lg: "300px" }} />
           </Link>
         </Box>
         <Stack maxW={"2xl"} align={"flex-start"}>
@@ -107,37 +107,37 @@ export default function Hero() {
               py={8}
             >
               <ChakraProvider>
-                <Box>
-                  <Menu>
-                    <MenuButton
-                      as={Button}
-                      width="411px"
-                      height="74px"
-                      padding="16px 64px"
-                      borderRadius="2.8125rem"
-                      textAlign={"left"}
-                      rightIcon={<ChevronDownIcon />}
-                      bg="#ffffff"
-                      color="#333333"
-                    >
-                      Select a quiz to view
-                    </MenuButton>
-                    <MenuList>
-                      <MenuItem>Option 1</MenuItem>
-                      <MenuItem>Option 2</MenuItem>
-                      <MenuItem>Option 3</MenuItem>
-                    </MenuList>
-                  </Menu>
-                </Box>
-              </ChakraProvider>
+      <Box>
+        <Menu>
+          <MenuButton
+            as={Button}
+            width={{ base: "100%", md: "411px" }} // Adjust width for mobile and larger screens
+            height={{base: 'auto', md: '60px'}}
+            padding={{ base: "16px", md: "16px 64px" }} // Adjust padding for mobile and larger screens
+            borderRadius="2.8125rem"
+            textAlign={"left"}
+            rightIcon={<ChevronDownIcon />}
+            bg="#ffffff"
+            color="#333333"
+          >
+            Select a quiz to view
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Option 1</MenuItem>
+            <MenuItem>Option 2</MenuItem>
+            <MenuItem>Option 3</MenuItem>
+          </MenuList>
+        </Menu>
+      </Box>
+    </ChakraProvider>
 
               <ChakraProvider>
                 <Box position="relative">
                   <Button
                   as={Link}
                   to='/roseline-etuokwu/login'
-                    width="9.875rem"
-                    height="74px"
+                    width={{ base: "100%", md: "9.875rem" }} 
+                    height={{base: 'auto', md: '60px'}}
                     padding="16px 24px"
                     borderRadius="2.8125rem"
                     bg="#8F19E7"
