@@ -26,6 +26,7 @@ import SignUp from './pages/Quiz/SignUp'
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
+import Documentary from "./pages/Quiz/Documentary";
 
 function App() {
   return (
@@ -53,9 +54,16 @@ function App() {
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
-        <Route path="/roseline-etuokwu-quiz-competiton" element={<QuizHomepage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Sign-up" element={<SignUp />} />
+        <Route
+              path="/roseline-etuokwu/quiz-competition"
+              element={<QuizHomepage />}
+            />
+            <Route path="/roseline-etuokwu/login" element={<Login />} />
+            <Route path="/roseline-etuokwu/sign-up" element={<SignUp />} />
+            <Route
+              path="/roseline-etuokwu/quiz-documentary"
+              element={<Documentary />}
+            />
       </Routes>
     </>
   );
