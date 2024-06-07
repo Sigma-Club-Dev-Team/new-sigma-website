@@ -1,36 +1,51 @@
 import React from 'react';
 import { Box, Flex, Image, Text, Link as ChakraLink, Heading, Stack, Button, Icon } from '@chakra-ui/react';
 import { ChevronLeft } from 'lucide-react';
-import { CoverImage } from 'components/myImage';
+import { CoverImage, ContainImage } from 'components/myImage';
 import { Link } from "react-router-dom";
+import ReactPlayer from 'react-player';
 
 const posts = [
   {
-    id: 1,
     category: "©️THE LAW PRESS ORGANISATION, 2024.",
-    imageUrl: './assets/images/jpgs/health.jp',
+    imageUrl: './assets/images/pngs/resss2022.png',
     title: 'NEWS: Roseline Etuokwu Sigma National Secondary Schools Quiz Competition Reaches Thrilling Final Stage',
     description: 'From the state heats to the regional showdowns, and now to the national final, each stage has been a showcase of knowledge, collaboration... ',
     link: 'https://thelawpress.wordpress.com/2024/05/12/roseline-etuokwu-sigma-national-secondary-school-quiz-competition-reaches-thrilling-final-stage/'
   },
   {
-    id: 2,
     category: "Channels Television",
-    logoUrl: './assets/images/channels-logo.png',
-    imageUrl: './assets/images/jpgs/health.jp',
-    title: 'Sigma Club Congratulates Honourary Sigmite Sir Kessignton Adebutu',
-    description: 'The Sigma Chief congratulates Honorary Sigmite, Adebutu Kesington on his well deserved ascension to the position of the President of the association of Lagos. His accomplishment has been an inspiration to all. Your win is a victory for all those  who believe and practice the Sigma principles of discipline, philanthropy and social impact. Accept our congratulations on this outstanding achievement. We wish you strength and success as you embark on this new chapter of service.',
-    link: 'https://example.com/post2'
+    logoUrl: './assets/images/pngs/channelLogo.png',
+    videoUrl: 'https://www.youtube.com/watch?v=fc2-N8w2g6M'
   },
   {
-    id: 3,
     category: "Sigma Club",
-    logoUrl: './assets/images/sigma-logo.png',
-    imageUrl: './assets/images/jpgs/health.jp',
+    logoUrl: './assets/images/pngs/logo.png',
+    imageUrl: './assets/images/pngs/kesington.png',
+    title: 'Sigma Club Congratulates Honourary Sigmite Sir Kessignton Adebutu',
+    description: 'The Sigma Chief congratulates Honorary Sigmite, Adebutu Kesington on his well deserved ascension to the position of the President of the association of Lagos. His accomplishment has been an inspiration to all. Your win is a victory for all those  who believe and practice the Sigma principles of discipline, philanthropy and social impact. Accept our congratulations on this outstanding achievement. We wish you strength and success as you embark on this new chapter of service.',
+  },
+  {
+    category: "Sigma Club",
+    logoUrl: './assets/images/pngs/logo.png',
+    imageUrl: './assets/images/pngs/isaac.png',
+    title: 'Sigma Club Congratulates Honourary Sigmite Prof. Isaac Folorunsho Adewale',
+    description: 'On behalf of Sigma Club, the Sigma Chief congratulates Honourary Sigmite, Prof. Isaac Folorunso Adewole on his well deserved retirement after years of meritorious service to the country and humanity. His accomplishments are sources of  inspiration and testament to the core Sigma values of integrity, discipline and philanthropy. Accept our congratulations on your retirement. We pray God grants you strength and good health on this new chapter of your life.',
+  },
+  {
+    category: "©THE DAILY TRIBUNE NEWSPAPER",
+    imageUrl: './assets/images/pngs/resss2022.png',
     title: 'NEWS:Finalists Emerge from Roseline Etuokwu Sigma Quiz Competition',
     description: 'From the state heats to the regional showdowns, and now to the national final, each stage has been a showcase of knowledge, collaboration... ',
-    link: 'https://example.com/post3'
-  }
+    link: 'https://thelawpress.wordpress.com/2024/05/12/roseline-etuokwu-sigma-national-secondary-school-quiz-competition-reaches-thrilling-final-stage/'
+  },
+  {
+    category: "Sigma Club",
+    logoUrl: './assets/images/pngs/logo.png',
+    videoUrl: 'https://www.youtube.com/watch?v=0kChM02MPOU',
+    description: "What inspired the initiative of the Roseline Etuokwu Sigma National Secondary School Quiz Competition❓Listen to the Sigma Chief as he explains how the idea of the Quiz Competition came to be . See the rest of the Sigma Chief's Interview at the Morning Show on Arise TV",
+    link: 'https://www.youtube.com/watch?v=0kChM02MPOU'
+  },
   // Add more posts as needed
 ];
 
@@ -47,23 +62,25 @@ function ViewAllPosts() {
       </Box>
 
       <Stack spacing="2rem" alignItems={"center"}>
-        {posts.map(post => (
-          <Box key={post.id} width={{base: "100%", lg: "50%", md: "806px",}}>
+        {posts.map((post, index) => (
+          <Box key={index} width={{base: "100%", lg: "50%", md: "806px",}}>
             <Flex alignItems="center" mb="1rem">
-              <Text fontSize="1rem" fontWeight="500" display="flex" alignItems="center">
+              <Text fontSize="1rem" fontWeight="500" display="flex" gap={".5rem"} alignItems="center">
                 {post.logoUrl && <Image src={post.logoUrl} alt={`${post.category} Logo`} boxSize="1.5rem" ml="0.5rem" />}
                 {post.category}
               </Text>
             </Flex>
             <Box position="relative" borderRadius={".5rem"} overflow={"hidden"} maxW={"860px"} maxH="348px" w="100%" h="auto" aspectRatio={"806/348"} mb="1rem">
-              <CoverImage src='./assets/images/jpgs/health.jpg' alt='Post Image' position='center' />
+              {post.imageUrl ? <CoverImage src={post.imageUrl} alt='Post Image' position='center' /> : (
+                <ReactPlayer url={'https://www.youtube.com/watch?v=fc2-N8w2g6M'} controls playIcon={<ContainImage src={'./assets/images/pngs/logo.png'} alt='Play Icon' />} />
+              )}
             </Box>
             {/* <Image src={post.imageUrl} alt={post.title} maxW="806px" maxH="348px" w="100%" h="auto" mb="1rem" /> */}
-            <Heading as="h2" fontSize="18px" fontWeight="700" mb="0.5rem">{post.title}</Heading>
-            <Text fontSize=".875rem" fontWeight="400" mb="1rem">{post.description}</Text>
-            <ChakraLink href={post.link} color="blue.400" fontSize=".875rem" fontWeight="400" isExternal>
+            {post.title ? <Heading as="h2" fontSize="18px" fontWeight="700" mb="0.5rem">{post.title}</Heading> : null}
+            {post.description ? <Text fontSize=".875rem" fontWeight="400" mb="1rem">{post.description}</Text> : null}
+            {post.link ? <ChakraLink href={post.link} color="blue.400" fontSize=".875rem" fontWeight="400" isExternal>
               Read more
-            </ChakraLink>
+            </ChakraLink> : null}
           </Box>
         ))}
       </Stack>
