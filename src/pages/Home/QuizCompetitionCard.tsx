@@ -27,7 +27,7 @@ const QuizCompetitionCard = () => {
           Sigma Club is organising the 2024 Roseline Etuokwu national quiz
           competition for secondary schools across all states in Nigeria with
           focus on fields of Mathematics, English Language, and General
-          Knowledge and #8,000,000 worth of prizes with consolation prizes for
+          Knowledge and #10,000,000 worth of prizes with consolation prizes for
           winners at each stage; state, regional and national
           <br />
           <br />
