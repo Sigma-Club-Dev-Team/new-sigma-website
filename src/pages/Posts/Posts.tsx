@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Image, Text, Link as ChakraLink, Heading, Stack, Button, Icon } from '@chakra-ui/react';
-import { ChevronLeft } from 'lucide-react';
+import { LuChevronLeft } from "react-icons/lu";
 import { CoverImage, ContainImage } from 'components/myImage';
 import { Link } from "react-router-dom";
 import ReactPlayer from 'react-player';
@@ -55,7 +55,7 @@ function ViewAllPosts() {
     <Box padding={{base: "2rem", md: "5rem"}}>
       <Box mb={"2rem"}>
         <Link to={"/"}>
-          <Button variant="link" leftIcon={<Icon as={ChevronLeft} w={4} h={4} />} fontSize="1rem" fontWeight="400">
+          <Button variant="link" leftIcon={<Icon as={LuChevronLeft} w={4} h={4} />} fontSize="1rem" fontWeight="400">
             Back
           </Button>
         </Link>

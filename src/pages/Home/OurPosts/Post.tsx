@@ -1,6 +1,6 @@
 import React from 'react'
 import { CoverImage } from 'components/myImage'
-import { ChevronsRight } from 'lucide-react'
+import { LuChevronsRight } from "react-icons/lu";
 import { Box, Button, Icon, Text } from '@chakra-ui/react'
 
 
@@ -21,7 +21,7 @@ export default function Post() {
       <Box p="1rem" display="flex" flexDirection="column" gap=".75rem">
         <Text noOfLines={2} fontSize="1.125rem" lineHeight="1.6875rem" fontWeight="600">UCJ- Sigma Club quiz competition enters final stages by Akanni Oluwasegun.</Text>
         <Box>
-          <Button variant="link" rightIcon={<Icon as={ChevronsRight} w={4} h={4} />} fontSize="1rem" fontWeight="400">
+          <Button variant="link" rightIcon={<Icon as={LuChevronsRight} w={4} h={4} />} fontSize="1rem" fontWeight="400">
             View
           </Button>
         </Box>
