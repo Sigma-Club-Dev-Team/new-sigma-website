@@ -7,7 +7,7 @@ export const appColors = {
   };
 
 export const appTheme = {
-  colors: appColors
+  colors: appColors,
 };
 
 export default appTheme;
