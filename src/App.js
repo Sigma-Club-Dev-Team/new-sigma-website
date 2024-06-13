@@ -27,6 +27,7 @@ import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Documentary from "./pages/Quiz/Documentary";
+import ProfileSettings from "./pages/Quiz/MyAccount/PasswordSettingsPage"
 
 function App() {
   return (
@@ -63,6 +64,10 @@ function App() {
             <Route
               path="/roseline-etuokwu/quiz-documentary"
               element={<Documentary />}
+            />
+             <Route
+              path="/roseline-etuokwu/my-account"
+              element={<ProfileSettings />}
             />
       </Routes>
     </>
