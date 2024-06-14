@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Box,
   VStack,
@@ -20,7 +20,7 @@ import {
 } from "react-icons/fa";
 
 const Sidebar: React.FC = () => {
-  const location = useLocation();
+  
 
   return (
     <Box
