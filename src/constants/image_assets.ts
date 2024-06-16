@@ -41,6 +41,9 @@ import GroupPicture from "assets/HealthOutreach2024/GroupPicture.png";
 import SigmaChief from 'assets/HealthOutreach2024/SigmaChief.png';
 import Volunteers from 'assets/HealthOutreach2024/Volunteers.png'
 import Volunteers2 from 'assets/HealthOutreach2024/Volunteers2.png'
+import QuizHeroBg from "assets/Quiz/GroupPicture.png"
+import SigmaLogo from "assets/Quiz/SigmaLogo.png"
+import Avatarpng from "assets/Quiz/Avatar.png"
 export {
   HsLamidoSanusiJPG,
   HsWaleBabalakin,
@@ -84,5 +87,8 @@ export {
   RegisteringAttendees,
   SigmaChief,
   Volunteers,
-  Volunteers2
+  Volunteers2,
+  QuizHeroBg,
+  SigmaLogo,
+  Avatarpng
 };
