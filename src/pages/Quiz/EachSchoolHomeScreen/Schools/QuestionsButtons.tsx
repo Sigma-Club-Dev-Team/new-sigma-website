@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Button, Flex, IconButton } from "@chakra-ui/react";
+import {  Button, Flex, } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const QuestionsBTN: React.FC = () => {

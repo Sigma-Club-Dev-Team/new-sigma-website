@@ -1,15 +1,12 @@
 import React from "react";
 import { Box, Text, Flex, IconButton } from "@chakra-ui/react";
-import { useParams, useNavigate, Navigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { contentData } from "./content";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import AnsweredButtons from "./AnsweredQuestnBtn";
 import TopMenu from "./TopMenu"; 
 
-interface PageParams {
-  title: string;
-  pageId: string;
-}
+
 
 const DetailsPage: React.FC = () => {
   const { pageId } = useParams();

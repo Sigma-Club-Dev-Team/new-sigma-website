@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Flex, IconButton } from "@chakra-ui/react";
+import { Button, Flex, IconButton } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 interface AnsweredButtonsProps {
