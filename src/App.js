@@ -1,4 +1,5 @@
 import HomePage from "./pages/Home";
+import ViewAllPosts from "./pages/Posts/Posts";
 import BlogPage from "./pages/Articles/Blog";
 import MerchPage from "./pages/Merch";
 import Header from "./components/Header";
@@ -27,6 +28,8 @@ import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Documentary from "./pages/Quiz/Documentary";
+import SelectQuiz from "./pages/Quiz/ManageQuiz/SelectQuiz";
+
 
 function App() {
   return (
@@ -43,6 +46,7 @@ function App() {
           <Route path="sigma-talents" element={<Talents />} />
         </Route>
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/posts" element={<ViewAllPosts />} />
         <Route path="/blogs/:id" element={<Blogdetails />} />
         <Route path="/merch" element={<MerchPage />} />
         <Route path="/events" element={<EventNavBar />}>
@@ -55,15 +59,19 @@ function App() {
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
         <Route
-              path="/roseline-etuokwu/quiz-competition"
-              element={<QuizHomepage />}
-            />
-            <Route path="/roseline-etuokwu/login" element={<Login />} />
-            <Route path="/roseline-etuokwu/sign-up" element={<SignUp />} />
-            <Route
-              path="/roseline-etuokwu/quiz-documentary"
-              element={<Documentary />}
-            />
+          path="/roseline-etuokwu/quiz-competition"
+          element={<QuizHomepage />}
+        />
+        <Route path="/roseline-etuokwu/login" element={<Login />} />
+        <Route path="/roseline-etuokwu/sign-up" element={<SignUp />} />
+        <Route
+          path="/roseline-etuokwu/quiz-documentary"
+          element={<Documentary />}
+        />
+
+        {/* Manage Quiz */}
+        <Route path="/roseline-etuokwu/select-quiz" element={<SelectQuiz />}
+        />
       </Routes>
     </>
   );

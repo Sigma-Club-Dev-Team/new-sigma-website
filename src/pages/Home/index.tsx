@@ -10,6 +10,7 @@ import HonourarySigmites from "./HonSigmites";
 import MerchHero from "./MerchHero";
 import AdmissionInterviewCard from "./AdmissionInterviewCard";
 import QuizCompetitionCard from "./QuizCompetitionCard";
+import OurPosts from "./OurPosts";
 
 function HomePage() {
   return (
@@ -19,7 +20,8 @@ function HomePage() {
       <AdmissionInterviewCard />
       <QuizCompetitionCard />
       <UpcomingEvent />
-      <Philantrophy />
+      <Philantrophy /> 
+      <OurPosts />
       <Documentary />
       <Blog />
       <HonourarySigmites />

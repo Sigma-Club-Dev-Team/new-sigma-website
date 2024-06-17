@@ -302,8 +302,8 @@ const Health = () => {
                   residence and nearby faculties to invite passers-by and
                   residents of halls to participate in the program. Faces were
                   lit with smiles at the kind gestures especially at the Faculty
-                  of Arts where students just concluded exams. Oyewale Agboola, a
-                  student from the Faculty of Agriculture was glad. 'I
+                  of Arts where students just concluded exams. Oyewale Agboola,
+                  a student from the Faculty of Agriculture was glad. 'I
                   definitely need therapy after these exams' he said.
                 </p>
                 <Box py={8} textAlign={"center"}>
@@ -347,7 +347,11 @@ const Health = () => {
           </Flex>
 
           <div>
-            <Video src={"https://www.youtube.com/shorts/Hzb47AEIMkM"} />
+            <Video
+              src={
+                "https://www.youtube.com/embed/nKw-6viPeJs?si=dW4ywD7-of982iXT"
+              }
+            />
           </div>
         </Box>
 
