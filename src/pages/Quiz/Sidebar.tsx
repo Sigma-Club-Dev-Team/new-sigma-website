@@ -1,3 +1,4 @@
+// src/Sidebar.tsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -18,19 +19,23 @@ import {
   FaGraduationCap,
   FaPlus,
 } from "react-icons/fa";
+import { contentData } from "./EachSchoolHomeScreen/Schools/content";
 
 const Sidebar: React.FC = () => {
   
-
   return (
     <Box
-      width={{ base: "full", md: "15.8125rem" }}
       bg="#EDEDED"
       color="white"
+      minW={{base: 'none', md:'10%', lg: '20%'}}
       height="100vh"
       py={10}
       fontFamily={"Poppins"}
       overflowY={"scroll"}
+      position={'fixed'}
+      top={'0'}
+      display={{base: 'none', md:'block'}}
+      
     >
       <VStack spacing={6} align="stretch">
         <HStack cursor="pointer" spacing={4} px={8}>
@@ -41,27 +46,33 @@ const Sidebar: React.FC = () => {
         </HStack>
 
         <VStack align="stretch" spacing={4}>
-          {[
-            "Ambassadors",
-            "School Two",
-            "School Three",
-            "School Four",
-            "School Five",
-            "School Six",
-          ].map((school) => (
-            <HStack
-              cursor="pointer"
-              key={school}
-              spacing={4}
-              bg={"#Ffffff"}
-              px={8}
-              py={2}
-              _hover={{ shadow: "md" }}
+          {contentData.map((school) => (
+            <NavLink
+              key={school.id}
+              to={`/roseline-etuokwu/schools/${school.id}`}
+             
+              style={{ textDecoration: "none" }}
             >
-              <Text color="#333333">{school}</Text>
-            </HStack>
+              {({ isActive }) => (
+                <HStack
+                  cursor="pointer"
+                  spacing={4}
+                  bg={"#ffffff"}
+                  px={8}
+                  py={2}
+                 
+                
+                  borderLeft="5px solid"
+                  borderColor={isActive ? "#8F19E7" : "transparent"}
+                  shadow={'md'}
+                >
+                  <Text  color={isActive ? "#8F19E7" : "#000000"}>{school.title}</Text>
+                </HStack>
+              )}
+            </NavLink>
           ))}
         </VStack>
+
         <Box textAlign={"center"}>
           <Button
             leftIcon={
@@ -102,7 +113,6 @@ const Sidebar: React.FC = () => {
             ml={8}
             mt={2}
             _hover={{ shadow: "md" }}
-           
           >
             <IconButton
               aria-label="percent-scores"
@@ -127,7 +137,6 @@ const Sidebar: React.FC = () => {
                 alignItems="center"
                 borderLeft="5px solid"
                 borderColor={isActive ? "#8F19E7" : "transparent"}
-               
               >
                 <IconButton
                   aria-label="all-schools"
@@ -151,7 +160,6 @@ const Sidebar: React.FC = () => {
                 alignItems="center"
                 borderLeft="5px solid"
                 borderColor={isActive ? "#8F19E7" : "transparent"}
-               
               >
                 <IconButton
                   aria-label="manage-questions"
@@ -175,7 +183,6 @@ const Sidebar: React.FC = () => {
                 alignItems="center"
                 borderLeft="5px solid"
                 borderColor={isActive ? "#8F19E7" : "transparent"}
-              
               >
                 <IconButton
                   aria-label="account"

@@ -7,7 +7,7 @@ import {
   VStack,
   Flex,
 } from "@chakra-ui/react";
-import Sidebar from "./Sidebar";
+import Sidebar from "../Sidebar";
 import ProfileUpdate from './ProfileUpdate';
 import UpdatePassword from './UpdatePassword';
 
@@ -22,9 +22,9 @@ const ProfileSetting: React.FC = () => {
   return (
     <Box display="flex">
       <Sidebar />
-      <Box ml={8} w="full" fontFamily="Poppins">
-        <Flex height="100vh">
-          <Box flex="1" display="flex" alignItems="center" justifyContent="center">
+      <Box ml={'28%'} w="full" fontFamily="Poppins" minW={'72%'}>
+        <Flex >
+          <Box flex="1" display="flex" alignItems="center" justifyContent="center" flexWrap={'wrap'}>
             {/* Conditional rendering based on activeComponent state */}
             {activeComponent === "profile" && <ProfileUpdate />}
             {activeComponent === "password" && <UpdatePassword />}
