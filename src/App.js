@@ -28,6 +28,8 @@ import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Documentary from "./pages/Quiz/Documentary";
 import ProfileSettings from "./pages/Quiz/MyAccount/PasswordSettingsPage"
+import SchoolsPage from './pages/Quiz/EachSchoolHomeScreen/Schools/template'
+import TestDetailsPage from './pages/Quiz/EachSchoolHomeScreen/Schools/TestDetails'
 
 function App() {
   return (
@@ -65,10 +67,15 @@ function App() {
               path="/roseline-etuokwu/quiz-documentary"
               element={<Documentary />}
             />
+             
+             
              <Route
               path="/roseline-etuokwu/my-account"
               element={<ProfileSettings />}
             />
+             <Route path="/roseline-etuokwu/schools/:pageId" element={<SchoolsPage />} />
+             <Route path="/roseline-etuokwu/schools/:pageId/test-details" element={<TestDetailsPage/>} />
+           
       </Routes>
     </>
   );
