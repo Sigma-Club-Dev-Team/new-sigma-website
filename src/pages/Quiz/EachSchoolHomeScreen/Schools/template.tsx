@@ -14,9 +14,6 @@ import QuestionsBTN from "./QuestionsButtons";
 import AnsweredButtons from "./AnsweredQuestnBtn";
 import ScoreBoard from "./ScoreBoard";
 
-interface PageParams {
-  pageId: string;
-}
 
 const TemplatePage: React.FC = () => {
   const { pageId } = useParams();
@@ -26,7 +23,7 @@ const TemplatePage: React.FC = () => {
     return <div>No data found</div>;
   }
 
-  const formattedTitle = pageContent.title.replace(/\s+/g, '-').toLowerCase();
+  
 
   return (
     <Flex>
