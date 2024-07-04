@@ -145,6 +145,10 @@ const NAV_ITEMS = [
     href: "/blog",
   },
   {
+    label: "Posts",
+    href: "/posts",
+  },
+  {
     label: "Events",
     href: "/events/quiz-competition",
   },
