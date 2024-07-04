@@ -4,7 +4,12 @@ import health from "../../../assets/health.jpg";
 import { Flex } from "@chakra-ui/react";
 import Video from "../../../components/Video";
 import { Text, Box, Image } from "@chakra-ui/react";
-import SideBar from "./RightBar";
+import SideBar from "../SideBar/RightBar";
+
+const healthOutreachEditions = [
+  { year: "2023", path: "/events/health-outreach/2023" },
+  { year: "2024", path: "/events/health-outreach/2024" },
+];
 
 const Health = () => {
   return (
@@ -35,7 +40,7 @@ const Health = () => {
                 lineHeight="normal"
                 fontWeight="700"
               >
-            Sigma Health Outreach
+           2023 Sigma Health Outreach
           </Text>
           <br />
 
@@ -100,7 +105,7 @@ const Health = () => {
           p={{ lg: "6", md: "3", sm: "4" }}
           fontWeight="500"
         >
-          <SideBar/>
+         <SideBar editions={healthOutreachEditions} eventName="Sigma Health Outreach" />
         </Box>
       </Flex>
       

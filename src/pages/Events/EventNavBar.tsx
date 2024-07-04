@@ -18,8 +18,8 @@ const EventNavBar = () => {
         <NavLink to="health-outreach/2024" className="nav">
           Sigma Health Outreach
         </NavLink>
-        <NavLink to="sport-competition" className="nav">
-          Sigma Chief Cup
+        <NavLink to="/events/sigma-chief's-league/2024" className="nav">
+          Sigma Chief's League
         </NavLink>
       </nav>
       <Outlet />
