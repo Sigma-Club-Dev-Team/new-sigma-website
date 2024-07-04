@@ -3,16 +3,18 @@ import { useLocation } from "react-router-dom";
 import { Divider, Box, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-const editions = [
-  { year: "2023", path: "/events/health-outreach/2023" },
-  { year: "2024", path: "/events/health-outreach/2024" },
-  
- 
-];
+interface Edition {
+  year: string;
+  path: string;
+}
 
-const SideBar = () => {
+interface SideBarProps {
+  editions: Edition[];
+  eventName: string;
+}
 
-  //Grab the path name so as not to include the current page edition in the other editions side bar
+const SideBar: React.FC<SideBarProps> = ({ editions, eventName }) => {
+  // Grab the path name so as not to include the current page edition in the other editions side bar
   const location = useLocation();
   const currentYear = location.pathname.split("/").pop();
 
@@ -37,10 +39,10 @@ const SideBar = () => {
       >
         <Text fontSize={"xl"}>Other Editions</Text>
         {editions
-          .filter(edition => edition.year !== currentYear)
-          .map(edition => (
+          .filter((edition) => edition.year !== currentYear)
+          .map((edition) => (
             <Box key={edition.year} py={4}>
-              <Text>{edition.year} Sigma Health Outreach</Text>
+              <Text>{edition.year} {eventName}</Text>
               <Link to={edition.path}>
                 <Text
                   textDecoration="underline"

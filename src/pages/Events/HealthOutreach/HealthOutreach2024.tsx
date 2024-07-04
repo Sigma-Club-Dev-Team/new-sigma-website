@@ -18,7 +18,12 @@ import {
   Volunteers,
   Volunteers2,
 } from "../../../constants/image_assets";
-import SideBar from "./RightBar";
+import SideBar from "../SideBar/RightBar";
+
+const healthOutreachEditions = [
+  { year: "2023", path: "/events/health-outreach/2023" },
+  { year: "2024", path: "/events/health-outreach/2024" },
+];
 
 const Health = () => {
   return (
@@ -35,7 +40,7 @@ const Health = () => {
                 lineHeight="normal"
                 fontWeight="700"
               >
-                Sigma Health Outreach
+                2024 Sigma Health Outreach
               </Text>
               <br />
 
@@ -361,7 +366,7 @@ const Health = () => {
           p={{ lg: "10", md: "3", sm: "4" }}
           fontWeight="500"
         >
-          <SideBar />
+           <SideBar editions={healthOutreachEditions} eventName="Sigma Health Outreach" />
         </Box>
       </Flex>
     </Container>
