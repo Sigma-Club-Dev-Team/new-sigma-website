@@ -17,7 +17,8 @@ import Quiz2024 from "./pages/Events/Quiz/Editions/2024"
 import Quiz2024Stages from "./pages/Events/Quiz/Editions/2024/Stages";
 import HealthOutreach2024 from "./pages/Events/HealthOutreach/HealthOutreach2024";
 import HealthOutreach2023 from "./pages/Events/HealthOutreach/HeathOutreach2023";
-import SportCompetition from "./pages/Events/SportCompetition";
+import ChiefsLeague2023 from "./pages/Events/SigmaChief'sLeague/SigmaChief'sLeague2023";
+import ChiefsLeague2024 from "./pages/Events/SigmaChief'sLeague/SigmaChief'sLeague2024";
 import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
 import { Routes, Route } from "react-router-dom";
@@ -48,7 +49,8 @@ function App() {
           <Route path="quiz-competition" element={<Quiz />} />
           <Route path="health-outreach/2024" element={<HealthOutreach2024 />} />
           <Route path="health-outreach/2023" element={<HealthOutreach2023 />} />
-          <Route path="sport-competition" element={<SportCompetition />} />
+          <Route path="/events/sigma-chief's-league/2023" element={<ChiefsLeague2023 />} />
+          <Route path="/events/sigma-chief's-league/2024" element={<ChiefsLeague2024 />} />
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
