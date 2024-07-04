@@ -38,9 +38,23 @@ import RegisteringAttendees from "assets/HealthOutreach2024/RegisteringAttendees
 import JajaDirector from "assets/HealthOutreach2024/JajaDirector.png";
 import OSGani from "assets/HealthOutreach2024/OS Gani.png";
 import GroupPicture from "assets/HealthOutreach2024/GroupPicture.png";
-import SigmaChief from 'assets/HealthOutreach2024/SigmaChief.png';
-import Volunteers from 'assets/HealthOutreach2024/Volunteers.png'
-import Volunteers2 from 'assets/HealthOutreach2024/Volunteers2.png'
+import SigmaChief from "assets/HealthOutreach2024/SigmaChief.png";
+import Volunteers from "assets/HealthOutreach2024/Volunteers.png";
+import Volunteers2 from "assets/HealthOutreach2024/Volunteers2.png";
+import CommitteChair from "assets/ChiefLeague2024/CommitteChair.png";
+import Chief from "assets/ChiefLeague2024/Chief.png";
+import FemaleTeam from "assets/ChiefLeague2024/FemaleTeam.png";
+import LoyalSigmites from "assets/ChiefLeague2024/LoyalSigmites.png";
+import MatchOn from "assets/ChiefLeague2024/MatchOn.png";
+import MatchOnF1 from "assets/ChiefLeague2024/MatchOnF1.png";
+import OldSig from "assets/ChiefLeague2024/OldSig.png";
+import PresentationF from "assets/ChiefLeague2024/PresentationF.png";
+import Presentation from "assets/ChiefLeague2024/Presentation.png";
+import SigmaChiefKick from "assets/ChiefLeague2024/SigmaChiefKick.png";
+import SigmaChiefVoteOfThanks from "assets/ChiefLeague2024/SigmaChiefVoteOfThanks.png";
+import Team from "assets/ChiefLeague2024/Team.png";
+import UIDirectorOfSport from "assets/ChiefLeague2024/UIDirectorOfSport.png";
+import UiDirectorOfSportVoteOfThanks from "assets/ChiefLeague2024/UiDirectorOfSportVoteOfThanks.png";
 
 export {
   HsLamidoSanusiJPG,
@@ -85,5 +99,19 @@ export {
   RegisteringAttendees,
   SigmaChief,
   Volunteers,
-  Volunteers2
+  Volunteers2,
+  CommitteChair,
+  Chief,
+  FemaleTeam,
+  LoyalSigmites,
+  MatchOn,
+  MatchOnF1,
+  OldSig,
+  PresentationF,
+  Presentation,
+  SigmaChiefKick,
+  SigmaChiefVoteOfThanks,
+  Team,
+  UIDirectorOfSport,
+  UiDirectorOfSportVoteOfThanks,
 };
