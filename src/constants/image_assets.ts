@@ -55,7 +55,6 @@ import SigmaChiefVoteOfThanks from "assets/ChiefLeague2024/SigmaChiefVoteOfThank
 import Team from "assets/ChiefLeague2024/Team.png";
 import UIDirectorOfSport from "assets/ChiefLeague2024/UIDirectorOfSport.png";
 import UiDirectorOfSportVoteOfThanks from "assets/ChiefLeague2024/UiDirectorOfSportVoteOfThanks.png";
-import Bushitos from "assets/Picnic/Bushitos.png";
 import Chris from "assets/Picnic/Chris.png";
 import Games from "assets/Picnic/Games.png";
 import GameSession from "assets/Picnic/GameSession.png";
