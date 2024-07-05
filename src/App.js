@@ -21,6 +21,7 @@ import ChiefsLeague2023 from "./pages/Events/SigmaChief'sLeague/SigmaChief'sLeag
 import ChiefsLeague2024 from "./pages/Events/SigmaChief'sLeague/SigmaChief'sLeague2024";
 import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
+import Picnic from './pages/Events/GentlemenPicnic/Picnic'
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
@@ -51,6 +52,7 @@ function App() {
           <Route path="health-outreach/2023" element={<HealthOutreach2023 />} />
           <Route path="/events/sigma-chief's-league/2023" element={<ChiefsLeague2023 />} />
           <Route path="/events/sigma-chief's-league/2024" element={<ChiefsLeague2024 />} />
+          <Route path="/events/Gentlemen-picnic" element={<Picnic />} />
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />
