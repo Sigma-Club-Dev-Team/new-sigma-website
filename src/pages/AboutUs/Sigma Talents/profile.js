@@ -5,28 +5,14 @@ import Profilecard from "./profilecard";
 import {
   TomiwaHeadshot,
   TimothyHeadshot,
-  // AfiaHeadshot,
   akorede,
   oyerohabib,
-  sigmachief,
+
   // FredHeadshot,
 } from "constants/image_assets";
 
 const ProfileOBJ = [
-  {
-    id: 1,
-    Headshot: sigmachief,
-    name: "Sigma Chief",
-    skill: "Software tester",
-    intro:
-      "He is a Quality Assurance Software Tester with over four years of expertise manually and assists in discovering relevant content and visual issues, participates in numerous test cases, and contributes to Tester Work with published software testing publications.",
-    LinkedIn:
-      "https://www.linkedin.com/in/moses-%E1%BA%B9ni%E1%BB%8Dl%C3%A1-88758517a",
-    Email: "jenyoeniola@gmail.com",
-    Link: "https://testerwork.com/author/ana/",
-    Twitter: "#",
-    Instagram: "#",
-  },
+ 
   {
     id: 2,
     Headshot: akorede,
