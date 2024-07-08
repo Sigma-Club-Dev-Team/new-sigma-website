@@ -33,7 +33,7 @@ const Scholarship = () => {
           px={{ lg: "6", md: "2", sm: "0" }}
         >
           <Text
-            mt={{ lg: "40", md: "35%", sm: "5%" }}
+           
             display="block"
             fontSize="24"
             lineHeight="normal"
@@ -44,13 +44,35 @@ const Scholarship = () => {
           <br />
 
           <Text fontSize="16px" lineHeight="7">
-            He is a final year student of the Faculty of Law in the University
-            of Ibadan. He runs a PR agency, OMA brand and subsidiaries. He is
-            also an ambassador for various brands like; MyStash, Ohealth,
-            SwiftMoney and Mayor Merchant Synergy Enterprise.
+            He is a final-year student at the Faculty of Law, University of
+            Ibadan, with a strong passion for leadership, public relations, and
+            philanthropy.
+            <br />
+            <br />
+            He has held various leadership positions on campus, including Public
+            Relations Officer for the Faculty of Law and the University of
+            Ibadan Student's Union, as well as Majority Leader of the Lord
+            Tedder Representative Council.
+            <br />
+            <br />
+            Beyond campus, he currently serves as the Director of Contact,
+            Mobilization and Campus Intervention for NANS Oyo.
+            <br />
+            <br />
+            As a PR expert, he runs a successful PR agency and is the founder of
+            the renowned Fount Media, leveraging his expertise in public
+            relations, and marketing to deliver strategic solutions for clients.
+            <br />
+            <br />
+            With a proven track record of success, he has received numerous
+            leadership awards for his outstanding contributions and dedication
+            to public service and humanity in general. This is even as he
+            remains committed to making a positive impact in his society and the
+            world at large through his laudable philanthropic efforts.
+            <br />
             <br />
             <Text fontSize="16" fontWeight={500}>
-            He is the embodiment of the Sigma Ideals and tradition as he is a philanthropist and socialite.
+            The Sigma Chief, who embodies the Sigma ideals and tradition, is a respected philanthropist and socialite.
             </Text>
             <Text fontSize="20" fontWeight={600} py={8}>
               "The Sigma Chief is The Sigma Club"
