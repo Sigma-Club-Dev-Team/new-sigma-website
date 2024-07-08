@@ -4391,7 +4391,47 @@ const OldSigmitesOBJ: OldSigmite[] = [
         "id": "878",
         "sigmaYear": "2021/2022",
         "name": "Dauda Wale Japhet"
-    }
+    },
+    {
+        "id": "879",
+        "sigmaYear": "2022/2023",
+        "name": "Ukachi Vincent"
+    },
+    {
+        "id": "880",
+        "sigmaYear": "2022/2023",
+        "name": "Ogbu Nnamdi Dave"
+    },
+    {
+        "id": "881",
+        "sigmaYear": "2022/2023",
+        "name": "Abdulazeez Oladimeji"
+    },
+    {
+        "id": "882",
+        "sigmaYear": "2022/2023",
+        "name": "Rasheed Habib"
+    },
+    {
+        "id": "883",
+        "sigmaYear": "2022/2023",
+        "name": "Oyero Habib"
+    },
+    {
+        "id": "884",
+        "sigmaYear": "2022/2023",
+        "name": "Ayodeji Timothy"
+    },
+    {
+        "id": "885",
+        "sigmaYear": "2022/2023",
+        "name": "Adeyanju Akorede"
+    },
+    {
+        "id": "886",
+        "sigmaYear": "2022/2023",
+        "name": "Abimbola Oluwatobi"
+    },
 
  
 ];
