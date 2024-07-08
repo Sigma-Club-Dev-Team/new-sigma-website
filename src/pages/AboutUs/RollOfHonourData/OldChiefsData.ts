@@ -337,6 +337,11 @@ const OldChiefsOBJ: OldSigmite[] = [
     sigmaYear: "2021/2022",
     name: "Eluwa Lucky",
   },
+  {
+    id: "68",
+    sigmaYear: "2022/2023",
+    name: "Eniola Oluwajenyo Moses",
+  },
 ];
 
 export { OldChiefsOBJ };
