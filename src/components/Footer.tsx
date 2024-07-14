@@ -156,7 +156,7 @@ export default function Footer() {
 
             <Stack align={"flex-start"}>
               <Text fontSize={"sm"} pt={4}>
-                © 2023 Sigma Club. All rights reserved.
+                © {new Date().getFullYear()} Sigma Club. All rights reserved.
               </Text>
               <Text
                 fontSize={"lg"}
