@@ -15,18 +15,15 @@ const AdmissionInterviewCard = () => {
       mx={"auto"}
       alignItems={"center"} // Center content vertically
       justifyContent={"center"} // Center content horizontally
-      
     >
-      <Flex maxW={{base: '100%', md: '75%'}}>
-
-      
-      <Flex
-        flexDirection={"column"}
-        color={"#1C1C1C"}
-        fontWeight={600}
+      <Flex maxW={{base: '100%', md: '80%'}}  flexDirection={{ base: "column", md: "row" }}>
+      <Flex 
+        flexDirection={"column"} 
+        color={"#1C1C1C"} 
+        fontWeight={600} 
         flex={1}
-        alignItems={{ base: "center", md: "flex-start" }} // Center text on mobile, align left on desktop
-        textAlign={{ base: "center", md: "left" }} // Center text on mobile, align left on desktop
+       
+        textAlign='left' // Center text on mobile, align left on desktop
       >
         <Text fontSize={"40px"} lineHeight={"60px"}>
           Sigma Club presents Walk Against Drug Abuse💊
@@ -38,12 +35,13 @@ const AdmissionInterviewCard = () => {
           lineHeight={"27px"}
           color={"#1C1C1CB2"}
           marginTop={"20px"}
+          textAlign='left'
         >
           As we mark the international youth day, it is important to stand
           against one of the greatest vices of the youth; Drug Abuse.
         </Text>
 
-        <Text fontSize={"16px"} lineHeight="24px" py={2}>
+        <Text fontSize={"16px"} lineHeight="24px" py={2}  textAlign='left'>
           Date: Monday, August 12th, 2024
           <br /> ⏰Time: 10 AM
           <br /> 📍Start Point: SUB Car Park, UI.
@@ -72,14 +70,14 @@ const AdmissionInterviewCard = () => {
         flexDirection={"column"}
         justify={"center"} // Center image vertically within its flexbox
         alignItems={"center"} // Center image horizontally within its flexbox
-        mt={{ base: "20px", md: "0" }} // Adjust margin top for mobile
+        mt={{ base: "20px", md: "0" }} // Place the image below the text on mobile devices
         gap={"8px"}
         flex={1}
       >
         <Image
           src={Walk}
           borderRadius="lg"
-          width={{ sm: "100%", md: "100%" }}
+          width={{ base: "100%", md: "100%" }} // Adjust width for responsiveness
         />
       </Flex>
       </Flex>
