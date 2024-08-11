@@ -17,7 +17,7 @@ const AdmissionInterviewCard = () => {
       justifyContent={"center"} // Center content horizontally
       
     >
-      <Flex maxW={{base: '100%', md: '75%'}}>
+      <Flex maxW={{base: '100%', md: '75%'}} flexDirection={{ base: "column", md: "row" }} //>
 
       
       <Flex
