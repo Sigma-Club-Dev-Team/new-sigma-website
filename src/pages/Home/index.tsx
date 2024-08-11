@@ -8,7 +8,7 @@ import Philantrophy from "./Philantrophy";
 import Blog from "./TopStories";
 import HonourarySigmites from "./HonSigmites";
 import MerchHero from "./MerchHero";
-import AdmissionInterviewCard from "./AdmissionInterviewCard";
+import AdmissionInterviewCard from "./UpcomingEvent";
 import QuizCompetitionCard from "./QuizCompetitionCard";
 import OurPosts from "./OurPosts";
 
