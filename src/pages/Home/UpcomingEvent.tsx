@@ -3,7 +3,7 @@ import CTAButton from "components/CTAButton";
 import React from "react";
 import { Walk } from "../../constants/image_assets";
 
-const AdmissionInterviewCard = () => {
+const SigmaWalk = () => {
   return (
     <Box
       width={"100%"}
@@ -16,14 +16,16 @@ const AdmissionInterviewCard = () => {
       alignItems={"center"} // Center content vertically
       justifyContent={"center"} // Center content horizontally
     >
-      <Flex maxW={{base: '100%', md: '80%'}}  flexDirection={{ base: "column", md: "row" }}>
-      <Flex 
-        flexDirection={"column"} 
-        color={"#1C1C1C"} 
-        fontWeight={600} 
+      <Flex maxW={{base: '100%', md: '75%'}} flexDirection={{ base: "column", md: "row" }} >
+
+      
+      <Flex
+        flexDirection={"column"}
+        color={"#1C1C1C"}
+        fontWeight={600}
         flex={1}
        
-        textAlign='left' // Center text on mobile, align left on desktop
+        textAlign='left' 
       >
         <Text fontSize={"40px"} lineHeight={"60px"}>
           Sigma Club presents Walk Against Drug Abuse💊
@@ -85,4 +87,4 @@ const AdmissionInterviewCard = () => {
   );
 };
 
-export default AdmissionInterviewCard;
+export default SigmaWalk ;

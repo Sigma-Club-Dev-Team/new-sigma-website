@@ -10,6 +10,15 @@ export type IMediaPost = {
 
 const MediaPosts:IMediaPost[] = [
   {
+    source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
+    imageUrl: "./assets/images/pngs/walk.jpeg",
+    title:
+      "NEWS: IYD: SIGMA Stages Campus Walk To Raise Awareness Against Drug Abuse",
+    description:
+      "SIGMA Club, University of Ibadan, in commemoration of this year’s International Youth Day, hosts walk against Drug Abuse on Monday, August 12, 2024.... ",
+    link: "https://www.ucjui.com/iyd-sigma-stages-campus-walk-to-raise-awareness-against-drug-abuse/",
+  },
+  {
     source: "©️THE LAW PRESS ORGANISATION, 2024.",
     imageUrl: "./assets/images/pngs/resss2022.png",
     title:
