@@ -22,6 +22,7 @@ import ChiefsLeague2024 from "./pages/Events/SigmaChief'sLeague/SigmaChief'sLeag
 import Blogdetails from "./pages/Articles/Blogdetails";
 import Talents from "./pages/AboutUs/Sigma Talents/profile";
 import Picnic from './pages/Events/GentlemenPicnic/Picnic'
+import SigmaIYD from './pages/Events/SigmaIYD'
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 import ScrollToTop from "./components/ScrollToTop";
@@ -53,6 +54,7 @@ function App() {
           <Route path="/events/sigma-chief's-league/2023" element={<ChiefsLeague2023 />} />
           <Route path="/events/sigma-chief's-league/2024" element={<ChiefsLeague2024 />} />
           <Route path="/events/Gentlemen-picnic" element={<Picnic />} />
+          <Route path="/events/sigma-iyd" element={<SigmaIYD  />} />
         </Route>
         <Route path="/events/quiz-competition/2024" element={<Quiz2024 />} />
         <Route path="/events/quiz-competition/2024/stages" element={<Quiz2024Stages />} />

@@ -66,6 +66,7 @@ import Introduction from "assets/Picnic/Introduction.png";
 import RandomShot from "assets/Picnic/RandomShot.png";
 import SigmaChiefPNG from "assets/Picnic/SigmaChief.png";
 import Walk from 'assets/walk.jpeg'
+import SigmaIYDJPG from 'assets/SigmaIYD.jpg'
 
 export {
   HsLamidoSanusiJPG,
@@ -135,5 +136,6 @@ export {
   Introduction,
   RandomShot,
   SigmaChiefPNG,
-  Walk
+  Walk,
+  SigmaIYDJPG
 };
