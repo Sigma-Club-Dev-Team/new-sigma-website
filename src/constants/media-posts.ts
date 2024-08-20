@@ -11,6 +11,15 @@ export type IMediaPost = {
 const MediaPosts:IMediaPost[] = [
   {
     source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
+    imageUrl: "./assets/images/jpgs/essay.jpg",
+    title:
+      "NEWS: SIGMA Releases Call for Entries for Essay Competition",
+    description:
+      "The topic speaks to the need for a sense of responsibility among students, who will, in time, become leaders and stakeholders who can effect changes in our society,” the SIGMA Chief said reacting to the call for entries.... ",
+    link: "https://www.ucjui.com/news-sigma-releases-call-for-entries-for-essay-competition/",
+  },
+  {
+    source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
     imageUrl: "./assets/images/pngs/walk.jpeg",
     title:
       "NEWS: IYD: SIGMA Stages Campus Walk To Raise Awareness Against Drug Abuse",
