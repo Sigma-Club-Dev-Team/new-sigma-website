@@ -1,5 +1,5 @@
-import { Box, Flex, Link, Text, Image } from "@chakra-ui/react";
-import CTAButton from "components/CTAButton";
+import { Box, Flex,  Text, Image } from "@chakra-ui/react";
+// import CTAButton from "components/CTAButton";
 import React from "react";
 import { SigmaEssay } from "../../constants/image_assets";
 
