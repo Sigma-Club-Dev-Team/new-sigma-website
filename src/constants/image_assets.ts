@@ -23,11 +23,10 @@ import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
 import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
-import AfiaHeadshot from "assets/Sigma-Talents/AfiaHeadshot.jpg";
+
 import akorede from "assets/Sigma-Talents/akorede.jpeg";
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
-import sigmachief from "assets/Sigma-Talents/sigmachiefHeadShot.jpg";
-import FredHeadshot from "assets/Sigma-Talents/FredHeadshot.jpeg";
+import Adesokan from "assets/Sigma-Talents/Adesokan.jpg";
 import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
 import Participants from "assets/HealthOutreach2024/Participants.png";
 import Participants2 from "assets/HealthOutreach2024/Participants2.png";
@@ -65,6 +64,9 @@ import Intro2 from "assets/Picnic/Intro2.png";
 import Introduction from "assets/Picnic/Introduction.png";
 import RandomShot from "assets/Picnic/RandomShot.png";
 import SigmaChiefPNG from "assets/Picnic/SigmaChief.png";
+import Walk from "assets/walk.jpeg";
+import SigmaIYDJPG from "assets/SigmaIYD.jpg";
+import SigmaEssay from "assets/UpcomingEvents/essay.jpg";
 
 export {
   HsLamidoSanusiJPG,
@@ -91,13 +93,12 @@ export {
   ScholarShipScheme,
   TomiwaHeadshot,
   TimothyHeadshot,
-  AfiaHeadshot,
   akorede,
   oyerohabib,
-  sigmachief,
+
   GuestLuncheon,
   DEFAULT,
-  FredHeadshot,
+  Adesokan,
   Participants,
   Participants2,
   BloodTest,
@@ -134,4 +135,7 @@ export {
   Introduction,
   RandomShot,
   SigmaChiefPNG,
+  Walk,
+  SigmaIYDJPG,
+  SigmaEssay,
 };

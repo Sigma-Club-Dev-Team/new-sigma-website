@@ -10,6 +10,24 @@ export type IMediaPost = {
 
 const MediaPosts: IMediaPost[] = [
   {
+    source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
+    imageUrl: "./assets/images/jpgs/essay.jpg",
+    title:
+      "NEWS: SIGMA Releases Call for Entries for Essay Competition",
+    description:
+      "The topic speaks to the need for a sense of responsibility among students, who will, in time, become leaders and stakeholders who can effect changes in our society,” the SIGMA Chief said reacting to the call for entries.... ",
+    link: "https://www.ucjui.com/news-sigma-releases-call-for-entries-for-essay-competition/",
+  },
+  {
+    source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
+    imageUrl: "./assets/images/pngs/walk.jpeg",
+    title:
+      "NEWS: IYD: SIGMA Stages Campus Walk To Raise Awareness Against Drug Abuse",
+    description:
+      "SIGMA Club, University of Ibadan, in commemoration of this year’s International Youth Day, hosts walk against Drug Abuse on Monday, August 12, 2024.... ",
+    link: "https://www.ucjui.com/iyd-sigma-stages-campus-walk-to-raise-awareness-against-drug-abuse/",
+  },
+  {
     source: "©️THE LAW PRESS ORGANISATION, 2024.",
     imageUrl: "./assets/images/pngs/quiz-winner-group.jpg",
     title:

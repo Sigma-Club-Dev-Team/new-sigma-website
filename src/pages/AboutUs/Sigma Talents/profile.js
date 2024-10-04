@@ -7,16 +7,15 @@ import {
   TimothyHeadshot,
   akorede,
   oyerohabib,
-
-  // FredHeadshot,
+   Adesokan
 } from "constants/image_assets";
 
 const ProfileOBJ = [
  
   {
-    id: 2,
+    id: 1,
     Headshot: akorede,
-    name: "Loyalist Adeyanju Akorede",
+    name: "Old Sigmite Adeyanju Akorede",
     skill: "Backend Developer",
     intro:
       "People, Technology, Financial Analysis and LIteracy, Entrepreneurship. In no particular order, those are the pillars upon which I am building my life and career",
@@ -27,8 +26,8 @@ const ProfileOBJ = [
     Instagram: "#",
   },
   {
-    id: 3,
-    name: "Loyalist Oyero Habibulah",
+    id: 2,
+    name: "Old Sigmite Oyero Habibulah",
     Headshot: oyerohabib,
     skill: "Software Engineer",
     intro:
@@ -36,6 +35,19 @@ const ProfileOBJ = [
     LinkedIn: "https://www.linkedin.com/in/oyerohabib/",
     Email: "oyerhabib@yahoo.com",
     Link: "https://oyerohabib.com/",
+    Twitter: "#",
+    Instagram: "#",
+  },
+  {
+    id: 3,
+    name: "Loyalist Adesokan Emmanuel",
+    Headshot: Adesokan,
+    skill: "Software Engineer",
+    intro:
+      "Adesokan Emmanuel is a skilled Software Engineer. He excels in creating seamless user experience and thrives in collaborative environments. He is commited to continuos learning and growth",
+    LinkedIn: "#",
+    Email: "#",
+    Link: "#",
     Twitter: "#",
     Instagram: "#",
   },

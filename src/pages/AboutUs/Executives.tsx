@@ -17,7 +17,7 @@ import { Executive } from "types";
 const ExecutiveObj: Executive[] = [
   {
     id: 1,
-    name: "Loyalist Owonifari Toluwaleke",
+    name: "Loyalist Olasupo Tomiwa",
     post: "Deputy Chief (Band Committee Chairman)",
     image: DeputyChiefJPG,
   },
@@ -41,7 +41,7 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 5,
-    name: "Loyalist Fijabi Oluwatobi",
+    name: "Loyalist Okedele Faith",
     post: "Publicity Committee Chairman",
     image: PublicityChairJPG,
   },
