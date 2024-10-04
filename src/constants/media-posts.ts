@@ -8,10 +8,10 @@ export type IMediaPost = {
   videoUrl?: string;
 };
 
-const MediaPosts:IMediaPost[] = [
+const MediaPosts: IMediaPost[] = [
   {
     source: "©️THE LAW PRESS ORGANISATION, 2024.",
-    imageUrl: "./assets/images/pngs/resss2022.png",
+    imageUrl: "./assets/images/pngs/quiz-winner-group.jpg",
     title:
       "NEWS: Roseline Etuokwu Sigma National Secondary Schools Quiz Competition Reaches Thrilling Final Stage",
     description:
@@ -21,7 +21,8 @@ const MediaPosts:IMediaPost[] = [
   {
     source: "Channels Television",
     title: "What To Know About Sigma Club Nat’l Secondary School Quiz",
-    description: "Watch Sigma Chief Interview on Channels TV as he talks about the Quiz Secondart School Quiz",
+    description:
+      "Watch Sigma Chief Interview on Channels TV as he talks about the Quiz Secondart School Quiz",
     logoUrl: "./assets/images/pngs/channelLogo.png",
     videoUrl: "https://www.youtube.com/watch?v=fc2-N8w2g6M",
     link: "https://www.youtube.com/watch?v=fc2-N8w2g6M",
@@ -45,7 +46,7 @@ const MediaPosts:IMediaPost[] = [
   },
   {
     source: "©THE DAILY TRIBUNE NEWSPAPER",
-    imageUrl: "./assets/images/pngs/resss2022.png",
+    imageUrl: "./assets/images/pngs/quiz-winner-group.jpg",
     title: "NEWS:Finalists Emerge from Roseline Etuokwu Sigma Quiz Competition",
     description:
       "From the state heats to the regional showdowns, and now to the national final, each stage has been a showcase of knowledge, collaboration... ",
@@ -63,6 +64,5 @@ const MediaPosts:IMediaPost[] = [
   },
   // Add more posts as needed
 ];
-
 
 export default MediaPosts;
