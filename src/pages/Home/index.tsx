@@ -8,8 +8,9 @@ import Philantrophy from "./Philantrophy";
 import Blog from "./TopStories";
 import HonourarySigmites from "./HonSigmites";
 import MerchHero from "./MerchHero";
-import SigmaWalk  from "./UpcomingEvent";
+// import SigmaWalk  from "./UpcomingEvent";
 // import QuizCompetitionCard from "./QuizCompetitionCard";
+import Quiz2025 from './UpcomingEvent'
 import OurPosts from "./OurPosts";
 
 function HomePage() {
@@ -17,8 +18,8 @@ function HomePage() {
     <>
       <Header />
       <Hero />
-      <SigmaWalk />
-      {/* <QuizCompetitionCard /> */}
+      {/* <SigmaWalk /> */}
+      <Quiz2025 />
       <UpcomingEvent />
       <Philantrophy /> 
       <OurPosts />
