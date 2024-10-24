@@ -1,7 +1,11 @@
-import { Box, Flex,  Text, Image } from "@chakra-ui/react";
-// import CTAButton from "components/CTAButton";
+import { Box, Flex, Link, Text , Image} from "@chakra-ui/react";
+import CTAButton from "components/CTAButton";
+import ExternalLinks from "constants/external_links";
 import React from "react";
-import { SigmaEssay } from "../../constants/image_assets";
+// import { Link as RRLink } from "react-router-dom";
+// import { appColors } from "theme";
+
+import { Quiz2025 } from "../../constants/image_assets";
 
 const SigmaWalk = () => {
   return (
@@ -27,33 +31,8 @@ const SigmaWalk = () => {
           flex={1}
           textAlign="left"
         >
-          <Text fontSize={"20px"}>
-            Unlock Your Potential at the Benedict Kudayah Sigma Essay
-            Competition! Are you a student at the University of Ibadan? Do you
-            have ideas on how to create lasting social change in Nigeria? Here's
-            your chance to make a difference and win exciting prizes!
-          </Text>
-
-          <Text
-            fontWeight={500}
-            fontSize={"20px"}
-            lineHeight={"27px"}
-            color={"#1C1C1CB2"}
-            marginTop={"20px"}
-            textAlign="left"
-          >
-            Topic: Creating Lasting Social Change: Strategies for Effective
-            Socio-Philanthropic Interventions in Nigeria.
-          </Text>
-
-          <Text fontSize={"16px"} lineHeight="24px" py={2} textAlign="left">
-            Submission Deadline: August 16th - September 16th, 2024. <br />{" "}
-            <br />
-            Guidelines: <br />
-            - Open to all University of Ibadan students. <br />
-            - Essays must be 1200-1500 words, PDF format, double-spaced, font
-            size 12. <br />
-            -Attach your school ID and submit to sigmacompetition2024@gmail.com.
+         <Text fontSize={"40px"} lineHeight={"60px"}>
+            2025 Roseline Etuokwu quiz competition
           </Text>
 
           <Text
@@ -61,12 +40,36 @@ const SigmaWalk = () => {
             fontSize={"18px"}
             lineHeight={"27px"}
             color={"#1C1C1CB2"}
-            marginTop={"10px"}
+            marginTop={"20px"}
           >
-            Seize this opportunity to showcase your brilliance and contribute to
-            meaningful change! For more details, contact 08163328645
+            Sigma Club is organising the 2025 Roseline Etuokwu national quiz
+            competition for secondary schools across all states in Nigeria with
+            focus on fields of Mathematics, English Language, and General
+            Knowledge with 20 MILLION NAIRA worth of prizes and consolation prizes
+            for winners at each stage; state, regional and national
+            <br />
+            <br />
+            Registration is completely FREE and every school should provide two
+            students (Male and female to ensure gender equality except in cases
+            of single sex schools)
           </Text>
+          
 
+
+          {/* <Link
+              color={appColors.brand.purple}
+              textDecoration={"underline"}
+              to="/events/quiz-competition/2024"
+              as={RRLink}
+            >
+              View more Details
+            </Link> */}
+         
+           <Box my={6}>
+           <Link href={ExternalLinks.SigmaRegGoogleForm} isExternal={true}>
+              <CTAButton>REGISTER NOW</CTAButton>
+            </Link>
+           </Box>
           {/* <Link
             href="https://bit.ly/SigWADA"
             isExternal
@@ -85,7 +88,7 @@ const SigmaWalk = () => {
           flex={1}
         >
           <Image
-            src={SigmaEssay}
+            src={Quiz2025}
             borderRadius="lg"
             width={{ base: "100%", md: "100%" }} // Adjust width for responsiveness
           />

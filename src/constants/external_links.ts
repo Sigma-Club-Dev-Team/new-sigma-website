@@ -1,5 +1,5 @@
 const ExternalLinks = {
-  SigmaRegGoogleForm : "https://forms.gle/vRhYyVyGZXjbEATi6",
+  SigmaRegGoogleForm : "https:quiz.sigmaclubui.ng",
 };
 
 export default ExternalLinks;
