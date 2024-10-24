@@ -23,7 +23,7 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 2,
-    name: "Loyalist Ogbonna Prince Onyekachukwu",
+    name: "Loyalist Olaniyan Mohammed",
     post: "Chief Scribe (Secretariat Committee Chairman)",
     image: ChiefScribeJPG,
   },
@@ -35,7 +35,7 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 4,
-    name: "Loyalist Oladimeji Muheez",
+    name: "Loyalist Babatunde Faith",
     post: "Deputy Scribe (Maintenance & Decoration Committee Chairman) ",
     image: DeputyChiefScribeJPG,
   },

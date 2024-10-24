@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Text , Image} from "@chakra-ui/react";
 import CTAButton from "components/CTAButton";
-import ExternalLinks from "constants/external_links";
+// import ExternalLinks from "constants/external_links";
 import React from "react";
 // import { Link as RRLink } from "react-router-dom";
 // import { appColors } from "theme";
@@ -66,7 +66,7 @@ const SigmaWalk = () => {
             </Link> */}
          
            <Box my={6}>
-           <Link href={ExternalLinks.SigmaRegGoogleForm} isExternal={true}>
+           <Link href='https://quiz.sigmaclubui.ng/' >
               <CTAButton>REGISTER NOW</CTAButton>
             </Link>
            </Box>
