@@ -41,7 +41,7 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 5,
-    name: "Loyalist Okedele Faith",
+    name: "Loyalist Sulaimon Phillipson",
     post: "Publicity Committee Chairman",
     image: PublicityChairJPG,
   },
