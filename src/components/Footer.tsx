@@ -90,10 +90,10 @@ export default function Footer() {
                 <Text>
                   <Text as={"b"}>Email:</Text>{" "}
                   <ChakraLink
-                    href="mailto:sigmaclub1950@gmail.com"
+                    href="sigmaclub1950archieve@gmail.com"
                     textDecoration={"underline"}
                   >
-                    sigmaclub1950@gmail.com
+                   sigmaclub1950archieve@gmail.com
                   </ChakraLink>
                 </Text>
                 <Text>
@@ -102,7 +102,7 @@ export default function Footer() {
                     href="tel: +234 818 254 3200"
                     textDecoration={"underline"}
                   >
-                    +234 818 254 3200
+                    +234 90 6086 5992
                   </ChakraLink>
                 </Text>
               </VStack>
