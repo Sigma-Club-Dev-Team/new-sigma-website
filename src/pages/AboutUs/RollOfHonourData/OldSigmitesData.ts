@@ -1,7 +1,7 @@
 import { OldSigmite } from "types";
 
 const OldSigmitesOBJ: OldSigmite[] = [
- 
+
     {
         "id": "1",
         "sigmaYear": "1950/1953",
@@ -4432,9 +4432,81 @@ const OldSigmitesOBJ: OldSigmite[] = [
         "sigmaYear": "2022/2023",
         "name": "Abimbola Oluwatobi"
     },
+    {
+        "id": "887",
+        "sigmaYear": "2023/2024",
+        "name": "Olasupo Tomiwa"
+    },
+    {
+        "id": "888",
+        "sigmaYear": "2023/2024",
+        "name": "Bamidele Taiwo Paul"
+    },
+    {
+        "id": "889",
+        "sigmaYear": "2023/2024",
+        "name": "Makinde Ayodele"
+    },
+    {
+        "id": "890",
+        "sigmaYear": "2023/2024",
+        "name": "Babatunde Akinloluwa"
+    },
+    {
+        "id": "891",
+        "sigmaYear": "2023/2024",
+        "name": "Adediran David"
+    },
+    {
+        "id": "892",
+        "sigmaYear": "2023/2024",
+        "name": "Adedokun Ibrahim"
+    },
+    {
+        "id": "893",
+        "sigmaYear": "2023/2024",
+        "name": "Fijabi Oluwatobi"
+    },
+    {
+        "id": "894",
+        "sigmaYear": "2023/2024",
+        "name": "Ilegbusi Timothy"
+    },
+    {
+        "id": "895",
+        "sigmaYear": "2023/2024",
+        "name": "Owonifaari Toluwaleke"
+    },
+    {
+        "id": "896",
+        "sigmaYear": "2023/2024",
+        "name": "Oladapo Samuel"
+    },
+    {
+        "id": "897",
+        "sigmaYear": "2023/2024",
+        "name": "Oyeyebi Qudus"
+    },
+    {
+        "id": "898",
+        "sigmaYear": "2023/2024",
+        "name": "Ibosiola Oluwatobi"
+    },
+    {
+        "id": "899",
+        "sigmaYear": "2023/2024",
+        "name": "Okedele Faith"
+    },
+    {
+        "id": "900",
+        "sigmaYear": "2023/2024",
+        "name": "Muhammad Jamiu"
+    },
 
- 
+
 ];
+
+
 
 export { OldSigmitesOBJ };
 

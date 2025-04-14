@@ -342,6 +342,11 @@ const OldChiefsOBJ: OldSigmite[] = [
     sigmaYear: "2022/2023",
     name: "Eniola Oluwajenyo Moses",
   },
+  {
+    id: "69",
+    sigmaYear: "2023/2024",
+    name: "Olalekan Micheal Ajibola",
+  },
 ];
 
 export { OldChiefsOBJ };
