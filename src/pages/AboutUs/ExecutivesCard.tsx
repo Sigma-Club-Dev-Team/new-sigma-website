@@ -22,15 +22,16 @@ export default function ExecutivesCard({ executive }: ExecutivesCardProps) {
         <Box
           className="animate-bottom"
           maxW={"290px"}
-          height={370}
+          height={430}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"md"}
           rounded={"md"}
           overflow={"hidden"}
         >
-          <Box bg={"gray.100"} mb={4} pos={"relative"}>
-            <Image src={image} objectFit="fill" width="288px" height="250px" />
+          <Box bg={"gray.100"} mb={4} pos={"relative"} bgImage={`url(${image})`} bgSize={"cover"}>
+            {/* <Image src={"imae"} objectFit="fill" width="288px" height="250px" /> */}
+            <Box width="288px" height="300px"></Box>
           </Box>
           <Stack p={3} mb={4}>
             <Heading
