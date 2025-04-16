@@ -10,6 +10,10 @@ import {
   SecurityChairJPG,
   PublicityChairJPG,
   DeputyChiefScribeJPG,
+  DanielPromise,
+  SulaimonPhilipson,
+  DEFAULT,
+  OladimejiMuheez,
   // DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
@@ -19,7 +23,7 @@ const ExecutiveObj: Executive[] = [
     id: 1,
     name: "Loyalist Babatunde Faith",
     post: "Deputy Chief (Band Committee Chairman)",
-    image: DeputyChiefJPG,
+    image: DeputyChiefScribeJPG,
   },
   {
     id: 2,
@@ -31,37 +35,37 @@ const ExecutiveObj: Executive[] = [
     id: 3,
     name: "Loyalist Daniel Promise",
     post: "Financial Scribe (Food & Drinks Committee Chairman)",
-    image: FDChairJPG,
+    image: DanielPromise,
   },
   {
     id: 4,
-    name: "Loyalist Oladimeji",
+    name: "Loyalist Oladimeji Muheez",
     post: "Deputy Scribe (Maintenance & Decoration Committee Chairman) ",
-    image: DeputyChiefScribeJPG,
+    image: OladimejiMuheez,
   },
   {
     id: 5,
     name: "Loyalist Sulaimon Philipson",
     post: "Publicity Committee Chairman",
-    image: PublicityChairJPG,
+    image: SulaimonPhilipson,
   },
   {
     id: 6,
     name: "Loyalist Ahmed Abdullahi",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
-    image: SigmaTJPG,
+    image: InvestmentChairJPG,
   },
   {
     id: 7,
-    name: "Loyalist Ahmed Abdullahi",
+    name: "Loyalist Olaosebikan Gbolahan",
     post: "Investment and Special Duties Committee Chairman",
-    image: InvestmentChairJPG,
+    image: DEFAULT,
   },
   {
     id: 8,
     name: "Loyalist Ojo Jolaoluwa Oluwatobi",
     post: "Security Committee Chairman",
-    image: SecurityChairJPG,
+    image: DEFAULT,
   },
 ];
 

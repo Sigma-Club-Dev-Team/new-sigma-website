@@ -20,6 +20,9 @@ import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpg";
 import SigmaTJPG from "assets/images/excos/sigma_t.jpg";
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
+import DanielPromise from "assets/images/excos/danielPromise.jpg";
+import SulaimonPhilipson from "assets/images/excos/sulaimonPhilipson.jpg";
+import OladimejiMuheez from "assets/images/excos/oladimejiMuheez.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
 import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
@@ -96,6 +99,9 @@ export {
   TimothyHeadshot,
   akorede,
   oyerohabib,
+  DanielPromise,
+  SulaimonPhilipson,
+  OladimejiMuheez,
 
   GuestLuncheon,
   DEFAULT,
