@@ -2,13 +2,8 @@ import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import {
-  DeputyChiefJPG,
   ChiefScribeJPG,
-  FDChairJPG,
-  SigmaTJPG,
   InvestmentChairJPG,
-  SecurityChairJPG,
-  PublicityChairJPG,
   DeputyChiefScribeJPG,
   DanielPromise,
   SulaimonPhilipson,
