@@ -6,11 +6,11 @@ import {
   ChiefScribeJPG,
   FDChairJPG,
   SigmaTJPG,
-  InvestmentChairJPG,
-  SecurityChairJPG,
+  // InvestmentChairJPG,
+  // SecurityChairJPG,
   PublicityChairJPG,
   DeputyChiefScribeJPG,
-  // DEFAULT,
+  DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
 
@@ -53,15 +53,17 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 7,
-    name: "Loyalist Ahmed Abdullahi",
+    name: "Loyalist Olaosebikan Gbolahan",
     post: "Investment and Special Duties Committee Chairman",
-    image: InvestmentChairJPG,
+    // image: InvestmentChairJPG,
+    image: DEFAULT,
   },
   {
     id: 8,
     name: "Loyalist Ojo Jolaoluwa Oluwatobi",
     post: "Security Committee Chairman",
-    image: SecurityChairJPG,
+    // image: SecurityChairJPG,
+    image: DEFAULT,
   },
 ];
 
