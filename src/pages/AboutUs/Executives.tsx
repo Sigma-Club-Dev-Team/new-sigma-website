@@ -6,8 +6,8 @@ import {
   ChiefScribeJPG,
   FDChairJPG,
   SigmaTJPG,
-  InvestmentChairJPG,
-  SecurityChairJPG,
+  // InvestmentChairJPG,
+  // SecurityChairJPG,
   PublicityChairJPG,
   DeputyChiefScribeJPG,
   DEFAULT,
@@ -55,6 +55,7 @@ const ExecutiveObj: Executive[] = [
     id: 7,
     name: "Loyalist Olaosebikan Gbolahan",
     post: "Investment and Special Duties Committee Chairman",
+    // image: InvestmentChairJPG,
     image: DEFAULT,
   },
   {
