@@ -9,6 +9,7 @@ import {
   SulaimonPhilipson,
   DEFAULT,
   OladimejiMuheez,
+  Olaosebikan,
   // DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
@@ -54,7 +55,7 @@ const ExecutiveObj: Executive[] = [
     id: 7,
     name: "Loyalist Olaosebikan Gbolahan",
     post: "Investment and Special Duties Committee Chairman",
-    image: DEFAULT,
+    image: Olaosebikan,
   },
   {
     id: 8,

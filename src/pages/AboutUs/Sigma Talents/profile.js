@@ -7,11 +7,12 @@ import {
   TimothyHeadshot,
   akorede,
   oyerohabib,
-   Adesokan
+  Adesokan,
+  Bankole
 } from "constants/image_assets";
 
 const ProfileOBJ = [
- 
+
   {
     id: 1,
     Headshot: akorede,
@@ -54,7 +55,7 @@ const ProfileOBJ = [
   {
     id: 4,
     Headshot: TomiwaHeadshot,
-    name: "Loyalist Olasupo Tomiwa",
+    name: "Old Sigmite Olasupo Tomiwa",
     skill: "Front-End Developer",
     intro:
       "I develop and design visual elements and interactive features using modern technologies, which enable users to have a seamless user experience.",
@@ -67,7 +68,7 @@ const ProfileOBJ = [
   {
     id: 5,
     Headshot: TimothyHeadshot,
-    name: "Loyalist Ilegbusi Timothy",
+    name: "Old Sigmite Ilegbusi Timothy",
     skill: "Product Designer",
     intro:
       " 400 level law student of the University of Ibadan. I am a product designer (UI/UX) and I love to cook up innovative ideas to solve human problems through technology.",
@@ -76,6 +77,19 @@ const ProfileOBJ = [
     Twitter: "https://twitter.com/warlordbolade",
     Link: "#",
     Instagram: "#",
+  },
+  {
+    id: 6,
+    Headshot: Bankole,
+    name: "Loyalist Bankole Caleb",
+    skill: "Front-End Developer",
+    intro:
+      "200 level medical student of the College of Medicine, University of Ibadan. I love to do it to the best of my ability, if I have to do it at all; anything my hands find to do.",
+    LinkedIn: "https://www.linkedin.com/in/caleb-bankole",
+    Email: "calebbanky247@gmail.com@gmail.com",
+    Twitter: "https://twitter.com/call_me_csharp",
+    Link: "#",
+    Instagram: "https://instagram.com/csharp_it_is",
   },
   // {
   //   id: 6,
