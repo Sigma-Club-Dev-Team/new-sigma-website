@@ -6,6 +6,7 @@ import {
   InvestmentChairJPG,
   DeputyChiefScribeJPG,
   DanielPromise,
+  OjoTobiloba,
   SulaimonPhilipson,
   DEFAULT,
   OladimejiMuheez,
@@ -61,7 +62,7 @@ const ExecutiveObj: Executive[] = [
     id: 8,
     name: "Loyalist Ojo Jolaoluwa Oluwatobi",
     post: "Security Committee Chairman",
-    image: DEFAULT,
+    image: OjoTobiloba,
   },
 ];
 
