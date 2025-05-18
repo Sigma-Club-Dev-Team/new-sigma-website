@@ -8,7 +8,6 @@ import {
   DanielPromise,
   OjoTobiloba,
   SulaimonPhilipson,
-  DEFAULT,
   OladimejiMuheez,
   Olaosebikan,
   // DEFAULT,
