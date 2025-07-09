@@ -44,35 +44,23 @@ const Chief = () => {
           <br />
 
           <Text fontSize="16px" lineHeight="7">
-            {/* He is a final-year student at the Faculty of Law, University of
-            Ibadan, with a strong passion for leadership, public relations, and
-            philanthropy.
+            He is a final-year student of Veterinary Medicine, widely regarded as an epitome of philanthropy, charity, selflessness, empathy, and leadership.
             <br />
             <br />
-            He has held various leadership positions on campus, including Public
-            Relations Officer for the Faculty of Law and the University of
-            Ibadan Student's Union, as well as Majority Leader of the Lord
-            Tedder Representative Council.
+            His philanthropy is evident not only in his acts of charity but also in his deep concern for the welfare of those around him, consistently championing the well-being of others.
             <br />
             <br />
-            Beyond campus, he currently serves as the Director of Contact,
-            Mobilization and Campus Intervention for NANS Oyo.
+            His leadership journey includes serving as Health Minister of Lord Tedder Hall during the 2021/2022 session, and rising to become the Hall Chairman the following year.
             <br />
             <br />
-            As a PR expert, he runs a successful PR agency and is the founder of
-            the renowned Fount Media, leveraging his expertise in public
-            relations, and marketing to deliver strategic solutions for clients.
+            A persuasive public speaker, he has represented the Faculty of Veterinary Medicine and Lord Tedder Hall at premier public speaking platforms — including the biggest stage of Public Speaking in Sub-Saharan Africa — winning each time he mounted the stage.
             <br />
             <br />
-            With a proven track record of success, he has received numerous
-            leadership awards for his outstanding contributions and dedication
-            to public service and humanity in general. This is even as he
-            remains committed to making a positive impact in his society and the
-            world at large through his laudable philanthropic efforts.
+            Well known for his heart of gold and unwavering strength, he has earned numerous awards and recognitions for his selfless service and contributions to the welfare of all who have crossed paths with him.
             <br />
-            <br /> */}
+            <br />
             <Text fontSize="16" fontWeight={500}>
-              The Sigma Chief, who embodies the Sigma ideals and tradition, is a respected philanthropist and socialite.
+              He is a true embodiment of Sigma ideals and traditions, representing all that the Sigma Club stands for.
             </Text>
             <Text fontSize="20" fontWeight={600} py={8}>
               "The Sigma Chief is The Sigma Club"
