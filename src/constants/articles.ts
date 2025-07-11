@@ -1,7 +1,18 @@
 import { Article } from "types";
+import { sigmaLectureContent } from "./sigmaLectureContent ";
 import * as ImageAssets from "./image_assets";
 
 export const ArticleArray: Article[] = [
+  {
+    id: "6",
+    authorName: "Sigma Club",
+    title: "11th Sigma Club Public Lecture.",
+    content: sigmaLectureContent,
+    abridgedContent:
+      "11th Sigma Club Lecture.",
+    image: ImageAssets.PubblicLecture11,
+    date: new Date("2025-07-11T19:01:27Z"),
+  },
   {
     id: "1",
     authorName: "Sigma Club",

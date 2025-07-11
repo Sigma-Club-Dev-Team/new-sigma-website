@@ -11,6 +11,24 @@ export type IMediaPost = {
 const MediaPosts: IMediaPost[] = [
   {
     source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
+    imageUrl: "./assets/images/UCJUI-PL.jpg",
+    title:
+      "MTN CEO, Karl Toriola, Delivers Lecture as Sigma Club Holds 11th Public Lecture",
+    description:
+      "The Sigma Club, University of Ibadan, held it’s 11th Public Lecture on Thursday, July 3 at the UI Alumni Hall. The lecture was delivered by the CEO, MTN Nigeria, Dr. Karl Toriola.",
+    link: "https://www.ucjui.com/mtn-ceo-karl-toriola-delivers-lecture-as-sigma-club-holds-11th-public-lecture/",
+  },
+  {
+    source: "©️NIGERIAN TRIBUNE.",
+    imageUrl: "./assets/images/UCJUI-PL.jpg",
+    title:
+      "Gov Makinde, Alaafin, others attend MTN CEO’s lecture",
+    description:
+      "The Alaafin of Oyo, Oba Akeem Owoade, and the representatives of the Oyo State Governor and the Vice Chancellor of the University of Ibadan, spoke at the 11th public lecture of the Sigma Club, University of Ibadan, delivered by the Managing Director and Chief Executive Officer (CEO) of MTN Nigeria, Dr Karl Toriola, in honour of Old Sigmite and former CEO of First Bank Group, Dr Adesola Adeduntan.",
+    link: "https://tribuneonlineng.com/gov-makinde-alaafin-others-attend-mtn-ceos-lecture/",
+  },
+  {
+    source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
     imageUrl: "./assets/images/jpgs/essay.jpg",
     title:
       "NEWS: SIGMA Releases Call for Entries for Essay Competition",

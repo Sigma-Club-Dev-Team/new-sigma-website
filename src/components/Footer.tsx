@@ -90,16 +90,16 @@ export default function Footer() {
                 <Text>
                   <Text as={"b"}>Email:</Text>{" "}
                   <ChakraLink
-                    href="sigmaclub1950archieve@gmail.com"
+                    href="sigmaclub1950@gmail.com"
                     textDecoration={"underline"}
                   >
-                   sigmaclub1950archieve@gmail.com
+                   sigmaclub1950gmail.com
                   </ChakraLink>
                 </Text>
                 <Text>
                   <Text as={"b"}>Phone Number:</Text>{" "}
                   <ChakraLink
-                    href="tel: +234 818 254 3200"
+                    href="tel: +234 813 469 0893"
                     textDecoration={"underline"}
                   >
                     +234 90 6086 5992

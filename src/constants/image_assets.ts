@@ -73,7 +73,8 @@ import SigmaChiefPNG from "assets/Picnic/SigmaChief.png";
 import Walk from "assets/walk.jpeg";
 import SigmaIYDJPG from "assets/SigmaIYD.jpg";
 import SigmaEssay from "assets/UpcomingEvents/essay.jpg";
-import Quiz2025 from "assets/UpcomingEvents/2025quiz.jpg"
+import Quiz2025 from "assets/UpcomingEvents/2025quiz.jpg";
+import PubblicLecture11 from "assets/images/events/11thPublicLecture.jpg"
 
 export {
   HsLamidoSanusiJPG,
@@ -151,5 +152,6 @@ export {
   Walk,
   SigmaIYDJPG,
   SigmaEssay,
-  Quiz2025
+  Quiz2025,
+  PubblicLecture11
 };
