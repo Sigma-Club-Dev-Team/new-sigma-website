@@ -20,6 +20,11 @@ import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpg";
 import SigmaTJPG from "assets/images/excos/sigma_t.jpg";
 import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
 import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
+import DanielPromise from "assets/images/excos/danielPromise.jpg";
+import OjoTobiloba from "assets/images/excos/ojoTobilolba.jpg";
+import Olaosebikan from "assets/images/excos/olaosebikan.jpg";
+import SulaimonPhilipson from "assets/images/excos/sulaimonPhilipson.jpg";
+import OladimejiMuheez from "assets/images/excos/oladimejiMuheez.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
 import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
@@ -27,6 +32,7 @@ import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
 import akorede from "assets/Sigma-Talents/akorede.jpeg";
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
 import Adesokan from "assets/Sigma-Talents/Adesokan.jpg";
+import Bankole from "assets/Sigma-Talents/BankoleCaleb.jpg";
 import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
 import Participants from "assets/HealthOutreach2024/Participants.png";
 import Participants2 from "assets/HealthOutreach2024/Participants2.png";
@@ -96,10 +102,16 @@ export {
   TimothyHeadshot,
   akorede,
   oyerohabib,
+  DanielPromise,
+  OjoTobiloba,
+  Olaosebikan,
+  SulaimonPhilipson,
+  OladimejiMuheez,
 
   GuestLuncheon,
   DEFAULT,
   Adesokan,
+  Bankole,
   Participants,
   Participants2,
   BloodTest,

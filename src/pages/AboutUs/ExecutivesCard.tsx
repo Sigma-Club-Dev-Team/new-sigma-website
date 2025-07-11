@@ -5,7 +5,6 @@ import {
   Heading,
   Text,
   Stack,
-  Image,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Executive } from "types";

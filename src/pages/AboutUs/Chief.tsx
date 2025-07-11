@@ -6,7 +6,7 @@ import { Flex } from "@chakra-ui/react";
 
 import { Text, Box, Image } from "@chakra-ui/react";
 
-const Scholarship = () => {
+const Chief = () => {
   return (
     <Container maxW="7xl" className="animate-bottom" mb={20} px={10}>
       <Flex direction={{ base: "column", md: "row" }}>
@@ -24,7 +24,7 @@ const Scholarship = () => {
             borderRadius="lg"
             width={{ lg: "95%", md: "80%", sm: "100%" }}
             src={SigmaChiefJPG}
-            alt="presentation of prize"
+            alt="The Sigma Chief"
           />
         </Box>
         <Box
@@ -33,7 +33,7 @@ const Scholarship = () => {
           px={{ lg: "6", md: "2", sm: "0" }}
         >
           <Text
-           
+
             display="block"
             fontSize="24"
             lineHeight="normal"
@@ -44,7 +44,7 @@ const Scholarship = () => {
           <br />
 
           <Text fontSize="16px" lineHeight="7">
-            He is a final-year student at the Faculty of Law, University of
+            {/* He is a final-year student at the Faculty of Law, University of
             Ibadan, with a strong passion for leadership, public relations, and
             philanthropy.
             <br />
@@ -70,9 +70,9 @@ const Scholarship = () => {
             remains committed to making a positive impact in his society and the
             world at large through his laudable philanthropic efforts.
             <br />
-            <br />
+            <br /> */}
             <Text fontSize="16" fontWeight={500}>
-            The Sigma Chief, who embodies the Sigma ideals and tradition, is a respected philanthropist and socialite.
+              The Sigma Chief, who embodies the Sigma ideals and tradition, is a respected philanthropist and socialite.
             </Text>
             <Text fontSize="20" fontWeight={600} py={8}>
               "The Sigma Chief is The Sigma Club"
@@ -84,4 +84,4 @@ const Scholarship = () => {
   );
 };
 
-export default Scholarship;
+export default Chief;

@@ -2,15 +2,15 @@ import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import {
-  DeputyChiefJPG,
-  ChiefScribeJPG,
-  FDChairJPG,
-  SigmaTJPG,
-  // InvestmentChairJPG,
-  // SecurityChairJPG,
-  PublicityChairJPG,
+  Bankole,
+  InvestmentChairJPG,
   DeputyChiefScribeJPG,
-  DEFAULT,
+  DanielPromise,
+  OjoTobiloba,
+  SulaimonPhilipson,
+  OladimejiMuheez,
+  Olaosebikan,
+  // DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
 
@@ -19,51 +19,49 @@ const ExecutiveObj: Executive[] = [
     id: 1,
     name: "Loyalist Babatunde Faith",
     post: "Deputy Chief (Band Committee Chairman)",
-    image: DeputyChiefJPG,
+    image: DeputyChiefScribeJPG,
   },
   {
     id: 2,
-    name: "Loyalist Olaniyan Mohammed",
+    name: "Loyalist Bankole Caleb",
     post: "Chief Scribe (Secretariat Committee Chairman)",
-    image: ChiefScribeJPG,
+    image: Bankole,
   },
   {
     id: 3,
     name: "Loyalist Daniel Promise",
     post: "Financial Scribe (Food & Drinks Committee Chairman)",
-    image: FDChairJPG,
+    image: DanielPromise,
   },
   {
     id: 4,
-    name: "Loyalist Oladimeji",
+    name: "Loyalist Oladimeji Muheez",
     post: "Deputy Scribe (Maintenance & Decoration Committee Chairman) ",
-    image: DeputyChiefScribeJPG,
+    image: OladimejiMuheez,
   },
   {
     id: 5,
     name: "Loyalist Sulaimon Philipson",
     post: "Publicity Committee Chairman",
-    image: PublicityChairJPG,
+    image: SulaimonPhilipson,
   },
   {
     id: 6,
     name: "Loyalist Ahmed Abdullahi",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
-    image: SigmaTJPG,
+    image: InvestmentChairJPG,
   },
   {
     id: 7,
     name: "Loyalist Olaosebikan Gbolahan",
     post: "Investment and Special Duties Committee Chairman",
-    // image: InvestmentChairJPG,
-    image: DEFAULT,
+    image: Olaosebikan,
   },
   {
     id: 8,
     name: "Loyalist Ojo Jolaoluwa Oluwatobi",
     post: "Security Committee Chairman",
-    // image: SecurityChairJPG,
-    image: DEFAULT,
+    image: OjoTobiloba,
   },
 ];
 

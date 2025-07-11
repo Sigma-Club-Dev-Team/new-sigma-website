@@ -345,7 +345,7 @@ const OldChiefsOBJ: OldSigmite[] = [
   {
     id: "69",
     sigmaYear: "2023/2024",
-    name: "Olalekan Micheal Ajibola",
+    name: "Olalekan Michael Ajibola",
   },
 ];
 
