@@ -102,7 +102,7 @@ export default function Footer() {
                     href="tel: +234 813 469 0893"
                     textDecoration={"underline"}
                   >
-                    +234 90 6086 5992
+                    +234 813 469 0893
                   </ChakraLink>
                 </Text>
               </VStack>
