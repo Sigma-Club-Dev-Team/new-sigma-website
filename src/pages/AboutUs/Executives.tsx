@@ -5,7 +5,7 @@ import {
   DeputyChiefJPG,
   Bankole,
   InvestmentChairJPG,
-  DeputyChiefScribeJPG,
+  // DeputyChiefScribeJPG,
   DanielPromise,
   OjoTobiloba,
   SulaimonPhilipson,

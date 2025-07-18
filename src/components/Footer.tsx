@@ -93,7 +93,7 @@ export default function Footer() {
                     href="sigmaclub1950@gmail.com"
                     textDecoration={"underline"}
                   >
-                   sigmaclub1950gmail.com
+                   sigmaclub195@gmail.com
                   </ChakraLink>
                 </Text>
                 <Text>
