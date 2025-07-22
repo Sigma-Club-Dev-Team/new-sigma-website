@@ -5,10 +5,8 @@ import {
   DeputyChiefJPG,
   Bankole,
   InvestmentChairJPG,
-  // DeputyChiefScribeJPG,
   DanielPromise,
   OjoTobiloba,
-  SulaimonPhilipson,
   OladimejiMuheez,
   Olaosebikan,
   UnahSimon
