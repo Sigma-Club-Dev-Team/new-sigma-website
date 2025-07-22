@@ -11,6 +11,7 @@ import {
   SulaimonPhilipson,
   OladimejiMuheez,
   Olaosebikan,
+  UnahSimon
   // DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
@@ -42,9 +43,9 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 5,
-    name: "Loyalist Sulaimon Philipson",
+    name: "Loyalist Unah Simon John",
     post: "Publicity Committee Chairman",
-    image: SulaimonPhilipson,
+    image: UnahSimon,
   },
   {
     id: 6,

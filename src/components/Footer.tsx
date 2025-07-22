@@ -90,10 +90,10 @@ export default function Footer() {
                 <Text>
                   <Text as={"b"}>Email:</Text>{" "}
                   <ChakraLink
-                    href="sigmaclub1950@gmail.com"
+                    href="mailto:sigmaclub1950@gmail.com" target="_blank" rel="noopener noreferrer"
                     textDecoration={"underline"}
                   >
-                   sigmaclub195@gmail.com
+                   sigmaclub1950@gmail.com
                   </ChakraLink>
                 </Text>
                 <Text>
