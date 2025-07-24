@@ -24,6 +24,7 @@ import DanielPromise from "assets/images/excos/danielPromise.jpg";
 import OjoTobiloba from "assets/images/excos/ojoTobilolba.jpg";
 import Olaosebikan from "assets/images/excos/olaosebikan.jpg";
 import SulaimonPhilipson from "assets/images/excos/sulaimonPhilipson.jpg";
+import UnahSimon from "assets/images/excos/unahSimon.jpg"
 import OladimejiMuheez from "assets/images/excos/oladimejiMuheez.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
@@ -153,5 +154,6 @@ export {
   SigmaIYDJPG,
   SigmaEssay,
   Quiz2025,
-  PubblicLecture11
+  PubblicLecture11,
+  UnahSimon
 };
