@@ -10,6 +10,15 @@ export type IMediaPost = {
 
 const MediaPosts: IMediaPost[] = [
   {
+    source: "Sigma Club",
+    logoUrl: "./assets/images/pngs/logo.png",
+    imageUrl: "./assets/admission2025/admission2025.jpg",
+    title: "Sigma Admission Interview 2025",
+    description:
+      "Sigma Club, the University of Ibadan's premier socio-philanthropic student organization, once again opens its gates to men who dare to be more than ordinary.",
+    link: "https://forms.gle/YyUe3SWdqaM2ukTZ6",
+  },
+  {
     source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
     imageUrl: "./assets/images/UCJUI-PL.jpg",
     title:
@@ -21,8 +30,7 @@ const MediaPosts: IMediaPost[] = [
   {
     source: "©️NIGERIAN TRIBUNE.",
     imageUrl: "./assets/images/UCJUI-PL.jpg",
-    title:
-      "Gov Makinde, Alaafin, others attend MTN CEO’s lecture",
+    title: "Gov Makinde, Alaafin, others attend MTN CEO’s lecture",
     description:
       "The Alaafin of Oyo, Oba Akeem Owoade, and the representatives of the Oyo State Governor and the Vice Chancellor of the University of Ibadan, spoke at the 11th public lecture of the Sigma Club, University of Ibadan, delivered by the Managing Director and Chief Executive Officer (CEO) of MTN Nigeria, Dr Karl Toriola, in honour of Old Sigmite and former CEO of First Bank Group, Dr Adesola Adeduntan.",
     link: "https://tribuneonlineng.com/gov-makinde-alaafin-others-attend-mtn-ceos-lecture/",
@@ -30,8 +38,7 @@ const MediaPosts: IMediaPost[] = [
   {
     source: "©️UNION OF CAMPUS JOURNALISTS, UI.",
     imageUrl: "./assets/images/jpgs/essay.jpg",
-    title:
-      "NEWS: SIGMA Releases Call for Entries for Essay Competition",
+    title: "NEWS: SIGMA Releases Call for Entries for Essay Competition",
     description:
       "The topic speaks to the need for a sense of responsibility among students, who will, in time, become leaders and stakeholders who can effect changes in our society,” the SIGMA Chief said reacting to the call for entries.... ",
     link: "https://www.ucjui.com/news-sigma-releases-call-for-entries-for-essay-competition/",
