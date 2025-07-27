@@ -29,6 +29,7 @@ import OladimejiMuheez from "assets/images/excos/oladimejiMuheez.jpg";
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
 import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
+import Admission2025 from "assets/admission2025/admission2025.jpg";
 
 import akorede from "assets/Sigma-Talents/akorede.jpeg";
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
@@ -155,5 +156,6 @@ export {
   SigmaEssay,
   Quiz2025,
   PubblicLecture11,
-  UnahSimon
+  UnahSimon,
+  Admission2025,
 };
