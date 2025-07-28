@@ -1,45 +1,55 @@
 import { Article } from "types";
 import { sigmaLectureContent } from "./sigmaLectureContent ";
+import { sigmaAdmissionWriteup } from "./admission";
 import * as ImageAssets from "./image_assets";
 
 export const ArticleArray: Article[] = [
+  {
+    id: "7",
+    authorName: "Sigma Club",
+    title: "2024/2025 Sigma Admission Interview",
+    content: sigmaAdmissionWriteup,
+    abridgedContent: "Sigma Admission Interview",
+    image: ImageAssets.Admission2025,
+    date: new Date("2025-07-28T22:45:27Z"),
+  },
   {
     id: "6",
     authorName: "Sigma Club",
     title: "11th Sigma Club Public Lecture.",
     content: sigmaLectureContent,
-    abridgedContent:
-      "11th Sigma Club Lecture.",
+    abridgedContent: "11th Sigma Club Lecture.",
     image: ImageAssets.PubblicLecture11,
     date: new Date("2025-07-11T19:01:27Z"),
   },
+  
   {
     id: "1",
     authorName: "Sigma Club",
     title: "Roseline Etuokwu Secondary School Quiz Competition",
     content:
-      "This is also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots.  "
-    + "It is the club’s believe that the secondary school students would grow to become  "
-              + "University students.As such, introducing the club to them right  "
-              + "from their secondary school days would guide them in manners to  "
-              + "act and way of life to live as a student of higher  "
-              + "institutions.During this competition, moral and educational  "
-              + "knowledge are displayed and students are being trained in manners  "
-              + "to become whole human and stand “for all that is pure”. These will  "
-              + "believe would keep the students on the right track before entering  "
-              + "the university. It also serve as a means of orientating students on  "
-              + "steps to take while making choices as a secondary school student  "
-              + "aspiring for higher institutions.   "
-              + "\n\n "
-              + "With the inceptions of the competition, over 300 secondary  "
-                + "schools across the 33 local government of Oyo State have  "
-                + "participated and witnessed the participation of over 700  "
-                + "students in this competition. Apart from the participation of  "
-                + "these students and schools, gift items are also won by different  "
-                + "schools, students, and teachers for their participation. In the  "
-                + "last competition, first position won the sum of #250 000 worth  "
-                + "of price, first runner won #200 000 worth of price and second  "
-                + "runner up won #150 000 worth of price.",
+      "This is also known as the Roseline Etuokwu Sigma Secondary School Quiz Competition is one of the philanthropic activities of the club to bring the club closer to the grassroots.  " +
+      "It is the club’s believe that the secondary school students would grow to become  " +
+      "University students.As such, introducing the club to them right  " +
+      "from their secondary school days would guide them in manners to  " +
+      "act and way of life to live as a student of higher  " +
+      "institutions.During this competition, moral and educational  " +
+      "knowledge are displayed and students are being trained in manners  " +
+      "to become whole human and stand “for all that is pure”. These will  " +
+      "believe would keep the students on the right track before entering  " +
+      "the university. It also serve as a means of orientating students on  " +
+      "steps to take while making choices as a secondary school student  " +
+      "aspiring for higher institutions.   " +
+      "\n\n " +
+      "With the inceptions of the competition, over 300 secondary  " +
+      "schools across the 33 local government of Oyo State have  " +
+      "participated and witnessed the participation of over 700  " +
+      "students in this competition. Apart from the participation of  " +
+      "these students and schools, gift items are also won by different  " +
+      "schools, students, and teachers for their participation. In the  " +
+      "last competition, first position won the sum of #250 000 worth  " +
+      "of price, first runner won #200 000 worth of price and second  " +
+      "runner up won #150 000 worth of price.",
     abridgedContent:
       "This is a quiz competition that stemed out of the need to improve education. It started in 2019 with 10 schools, and then progressed to Oyo state and is now organizing a South west level with more than 1000+ schools.",
     image: ImageAssets.SecSchoolQuizGroupJPG,
