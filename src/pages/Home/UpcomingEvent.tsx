@@ -33,7 +33,6 @@ const SigmaWalk = () => {
           textAlign="left"
         >
           <Text fontSize={"40px"} lineHeight={"60px"}>
-            {/* 2025 Roseline Etuokwu quiz competition */}
             Sigma Admission Interview 2025
           </Text>
 
@@ -44,16 +43,6 @@ const SigmaWalk = () => {
             color={"#1C1C1CB2"}
             marginTop={"20px"}
           >
-            {/* Sigma Club is organising the 2025 Roseline Etuokwu national quiz
-            competition for secondary schools across all states in Nigeria with
-            focus on fields of Mathematics, English Language, and General
-            Knowledge with 20 MILLION NAIRA worth of prizes and consolation
-            prizes for winners at each stage; state, regional and national
-            <br />
-            <br />
-            Registration is completely FREE and every school should provide two
-            students (Male and female to ensure gender equality except in cases
-            of single sex schools) */}
             2024/2025 SIGMA ADMISSION INTERVIEW
             <br />
             <br />
@@ -67,33 +56,18 @@ const SigmaWalk = () => {
             The Sigma Admission Interview is upon us. This moment is not merely
             an academic or social milestone — it is a solemn invitation into a
             legacy. A legacy of purpose-driven service, intellectual
-            distinction, and uncompromising virtue. 
+            distinction, and uncompromising virtue.
+            <br />
+            <Link href="/blogs/7" fontStyle={"italic"}>
+              Know More
+            </Link>
           </Text>
 
-          {/* <Link
-              color={appColors.brand.purple}
-              textDecoration={"underline"}
-              to="/events/quiz-competition/2024"
-              as={RRLink}
-            >
-              View more Details
-            </Link> */}
-
           <Box my={6}>
-            {/* <Link href="https://quiz.sigmaclubui.ng/">
-              <CTAButton>REGISTER NOW</CTAButton>
-            </Link> */}
             <Link href="https://forms.gle/YyUe3SWdqaM2ukTZ6">
               <CTAButton>REGISTER NOW</CTAButton>
             </Link>
           </Box>
-          {/* <Link
-            href="https://bit.ly/SigWADA"
-            isExternal
-            mt={{ base: "20px" }} // Push button to the bottom on desktop
-          >
-            <CTAButton>Join Now</CTAButton>
-          </Link> */}
         </Flex>
 
         <Flex
