@@ -3,14 +3,13 @@ import { Container, Flex, Heading } from "@chakra-ui/react";
 import ExecutivesCard from "./ExecutivesCard";
 import {
   DeputyChiefJPG,
-  Bankole,
-  InvestmentChairJPG,
-  DanielPromise,
-  OjoTobiloba,
-  OladimejiMuheez,
-  Olaosebikan,
-  UnahSimon
-  // DEFAULT,
+  FandD,
+  Security,
+  Investment,
+  PublicityChairJPG,
+  SigmaTJPG,
+  ChiefScribeJPG,
+  DEFAULT,
 } from "constants/image_assets";
 import { Executive } from "types";
 
@@ -23,45 +22,45 @@ const ExecutiveObj: Executive[] = [
   },
   {
     id: 2,
-    name: "Loyalist Bankole Caleb",
+    name: "Loyalist Adeyeye Anthony",
     post: "Chief Scribe (Secretariat Committee Chairman)",
-    image: Bankole,
+    image: ChiefScribeJPG,
   },
   {
     id: 3,
     name: "Loyalist Daniel Promise",
     post: "Financial Scribe (Food & Drinks Committee Chairman)",
-    image: DanielPromise,
+    image: FandD,
   },
   {
     id: 4,
-    name: "Loyalist Oladimeji Muheez",
+    name: "Loyalist Alabi Testimony",
     post: "Deputy Scribe (Maintenance & Decoration Committee Chairman) ",
-    image: OladimejiMuheez,
+    image: DEFAULT,
   },
   {
     id: 5,
-    name: "Loyalist Unah Simon John",
+    name: "Loyalist Sulaimon Philipson",
     post: "Publicity Committee Chairman",
-    image: UnahSimon,
+    image: PublicityChairJPG,
   },
   {
     id: 6,
-    name: "Loyalist Ahmed Abdullahi",
+    name: "Loyalist Daniel Bright",
     post: "Sigma Treasurer (Sponsorship & Gate-keeping Committee Chairman)",
-    image: InvestmentChairJPG,
+    image: SigmaTJPG,
   },
   {
     id: 7,
-    name: "Loyalist Olaosebikan Gbolahan",
+    name: "Loyalist Salawu Toyeeb",
     post: "Investment and Special Duties Committee Chairman",
-    image: Olaosebikan,
+    image: Investment,
   },
   {
     id: 8,
-    name: "Loyalist Ojo Jolaoluwa Oluwatobi",
+    name: "Loyalist Okwuowulu Clement",
     post: "Security Committee Chairman",
-    image: OjoTobiloba,
+    image: Security,
   },
 ];
 
