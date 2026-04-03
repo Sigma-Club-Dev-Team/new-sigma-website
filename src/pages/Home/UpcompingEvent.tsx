@@ -12,23 +12,23 @@ import {
   useBreakpointValue,
   Button,
 } from "@chakra-ui/react";
-import { GuestLuncheon } from "constants/image_assets";
+import SigmaPl from "../../assets/images/events/11thPublicLecture.jpg";
 import { isAfter, isBefore, isWithinInterval } from "date-fns";
 import React from "react";
 import { UpcomingEvent } from "types";
 
 const upcomingEvent: UpcomingEvent = {
-  title: "Sigma Guest Luncheon",
+  title: "Sigma 11th Public Lecture.",
   description:
-    "Sigma Club celebrates excellence and honor as we induct the distinguished Sir Kesington Adebukunola Adebutu (OON, CON, CFR, KJW, FISM, FNIJ, FAmedS, Odole-Oodua of the Source) into the Sigma Roll of Honour at our Sigma Guest Luncheon " +
+    "On July 3, 2025, the University of Ibadan’s Alumni Multipurpose Hall buzzed with energy and ideas as the Sigma Club hosted its 11th Public Lecture. This August event, a cornerstone of the club’s legacy, brought together students, alumni, and distinguished guests to discuss solutions to Nigeria’s pressing challenges. Held in honor of Old Chief Dr. Adesola Adeduntan, former CEO of First Bank Nigeria, the lecture hosted Dr. Karl Toriola, CEO of MTN Nigeria, as the guest speaker. The theme, “Leveraging Technology and Digital Education for Mass Employment, Wealth Creation, and Poverty Alleviation,” struck a chord with everyone present, sparking conversations about Nigeria’s future." +
 
-"\n\n🗓️ October 25, 2023. " +
+"\n\n🗓️ July 03, 2025. " +
 
-"\n📍 The Civic Centre Ozumba Mbadiwe Road, Victoria Island, Lagos."+
+"\n📍 Alumni Multipurpose Hall, University of Ibadan."+
 
- "\n\n Strictly by Invitation \n ...for all that is pure 💜💛",
-  image: GuestLuncheon,
-  startDate: new Date("2023-10-25")
+ "",
+  image: SigmaPl,
+  startDate: new Date("2025-07-03")
 };
 
 // const customDateFormat = "do 'of' MMMM";

@@ -10,29 +10,25 @@ import SigmaChiefCupJPG from "assets/images/events/sigma_chief_cup.jpg";
 import ScholarShipScheme from "assets/images/events/ScholarShipScheme.jpeg";
 import SigmaHealthOutreachJPG from "assets/images/events/sigma_health_outreach.jpg";
 import SecSchoolQuizWinnerJPG from "assets/quizCompetition.jpg";
-import ChiefScribeJPG from "assets/images/excos/chief_scribe.jpg";
-import DeputyChiefJPG from "assets/images/excos/deputy_chief.jpg";
-import FDChairJPG from "assets/images/excos/f&d_chair.jpg";
+import ChiefScribeJPG from "assets/images/excos/secretariat.jpg";
+import DeputyChiefJPG from "assets/images/excos/dchief.jpg";
 import DEFAULT from "assets/images/excos/default.jpg";
 import InvestmentChairJPG from "assets/images/excos/investment.jpg";
-import SecurityChairJPG from "assets/images/excos/security.jpg";
-import SigmaChiefJPG from "assets/images/excos/sigma_chief.jpg";
-import SigmaTJPG from "assets/images/excos/sigma_t.jpg";
-import PublicityChairJPG from "assets/images/excos/publicity_chair.jpg";
-import DeputyChiefScribeJPG from "assets/images/excos/deputy_chief_scribe.jpg";
-import DanielPromise from "assets/images/excos/danielPromise.jpg";
-import OjoTobiloba from "assets/images/excos/ojoTobilolba.jpg";
-import Olaosebikan from "assets/images/excos/olaosebikan.jpg";
-import SulaimonPhilipson from "assets/images/excos/sulaimonPhilipson.jpg";
-import OladimejiMuheez from "assets/images/excos/oladimejiMuheez.jpg";
+import SigmaTJPG from "assets/images/excos/treasurer.jpg";
+import PublicityChairJPG from "assets/images/excos//publicity.jpg";
+import FandD from "assets/images/excos/FandD.jpg";
+import Security from "assets/images/excos/security.jpg";
+import Investment from "assets/images/excos/investment.jpg";
+import SigmaChiefF from "assets/IMG_9490.jpg"
 import SigmaScholarship from "assets/sigma-scholarship.jpg";
 import TomiwaHeadshot from "assets/Sigma-Talents/TomiwaHeadshot.jpg";
 import TimothyHeadshot from "assets/Sigma-Talents/TimothyHeadShot.jpg";
+import Admission2025 from "assets/admission2025/admission2025.jpg";
+import Garuba from "assets/Sigma-Talents/NurainTwo1.jpg";
 
 import akorede from "assets/Sigma-Talents/akorede.jpeg";
 import oyerohabib from "assets/Sigma-Talents/oyerohabib.jpeg";
 import Adesokan from "assets/Sigma-Talents/Adesokan.jpg";
-import Bankole from "assets/Sigma-Talents/BankoleCaleb.jpg";
 import GuestLuncheon from "assets/images/events/sigma_guest_luncheon_2023.jpeg";
 import Participants from "assets/HealthOutreach2024/Participants.png";
 import Participants2 from "assets/HealthOutreach2024/Participants2.png";
@@ -73,9 +69,12 @@ import SigmaChiefPNG from "assets/Picnic/SigmaChief.png";
 import Walk from "assets/walk.jpeg";
 import SigmaIYDJPG from "assets/SigmaIYD.jpg";
 import SigmaEssay from "assets/UpcomingEvents/essay.jpg";
-import Quiz2025 from "assets/UpcomingEvents/2025quiz.jpg"
+import Quiz2025 from "assets/UpcomingEvents/2025quiz.jpg";
+import PubblicLecture11 from "assets/images/events/11thPublicLecture.jpg";
 
 export {
+  Garuba,
+  SigmaChiefF,
   HsLamidoSanusiJPG,
   HsWaleBabalakin,
   HsObiOnitsha,
@@ -89,29 +88,21 @@ export {
   SigmaHealthOutreachJPG,
   ChiefScribeJPG,
   DeputyChiefJPG,
-  FDChairJPG,
   InvestmentChairJPG,
-  SecurityChairJPG,
-  SigmaChiefJPG,
   SigmaTJPG,
-  PublicityChairJPG,
-  DeputyChiefScribeJPG,
   SigmaScholarship,
   ScholarShipScheme,
   TomiwaHeadshot,
   TimothyHeadshot,
   akorede,
   oyerohabib,
-  DanielPromise,
-  OjoTobiloba,
-  Olaosebikan,
-  SulaimonPhilipson,
-  OladimejiMuheez,
-
+  FandD,
+  Security,
+  Investment,
+  PublicityChairJPG,
   GuestLuncheon,
   DEFAULT,
   Adesokan,
-  Bankole,
   Participants,
   Participants2,
   BloodTest,
@@ -151,5 +142,7 @@ export {
   Walk,
   SigmaIYDJPG,
   SigmaEssay,
-  Quiz2025
+  Quiz2025,
+  PubblicLecture11,
+  Admission2025,
 };
